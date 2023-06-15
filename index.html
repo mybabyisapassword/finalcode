@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Programming Quiz Game</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+<body>
+
+
+<div class="form0" style="display: none;">
+    <div type="button" onclick="home()"class="button-home">HOME</div>
+  </div>
+  <form id="form1">
+    
+      <img src="image/back1.jpg" alt="Game Logo" class="logo"><br><br>
+<b>
+      <font style="color: black;" size="55">Welcome To Indenticode!</font> 
+      <h2 style="color: black;">
+      To Enhance your knowledge in<br> programming language<br><br>
+    </h2>
+    <button type="button" onclick="showForm2()" class="button-style">Start</button>
+  </form></b>
+
+  <form id="form2" style="display: none;">
+    <h2 style="font-size: 35px; color: white;">Choose a Programming Language</h2>
+    <div class="image-grid">  
+      <img src="image/c+.png" class="choicesimgs" alt="Image 1" onclick="showForm3('c++')">
+      <img src="image/c.png" class="choicesimgs" alt="Image 2" onclick="showForm3('c')">
+      <img src="image/java.png" class="choicesimgs" alt="Image 3" onclick="showForm3('java')">
+      <img src="image/js.png" class="choicesimgs" alt="Image 4" onclick="showForm3('js')">
+      <img src="image/html.webp" class="choicesimgs" alt="Image 5" onclick="showForm3('html')">
+      <img src="image/python.png" class="choicesimgs" alt="Image 6" onclick="showForm3('python')">
+    </div>  
+  </form>
+
+  <form id="form3" style="display: none; font-size: 20px; color: white;">
+    <h2 id="languageType">Choose Difficulty</h2>
+    <h2 id="language" style="text-transform: capitalize";></h2>
+    <div class="button-row">
+      <button type="button" onclick="startGame('easy')" class="button-start">Easy</button>
+    </div>
+    <div class="button-row">
+      <button type="button" onclick="startGame('normal')" class="button-start">Normal</button>
+    </div>
+    <div class="button-row">
+      <button type="button" onclick="startGame('hard')" class="button-start">Hard</button>
+    </div>
+  </form>
+
+  <div id="game" style="display: none;">
+    <div id="result"></div> 
+    <div class="questioncontainer">
+    <h2 id="question"></h2>
+  </div>
+    <form id="quizForm">
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr);" id="choices"></div>
+    </form>
+  </div>
+  <div id="score" style="display: none;"></div>
+  <button type="button" style="display: none;" onclick="endGame()"class="button-end">End Game</button>
+
+
+  
+</body>
+</html>
+
