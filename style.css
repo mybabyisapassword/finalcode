@@ -194,17 +194,17 @@ input[type="radio"] {
 
 #question {
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   padding: 10px;
 }
 
 #choices {
   color: white;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
-  padding: 10px;
-  display: flex;
+  padding: 5px;
+  display: center;
       flex-direction: column;
       align-items: center;
 }
@@ -265,10 +265,10 @@ button[type="button"] {
 }
 
 .choicesimgs {
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   justify-self: center; /* Center horizontally within each cell */
-  margin: 15px; /* Adjust the margin value as needed */
+  margin: 5 px; /* Adjust the margin value as needed */
   -webkit-box-reflect: below 0.0001px linear-gradient(transparent, #0003);
 }
 
