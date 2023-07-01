@@ -2038,7 +2038,7 @@ function startGame(difficulty) {
   document.getElementById("game").style.display = "block";
   document.getElementById("score").style.display = "block";
   document.getElementById("languageType").textContent = "Selected Language: " + currentLanguage;
-  document.getElementById("score").textContent = "Score: 0";
+  document.getElementById("score").textContent = "";
   showQuestion();
   const form0 = document.querySelector(".form0");
 
@@ -2074,7 +2074,7 @@ function showQuestion() {
     choice.value = currentQuestion.choices[i];
 
     choice.style.display = "block"; // Set display to "block" to stack buttons vertically
-choice.style.margin = "10vh"; // Add margin to center the buttons horizontally
+choice.style.margin = "5vh"; // Add margin to center the buttons horizontally
 choice.style.padding = "20px";
 choice.style.fontSize = "20px";
 choice.style.backgroundColor = "white";
