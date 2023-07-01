@@ -2074,7 +2074,7 @@ function showQuestion() {
     choice.value = currentQuestion.choices[i];
 
     choice.style.display = "inline-block"; // Set display to "inline-block" to align buttons horizontally
-    choice.style.marginRight = "5px"; // Add some margin between buttons
+    choice.style.marginleft = "5px"; // Add some margin between buttons
     choice.style.padding = "15px";
     choice.style.fontSize = "20px";
     choice.style.backgroundColor = "white";
