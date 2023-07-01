@@ -3,7 +3,7 @@ const quizData = {
   "easy": [
     {
     "question": "1.\n#include <stdio.h> \n __ main() { \n  printf(\"Hello World!\"); \n return 0; }\n\nCorrect answer:",
-    "choices": ["^", "<", "*", "="],
+    "choices": ["^", "<", "*"],
     "correctAnswer": "<",
     "output": "Hello World!"
   },
@@ -1128,7 +1128,7 @@ ABC`,
       '<button'
     ],
     correctAnswer: '<button',
-    output:''
+    output:'The output of the provided code would be an HTML page displaying a heading that says "Demo JavaScript in Head," a paragraph with the text "A Paragraph.," and a button labeled "Try it."'
   },
 
 
@@ -1149,7 +1149,7 @@ ABC`,
       '</p>'
     ],
     correctAnswer: '</p>',
-    output:''
+    output:'The output would be an HTML page with a heading saying "Demo External JavaScript," a paragraph with the text "A Paragraph.," a button labeled "Try it," a paragraph mentioning the link to an external JavaScript file, and another paragraph stating that the function myFunction() is stored in the external file "myScript.js," which is linked to the HTML page using the <script> tag with the src attribute set to "myScript.js".'
   },
 
 
@@ -1158,10 +1158,12 @@ ABC`,
   {
     question: `
       <h2>External JavaScript</h2>\n
+      ______
       <p id="demo">A Paragraph.</p>\n\n
       <button type="button" onclick="myFunction()">Click Me</button>\n
       <p>This example uses a full web URL to link to "myScript.js".</p>\n
       <p>(myFunction is stored in "myScript.js")</p>\n
+      </body>\n
       <script src="https://www.w3schools.com/js/myScript.js"></script>
     `,
     choices: [
@@ -1170,7 +1172,7 @@ ABC`,
       '</body>'
     ],
     correctAnswer: '<body>',
-    output:''
+    output:'The output would be an HTML page with a heading saying "External JavaScript," a paragraph with the text "A Paragraph.," a button labeled "Click Me," a paragraph mentioning the use of a full web URL to link to the external JavaScript file "myScript.js," and another paragraph stating that the function myFunction() is stored in the external file "myScript.js," which is linked to the HTML page using the <script> tag with the src attribute set to "https://www.w3schools.com/js/myScript.js".'
   },
 
 
@@ -1178,12 +1180,14 @@ ABC`,
 
   {
     question: `
+      __________
       <h2>My First Web Page</h2>\n
       <p>My First Paragraph.</p>\n
       <p id="demo"></p>\n
       <script>\n
         document.getElementById("demo").innerHTML = 5 + 6;\n
       </script>
+      </html>
     `,
     choices: [
       '<!DOCTYPE html>',
@@ -1191,7 +1195,7 @@ ABC`,
       '<!DOCTYPE Html>'
     ],
     correctAnswer: '<!DOCTYPE html>',
-    output:''
+    output:'The output would be an HTML page displaying a heading saying "My First Web Page," a paragraph saying "My First Paragraph.," and an empty paragraph, which is filled by JavaScript code to display the result of the expression "5 + 6," which is "11."'
   },
 
 
@@ -1200,7 +1204,7 @@ ABC`,
 
   {
     question: `
-      <h2>Activate Debugging_____</h2>\n\n
+      <h2>Activate Debugging_____\n\n
       <p>F12 on your keyboard will activate debugging.</p>\n
       <p>Then select "Console" in the debugger menu.</p>\n
       <p>Then click Run again.</p>\n
@@ -1214,7 +1218,7 @@ ABC`,
       '</h2>'
     ],
     correctAnswer: '</h2>',
-    output:''
+    output:'The output would be an HTML page with a heading saying "Activate Debugging," and three paragraphs with instructions for activating debugging, followed by a JavaScript code block that logs the result of the expression "5 + 6" (which is 11) to the browser console.'
   },
 
 
@@ -1232,7 +1236,7 @@ ABC`,
       'Print()'
     ],
     correctAnswer: 'print()',
-    output:''
+    output:'The output would be an HTML page with a heading saying "The window.print() Method," a paragraph with the text "Click the button to print the current page," and a button labeled "Print this page." When the button is clicked, it triggers the window.print() method, which opens the browser's print dialog to print the current page.'
   },
 
 
@@ -1254,7 +1258,7 @@ ABC`,
       '"demo"'
     ],
     correctAnswer: '"demo"',
-    output:''
+    output:'The output would be an HTML page displaying a heading saying "JavaScript Statements," a paragraph about JavaScript statements being executed by the browser, and an empty paragraph with the id "demo" that is filled with the text "Hello Dolly." using JavaScript.'
   },
 
 
@@ -1277,7 +1281,7 @@ ABC`,
       '.InnerHTML'
     ],
     correctAnswer: '.innerHTML',
-    output:''
+    output:'The output would be an HTML page with a heading saying "JavaScript Numbers," a paragraph stating that numbers can be written with or without decimals, an empty paragraph with the id attribute set to "demo," and a JavaScript code block that sets the content of the element with the id "demo" (<p id="demo"></p>) to the number 10.50 using the innerHTML property.'
   }
   ],
 
@@ -2028,7 +2032,7 @@ function showQuestion() {
     choice.value = currentQuestion.choices[i];
 
     choice.style.display = "inline-block"; // Set display to "inline-block" to align buttons horizontally
-    choice.style.marginRight = "20px"; // Add some margin between buttons
+    choice.style.marginRight = "10px"; // Add some margin between buttons
     choice.style.padding = "15px";
     choice.style.fontSize = "20px";
     choice.style.backgroundColor = "white";
