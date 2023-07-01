@@ -9,7 +9,7 @@
 
 
 <div class="form0" style="display: none;">
-    <div type="button" onclick="home()"class="button-home">back</div>
+    <div type="button" onclick="home()"class="button-home">home</div>
   </div>
   <form id="form1">
     
@@ -62,9 +62,10 @@
 
     <form id="quizForm">
       <div style="display: grid; grid-template-columns: repeat(4, 1fr);" id="choices"></div>
+       <div id="backButton" onclick="goBack()" class="button-home">Back</div>
     </form>
   </div>
   <div id="score" style="display: none;"></div>
-  <button type="button" style="display: none;" onclick="endGame()"class="button-end">End Game</button>
+ 
 </body>
 </html>

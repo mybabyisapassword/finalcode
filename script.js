@@ -4,7 +4,7 @@ const quizData = {
     {
     "question": "1.\n#include <stdio.h> \n __ main() { \n  printf(\"Hello World!\"); \n return 0; }\n\nCorrect answer:",
     "choices": ["^", "<", "*"],
-    "correctAnswer": "<",
+    "correctAnswer": "<" ,
     "output": "Hello World!"
   },
   {
@@ -125,6 +125,8 @@ const quizData = {
     "correctAnswer": "while",
     "output": "WHAT IS THE SECODE ONE ?"
   },
+
+
 {
     "question": "// Print numbers from 1 to 5\n\n#include <stdio.h>\nint main() {\n  int i = 1;\n    \n  1.a)___while__ (i <= 5) {\n    printf(\"%d\\n\", i);\n1.b)_____  }\n\n  return 0;\n}\n\nCorrect answer:\nwhile\n    ++i;",
     "choices": ["B.)\nI++:", "++i;", "j==;"],
@@ -142,6 +144,9 @@ const quizData = {
     "correctAnswer": "Numbers[]",
     "output": "25\n50\n75\n100"
   },
+
+
+
 {
     "question": "#include <stdio.h>\n\nint main() {\n  int my1.a)___Numbers[]___= {25, 50, 75, 100};\n  int i;\n  \n  for (i = 0; i < 4; i++) {\n    printf(\"%d\\n\", 1.b)_______);\n  }\n \n  return 0;\n}\n\nCorrect answer\nNumbers[]",
     "choices": ["B.)\nMynumber()", "myNumbers[i]", "Int num()"],
@@ -383,7 +388,7 @@ const quizData = {
         'choices': ['b.) "Demo"', 'b.) \'demo\'', 'b.) "demo"'],
         'correctAnswer': 'b.) "demo"',
         'output': 'My First JavaScript\nClick me to display Date and Time.'
-    }
+    },
 
 ],
   "hard": [
@@ -784,6 +789,32 @@ ABC`,
 
 
   ],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   "normal": [
     {
       "question": "Which of the following is the correct way to declare a constant in C++?",
@@ -811,6 +842,19 @@ ABC`,
       "correctAnswer": "&&"
     }
   ],
+
+
+
+
+
+
+
+
+
+
+
+
+  
   "hard": [
      {
     question: `1. #include <iostream>
@@ -1071,9 +1115,10 @@ ABC`,
 
 
 
+
   "js": {
       "easy": [
-     {
+         {
    
     question: `
       <h2>What Can JavaScript Do?</h2>\n
@@ -1091,10 +1136,7 @@ ABC`,
 
 
 
-
-
-
-  {
+{
    
     question: `
       <h2>JavaScript in Body</h2>\n
@@ -1130,6 +1172,8 @@ ABC`,
     correctAnswer: '<button',
     output:'The output of the provided code would be an HTML page displaying a heading that says "Demo JavaScript in Head," a paragraph with the text "A Paragraph.," and a button labeled "Try it."'
   },
+
+
 
 
 
@@ -1177,7 +1221,6 @@ ABC`,
 
 
 
-
   {
     question: `
       __________
@@ -1222,8 +1265,6 @@ ABC`,
   },
 
 
-
-
   {
     question: `
       <h2>The window.print() Method</h2>\n
@@ -1236,7 +1277,7 @@ ABC`,
       'Print()'
     ],
     correctAnswer: 'print()',
-    output:'The output would be an HTML page with a heading saying "The window.print() Method," a paragraph with the text "Click the button to print the current page," and a button labeled "Print this page." When the button is clicked, it triggers the window.print() method, which opens the browser's print dialog to print the current page.'
+    output:'The output would be an HTML page with a heading saying "The window.print() Method," a paragraph with the text "Click the button to print the current page," and a button labeled "Print this page." When the button is clicked, it triggers the window.print() method, which opens the browser s print dialog to print the current page.'
   },
 
 
@@ -1260,8 +1301,6 @@ ABC`,
     correctAnswer: '"demo"',
     output:'The output would be an HTML page displaying a heading saying "JavaScript Statements," a paragraph about JavaScript statements being executed by the browser, and an empty paragraph with the id "demo" that is filled with the text "Hello Dolly." using JavaScript.'
   },
-
-
 
 
 
@@ -1336,6 +1375,10 @@ ABC`,
     }
   ],
 },  
+
+
+
+
 
   "java": {
   "easy": [
@@ -1961,7 +2004,6 @@ ABC`,
 }
 
 };
-
 let currentLanguage = '';
 let currentDifficulty = '';
 let currentQuestionIndex = 0;
@@ -2032,7 +2074,7 @@ function showQuestion() {
     choice.value = currentQuestion.choices[i];
 
     choice.style.display = "inline-block"; // Set display to "inline-block" to align buttons horizontally
-    choice.style.marginRight = "10px"; // Add some margin between buttons
+    choice.style.marginRight = "5px"; // Add some margin between buttons
     choice.style.padding = "15px";
     choice.style.fontSize = "20px";
     choice.style.backgroundColor = "white";
@@ -2120,3 +2162,14 @@ function endGame() {
     location.reload();
   }, 5000);
 }
+
+
+
+ function goBack() {
+      document.getElementById("form1").style.display = "block";
+      document.getElementById("form2").style.display = "none";
+      document.getElementById("form3").style.display = "none";
+      document.getElementById("game").style.display = "none";
+      document.getElementById("score").style.display = "none";
+      document.getElementById("backButton").style.display = "none";
+    }
