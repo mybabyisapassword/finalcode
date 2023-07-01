@@ -8,12 +8,14 @@
 <body>
 
 
-
+<div class="form0" style="display: none;">
+    <div type="button" onclick="home()"class="button-home">back</div>
+  </div>
   <form id="form1">
     
       <img src="image/back1.jpg" alt="Game Logo" class="logo"><br><br>
 <b>
-      <font style="color: black;" size="48">Welcome To Indenticode!</font> 
+      <font style="color: black;" size="55">Welcome To Indenticode!</font> 
       <h2 style="color: black;">
       To Enhance your knowledge in<br> programming language<br><br>
     </h2>
@@ -51,15 +53,18 @@
     <div class="questioncontainer">
     <h2 id="question"></h2>
   </div>
+  <div class="submit-container">
+    <div class="hardfield">
+      <input type="text" style="width: 350px; height: 25px" name="hiddenField" id="hardfield" style="text-align: center;">
+    </div>
+    <button class="hardbutton" id="hardbutton" style="text-align: center; margin: 10px; padding: 20px; border-radius: 15px; background-color: #4371c6; border: none; color: white; ">Submit</button>
+  </div>
+
     <form id="quizForm">
       <div style="display: grid; grid-template-columns: repeat(4, 1fr);" id="choices"></div>
     </form>
   </div>
   <div id="score" style="display: none;"></div>
   <button type="button" style="display: none;" onclick="endGame()"class="button-end">End Game</button>
-
-
-  
 </body>
 </html>
-
