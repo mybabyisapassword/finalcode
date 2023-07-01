@@ -27,13 +27,13 @@ const quizData = {
   },
   {
     "question": "5.\n#include <stdio.h>\nint main() {\n  float my__Num = 3.5;\n  double myDoubleNum = 19.99;\n  printf(\"%f\\n\", myFloatNum);\n  printf(\"%If\", myDoubleNum);\n  return 0;\n}\n\nCorrect answer:",
-    "choices": ["Loaf", "Float", "Cokefloat"],
+    "choices": ["Loaf", "Float", "float"],
     "correctAnswer": "Float",
     "output": "3.500000\n19.990000"
   },
   {
     "question": "6.\n#include <stdio.h>\nint main() {\n  int x = 5;\n  ______= 2;\n  int sum = 5 / 2;\n  printf(\"%d\", sum);\n  return 0;\n}\n\nCorrect answer:",
-    "choices": ["int y", "printf", "int y\nPrint y"],
+    "choices": ["int y", "printf", "Println"],
     "correctAnswer": "int y",
     "output": "2"
   },
@@ -45,7 +45,7 @@ const quizData = {
   },
   {
     "question": "8.\n#include <stdio.h>\nint main() {\n  printf(\"%d\", 10 > 9); \n // ______ 1 (true) because 10 is greater than 9\n  return 0;\n}\n\nCorrect answer:",
-    "choices": ["1", "Returns", "true"],
+    "choices": ["1", "Returns", "10"],
     "correctAnswer": "Returns",
     "output": "1"
   },
@@ -57,8 +57,8 @@ const quizData = {
   },
   {
     "question": "10.\n#include <stdio.h>\nint main() {\n  short a;\n  long b;\n\n\n  printf(\"1.a)______ of short = %d bytes\\n\", sizeof(a));\n  printf(\"size of long = %d 1.b)______\\n\", sizeof(b));\n  return 0;\n}\n\nCorrect answer:\n",
-    "choices": ["A.)\nSIZE\nsize\nSeize", "B.)\nbytes\nBits\nBeats"],
-    "correctAnswer": "A.)\nSIZE\nsize\nSeize\nB.)\nbytes\nBits\nBeats",
+    "choices": ["SIZE","size","Seize"],
+    "correctAnswer": "size",
     "output": "size of short = 2 bytes\nsize of long = 8 bytes"
   },
     
@@ -66,34 +66,34 @@ const quizData = {
   "normal": [
    {
     "question": "1.\n#include <stdio.h>\nint main() 1.b)__\n  int 1.a)______ 15;\n  printf(\"%d\", myNum);\n  return 0;\n}\n\nCorrect answer\nmyNum =",
-    "choices": ["A.)\nMynum≠", "myNum =", "mynumber -"],
+    "choices": ["A.)\nMynum", "myNum =", "number"],
     "correctAnswer": "myNum =",
     "output": "15"
   },
   {
     "question": "2.\n#include <stdio.h>\nint main() {\n    int number;\n    printf(\"Enter an integer: \");\n    1.a)______(\"%d\", &number);\n    // true if number is less than 0\n    if (number < 0) {\n        printf(\"You entered %d.1.b)______\", number);\n    }\n    printf(\"The if statement is easy.\"); for \n    return 0;\n}\n\nCorrect answer\nscanf\n\\n",
-    "choices": ["A.)\nprintf()", "scanf", "Println()"],
+    "choices": ["\nprintf", "scanf", "Println()"],
     "correctAnswer": "scanf",
     "output": "WHAT IS THE SECOND ONE ?"
   },
   {
     "question": "2.\n#include <stdio.h>\nint main() {\n    int number;\n    printf(\"Enter an integer: \");\n    1.a)_scanf_(\"%d\", &number);\n    // true if number is less than 0\n    if (number < 0) {\n        printf(\"You entered %d.1.b)______\", number);\n    }\n    printf(\"The if statement is easy.\"); for \n    return 0;\n}\n\nCorrect answer\nscanf\n\\n",
-    "choices": ["B.)\n/N", "\\n", "%d"],
+    "choices": ["\n/N", "\\n", "%d"],
     "correctAnswer": "\\n",
     "output": "Enter an integer: 6\nThe if statement is easy."
   },
 
   {
     "question": "3.\n#include <stdio.h>\nint main() {\n    int number1, number2;\n    printf(\"Enter two integers: \");\n    scanf(\"%d %d\", &number1, &number2);\n\n    if (number1 >= number2) {\n      if (number1 == number2) {\n        printf(\"Result: %d = %d\",number1,number2);\n      }\n      else {\n        printf(\"1.a)____> %d\", number1, number2);\n      }\n    }\n    else {\n        1.b)______(\"Result: %d < %d\",number1, number2);\n    }\n\n    return 0;\n}\n\nCorrect answer\nResult: %d ",
-    "choices": ["A.)\nresult:&d", "Result: %d", "Result"],
+    "choices": ["\nresult:&d", "Result: %d", "Result"],
     "correctAnswer": "Result: %d",
     "output": "WHAT IS THE SECOND ONE ?"
   },
 
   {
     "question": "3.\n#include <stdio.h>\nint main() {\n    int number1, number2;\n    printf(\"Enter two integers: \");\n    scanf(\"%d %d\", &number1, &number2);\n\n    if (number1 >= number2) {\n      if (number1 == number2) {\n        printf(\"Result: %d = %d\",number1,number2);\n      }\n      else {\n        printf(\"1.a)Result: %d>\", number1, number2);\n      }\n    }\n    else {\n        1.b)______(\"Result: %d < %d\",number1, number2);\n    }\n\n    return 0;\n}\n\nCorrect answer\nResult: %d ",
-    "choices": ["B.)\nprintf", "println", "Print();"],
-    "correctAnswer": "B.)\nprintf",
+    "choices": ["\nprintf", "println", "Print();"],
+    "correctAnswer": "\nprintf",
     "output": "Result: 2 < 7"
   },
 
@@ -2074,8 +2074,8 @@ function showQuestion() {
     choice.value = currentQuestion.choices[i];
 
     choice.style.display = "block"; // Set display to "block" to stack buttons vertically
-choice.style.margin = "10px auto"; // Add margin to center the buttons horizontally
-choice.style.padding = "15px";
+choice.style.margin = "10vh"; // Add margin to center the buttons horizontally
+choice.style.padding = "20px";
 choice.style.fontSize = "20px";
 choice.style.backgroundColor = "white";
 choice.style.color = "black";
@@ -2155,7 +2155,7 @@ function endGame() {
   document.getElementById("game").style.display = "none";
 
   // Update the score display
-  document.getElementById("score").textContent = " " + score + "/" + quizData[currentLanguage][currentDifficulty].length;
+  document.getElementById("score").textContent = " YOUR SCORE IS ! \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" + score + "/" + quizData[currentLanguage][currentDifficulty].length;
   document.getElementById("score").style.display = "block";
 
   // Reload the page after 3 seconds
