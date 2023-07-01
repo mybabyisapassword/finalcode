@@ -2073,14 +2073,15 @@ function showQuestion() {
     choice.type = "button"; // Set type to "button" instead of "radio"
     choice.value = currentQuestion.choices[i];
 
-    choice.style.display = "inline-block"; // Set display to "inline-block" to align buttons horizontally
-    choice.style.marginLeft = "20px"; // Add some margin between buttons
-    choice.style.padding = "15px";
-    choice.style.fontSize = "20px";
-    choice.style.backgroundColor = "white";
-    choice.style.color = "black";
-    choice.style.border = "none";
-    choice.style.borderRadius = "20px";
+    choice.style.display = "block"; // Set display to "block" to stack buttons vertically
+choice.style.margin = "10px auto"; // Add margin to center the buttons horizontally
+choice.style.padding = "15px";
+choice.style.fontSize = "20px";
+choice.style.backgroundColor = "white";
+choice.style.color = "black";
+choice.style.border = "none";
+choice.style.borderRadius = "20px";
+
     // Add event listener to check answer on button click
     choice.addEventListener("click", checkAnswer);
 
