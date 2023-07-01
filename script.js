@@ -2074,7 +2074,7 @@ function showQuestion() {
     choice.value = currentQuestion.choices[i];
 
     choice.style.display = "inline-block"; // Set display to "inline-block" to align buttons horizontally
-    choice.style.marginleft = "5px"; // Add some margin between buttons
+    choice.style.marginLeft = "20px"; // Add some margin between buttons
     choice.style.padding = "15px";
     choice.style.fontSize = "20px";
     choice.style.backgroundColor = "white";
@@ -2154,7 +2154,7 @@ function endGame() {
   document.getElementById("game").style.display = "none";
 
   // Update the score display
-  document.getElementById("score").textContent = "Your score: " + score + "/" + quizData[currentLanguage][currentDifficulty].length;
+  document.getElementById("score").textContent = " " + score + "/" + quizData[currentLanguage][currentDifficulty].length;
   document.getElementById("score").style.display = "block";
 
   // Reload the page after 3 seconds
