@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Programming Quiz Game</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #answer-input {
+      width: 300px;
+      height: 30px;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form0" style="display: none;">
+    <div type="button" onclick="home()" class="button-home">HOME</div>
+  </div>
+  <form id="form1">
+    <img src="image/back1.jpg" alt="Game Logo" class="logo"><br><br>
+    <b>
+      <font style="color: black;" size="55">Welcome To Indenticode!</font> 
+      <h2 style="color: black;">To Enhance your knowledge in<br> programming language<br><br></h2>
+      <button type="button" onclick="showForm2()" class="button-style">Start</button>
+    </b>
+  </form>
+
+  <form id="form2" style="display: none;">
+    <h2 style="font-size: 35px; color: white;">Choose a Programming Language</h2>
+    <div class="image-grid">  
+      <img src="image/c+.png" class="choicesimgs" alt="Image 1" onclick="showForm3('c++')">
+      <img src="image/c.png" class="choicesimgs" alt="Image 2" onclick="showForm3('c')">
+      <img src="image/java.png" class="choicesimgs" alt="Image 3" onclick="showForm3('java')">
+      <img src="image/js.png" class="choicesimgs" alt="Image 4" onclick="showForm3('js')">
+      <img src="image/html.webp" class="choicesimgs" alt="Image 5" onclick="showForm3('html')">
+      <img src="image/python.png" class="choicesimgs" alt="Image 6" onclick="showForm3('python')">
+    </div>  
+  </form>
+
+  <form id="form3" style="display: none; font-size: 20px; color: white;">
+    <h2 id="languageType">Choose Difficulty</h2>
+    <h2 id="language" style="text-transform: capitalize";></h2>
+    <div class="button-row">
+      <button type="button" onclick="startGame('easy')" class="button-start">Easy</button>
+    </div>
+    <div class="button-row">
+      <button type="button" onclick="startGame('normal')" class="button-start">Normal</button>
+    </div>
+    <div class="button-row">
+      <button type="button" onclick="startGame('hard')" class="button-start">Hard</button>
+    </div>
+  </form>
+
+  <div id="game" style="display: none;">
+    <div id="result"></div> 
+    <div class="questioncontainer">
+      <h2 id="question"></h2>
+    </div>
+    <form id="quizForm">
+      <input type="text" id="answer-input" placeholder="Type your answer" />
+      <button type="button" onclick="checkAnswer()" class="button-answer">Submit</button>
+    </form>
+  </div>
+
+  <div id="score" style="display: none;"></div>
+  <button type="button" style="display: none;" onclick="endGame()" class="button-end">End Game</button>
+
+  <script>
+    const quizData = {
+      "c": {
+        "hard": [
+          {
+            "question": "1.\n#include <stdio.h> \n __ main() { \n  printf(\"Hello World!\"); \n return 0; }\n\nCorrect answer:",
+            "choices": ["<"],
+            "correctAnswer": "<",
+            "output": "Hello World!"
+          },
+          {
+            "question": "2.\n#include <stdio.h> \n __ main() { \n  printf(\"Hello World!\"); \n return 0; }\n\nCorrect answer:",
+            "choices": ["<"],
+            "correctAnswer": "<",
+            "output": "Hello World!"
+          }
+        ]
+      }
+    };
+
+    let currentLanguage = '';
+    let currentDifficulty = '';
+    let currentQuestionIndex = 0;
+    let score = 0;
+
+    function showForm2() {
+      document.getElementById("form1").style.display = "none";
+      document.getElementById("form2").style.display = "block";
+    }
+
+    function showForm3(language) {
+      currentLanguage = language;
+      document.getElementById("language").textContent = "Selected Language: " + language;
+      document.getElementById("form2").style.display = "none";
+      document.getElementById("form3").style.display = "block";
+    }
+
+    function startGame(difficulty) {
+      currentDifficulty = difficulty;
+      document.getElementById("form3").style.display = "none";
+      document.getElementById("game").style.display = "block";
+      showQuestion();
+    }
+
+    function showQuestion() {
+      const questionElement = document.getElementById("question");
+      const currentQuestion = quizData[currentLanguage][currentDifficulty][currentQuestionIndex];
+
+      questionElement.textContent = currentQuestion.question;
+
+      const quizForm = document.getElementById("quizForm");
+      quizForm.style.display = "block"; // Show the form before displaying the next question
+
+      const resultElement = document.getElementById("result");
+      resultElement.textContent = ""; // Clear previous result
+
+      const answerInput = document.getElementById("answer-input");
+      answerInput.value = ""; // Clear the input field
+
+      const buttonAnswer = document.getElementById("button-answer");
+      buttonAnswer.disabled = false; // Enable the answer button
+
+      if (currentQuestionIndex + 1 >= quizData[currentLanguage][currentDifficulty].length) {
+        // Last question
+        buttonAnswer.textContent = "Finish";
+      } else {
+        buttonAnswer.textContent = "Submit";
+      }
+    }
+
+    function checkAnswer() {
+      const answerInput = document.getElementById("answer-input");
+      const selectedAnswer = answerInput.value.trim();
+      const currentQuestion = quizData[currentLanguage][currentDifficulty][currentQuestionIndex];
+      const resultElement = document.getElementById("result");
+
+      if (selectedAnswer === currentQuestion.correctAnswer) {
+        resultElement.innerHTML = "Correct! <br>" + "Output: " + currentQuestion.output;
+        resultElement.style.fontSize = "20px";
+        resultElement.style.color = "#39FF14";
+        resultElement.style.fontFamily = "rockwell";
+        score++;
+        resultElement.style.textShadow = "0 0 15px #39FF14, 0 0 20px red, 0 0 20px blue";
+      } else {
+        resultElement.textContent = "Incorrect!";
+        resultElement.style.fontSize = "30px";
+        resultElement.style.color = "#ffcccb";
+        resultElement.style.textShadow = "0 0 10px #ffcccb, 0 0 20px #ffcccb, 0 0 30px #ffcccb";
+      }
+
+      answerInput.value = "";
+      currentQuestionIndex++;
+
+      if (currentQuestionIndex < quizData[currentLanguage][currentDifficulty].length) {
+        showQuestion();
+      } else {
+        endGame();
+      }
+    }
+
+    function home() {
+      location.reload();
+    }
+
+    function endGame() {
+      const gameElement = document.getElementById("game");
+      gameElement.style.display = "none";
+
+      const scoreElement = document.getElementById("score");
+      scoreElement.textContent = `Final Score: ${score}/${quizData[currentLanguage][currentDifficulty].length}`;
+      scoreElement.style.fontSize = "24px";
+      scoreElement.style.fontWeight = "bold";
+      scoreElement.style.display = "block";
+    }
+  </script>
+</body>
+</html>
