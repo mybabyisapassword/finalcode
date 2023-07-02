@@ -11,11 +11,12 @@
 <div class="form0" style="display: none;">
     <div type="button" onclick="home()"class="button-home">home</div>
   </div>
+
   <form id="form1">
     
       <img src="image/back1.jpg" alt="Game Logo" class="logo"><br><br>
 <b>
-      <font style="color: black;" size="55">Welcome To Indenticode!</font> 
+      <font style="color: black;" size="50">Welcome To Indenticode!</font> 
       <h2 style="color: black;">
       To Enhance your knowledge in<br> programming language<br><br>
     </h2>
@@ -46,6 +47,16 @@
     <div class="button-row">
       <button type="button" onclick="startGame('hard')" class="button-start">Hard</button>
     </div>
+    <b>
+    <div id="baButton" onclick="exit1()" class="button-back" style=" background-color: transparent;
+  width: 200px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 25px;
+  transition: background-color 0.3s ease-in-out;
+  float: left;
+  margin-right: 80px; ">Back</div>
+  </b>
   </form>
 
   <div id="game" style="display: none;">
@@ -62,7 +73,19 @@
 
     <form id="quizForm">
       <div style="display: grid; grid-template-columns: repeat(4, 1fr);" id="choices"></div>
-       <div id="backButton" onclick="goBack()" class="button-home">Back</div>
+      <b>
+      <div id="baButton" onclick="exit2()" class="button-back" style=" background-color: transparent;
+  width: 200px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 25px;
+  transition: background-color 0.3s ease-in-out;
+  float: left;
+  margin-right: 80px;
+}
+ ">Back</div>
+    </b>
+     
     </form>
   </div>
   <div id="score" style="display: none;"></div>

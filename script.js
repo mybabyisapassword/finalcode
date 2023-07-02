@@ -160,30 +160,35 @@ const quizData = {
     {
       "question": "What is the output of the following code?\n\n```c\n#include <stdio.h>\n\nint main() {\n   int arr[5];\n   printf(\"%d\", sizeof(arr));\n   return 0;\n}\n```\n",
       "choices": ["5", "20", "4" ],
-      "correctAnswer": "20"
+      "correctAnswer": "20",
+      "output": "20"
     },
 
      {
       "question": "What is the missin code of the following?\n\n```c\n#include <stdio.h>\n\nint main() {\n   int arr[5];\n   printf(\"%d\", sizeof(arr));\n  _____\n}\n```\n",
       "choices": ["5", "return 0;", "4" ],
-      "correctAnswer": "return 0;"
+      "correctAnswer": "return 0;",
+      "output": "return 0"
     },
 
 
     {
       "question": "What is the output of the following code?\n\n```c\n#include <stdio.h>\n\nint main() {\n   int arr[5] = {1, 2, 3, 4, 5};\n   int *p = &arr[1];\n   printf(\"%d\", *(p + 2));\n   return 0;\n}\n```\n",
       "choices": ["1", "2", "4","3"],
-      "correctAnswer": "4"
+      "correctAnswer": "4",
+      "output": "4"
     },
     {
       "question": "What is the output of the following code?\n\n```c\n#include <stdio.h>\n\nint main() {\n   char str[] = \"Hello World!\";\n   printf(\"%c\", str[5]);\n   return 0;\n}\n```\n",
       "choices": ["H", "Error", " "],
-      "correctAnswer": " "
+      "correctAnswer": " ",
+      "output": " "
     },
     {
       "question": "What is the output of the following code?\n\n```c\n#include <stdio.h>\n\nint main() {\n   int x = 5;\n   printf(\"%d\", x++ + x++);\n   return 0;\n}\n```\n",
       "choices": ["10", "11", "Error" ],
-      "correctAnswer": "11"
+      "correctAnswer": "11",
+      "output": "11"
     },
     
   ]
@@ -403,18 +408,18 @@ const quizData = {
     </code>`,
     choices: ["<code>", "<h1>", "<q>"],
     correctAnswer: "<code>",
-    output: "92",
+    output: "<code>"
   },
   {
     question: `2. What is the correct way to display an email address and link it to "hege@example.com"?
 
     <footer>
       <p>Author: Hege Refsnes</p>
-      <p><a href="mailto:hege@example.com">hege@example.com</a></p>
-      ________
+      <p><a href="mailto:hege@example.com">hege@example.com________</p>
     </footer>`,
     choices: ["</a>", "<a>", "</footer>"],
-    correctAnswer: "</a>"
+    correctAnswer: "</a>",
+    output: "<footer><p>Author: Hege Refsnes</p><p><a href=______\"mailto:hege@example.com\">hege@example.com</a></p></footer>`"
   },
   {
     question: `3. How can you create a navigation menu with HTML, CSS, JavaScript, and jQuery?
@@ -425,8 +430,9 @@ const quizData = {
       <a href="/js/">JavaScript</a> |
       <a href="/jquery/">________</a>
     </nav>`,
-    choices: ["<a href=\"/html/\">", "<a href= Html", "jQuery</a>"],
-    correctAnswer: "<a href=\"/html/\">jQuery</a>"
+    choices: ["<a href=\"/html/\">", "<a href= Html", "jQuery"],
+    correctAnswer: "jQuery",
+    output:"<nav><a href=\"/html/\">HTML</a> | <a href=\"/css/\">CSS</a> | <a href=\"/js/\">JavaScript</a> |<a href=\"/jquery/\">jQuery</a>"
   },
   {
     question: `4. What HTML entity represents the yen sign?
@@ -434,26 +440,29 @@ const quizData = {
     <h1>HTML Entity Example</h1>
 
     <h2>The yen sign: ________;</h2>`,
-    choices: ["&yen;", "&copy;", "&amp;"],
-    correctAnswer: "&yen;"
+    choices: ["&yen", "&copy;", "&amp;"],
+    correctAnswer: "&yen",
+    output: "<h1>HTML Entity Example</h1>\n<h2>The yen sign:&yen;</h2>"
   },
   {
     question: `5. How can you display the copyright sign using HTML entities?
 
     <h1>HTML Entity Example</h1>
 
-    <h2>The copyright sign: &copy; ________;</h2>`,
+    <h2>The copyright sign: &copy; ________`,
     choices: ["</h2>", "</body>", "<h>"],
-    correctAnswer: "</h2>"
+    correctAnswer: "</h2>",
+    output:"<h1>HTML Entity Example</h1>\n<h2>The copyright sign: &copy;</h2>"
   },
   {
     question: `6. How can you display the letter "a" with an acute accent using HTML special characters?
 
-    <h1>HTML Special Character Example ________</h1>
+    <h1>HTML Special Character Example ________
 
-    <h2>An "a" with an acute accent: a&#769; ________</h2>`,
+    <h2>An "a" with an acute accent: a&#769;</h2>`,
     choices: ["</h1>", "</h2>", "<h1>"],
-    correctAnswer: "</h1>"
+    correctAnswer: "</h1>",
+    output:"<h1>HTML Special Character Example</h1>\n<h2>An a with an acute accent: a&#769;</h2>"
   },
   {
     question: `7. What tag is used to define the character encoding for an HTML document?
@@ -469,12 +478,14 @@ const quizData = {
     </body>
     </html>`,
     choices: ["<meta charset=\"UTF-8\">", "System.out.print;", "<meta charset=\"ASCII\">"],
-    correctAnswer: "<meta charset=\"UTF-8\">"
+    correctAnswer: "<meta charset=\"UTF-8\">",
+    output:"<p>I will display A B C</p>\n<p>I will display &#65; &#66; &#67;</p>"
   },
   {
     question: `8. How can you display sized emojis using HTML?
 
-    <h1>Sized Emojis</h1>
+    <html>
+    <head>Sized Emojis______
 
     <p style="font-size:48px">
     &#128512; &#128516; &#128525; &#128151;
@@ -483,13 +494,13 @@ const quizData = {
     </body>
     </html>`,
     choices: ["<meta charset=\"UTF-8\">", "</head>", "</h2>"],
-    correctAnswer: "</head>"
+    correctAnswer: "</head>",
+    outpu:"<head>Sized Emojis</head><p style=\"font-size:48px\">&#128512; &#128516; &#128525; &#128151;</p>"
   },
   {
     question: `9. How can you define a CSS rule to set the font size to 20px for the body element?
 
     <html>
-    <style>
     _________
     {
       font-size: 20px;
@@ -503,27 +514,21 @@ const quizData = {
 
     </body>
     </html>`,
-    choices: ["<html>", "</html>", "<p>"],
-    correctAnswer: "<html>"
+    choices: ["<html>", "<style>", "<p>"],
+    correctAnswer: "<style>",
+    output:"<style>{font-size: 20px;}</style><span style='font-size:100px;'>&#8361;</span><p>I will display &#8361;</p>\n<p>I will display &#x20A9;</p>"
   },
   {
     question: `10. How can you display the right-pointing arrow character using HTML entities?
 
     <html>
-    <style>
-    body {
-      font-size: 20px;
-    }
-    </style>
     <body>
-    <span style='font-size:100px;'>&#8627; _______
-
-    <p>I will display &#8627; _______
-    <p>I will display &#x21B3; _______
+    <span style='font-size:100px;' ____I will display &#8627; </span>
     </body>
     </html>`,
-    choices: ["</span>", "</p>", "</>"],
-    correctAnswer: "</span>"
+    choices: ["</span>", "</p>", ">"],
+    correctAnswer: ">",
+    output:"<span style='font-size:100px;'>I will display &#8627; </span>"
   }
   ],
 },
@@ -1619,7 +1624,7 @@ ABC`,
   ],
 "hard": [
           {
-        question: "1.) public class Main ___\n  public static void main______ {\n    boolean isJavaFun = true;\n    boolean isFishTasty = false;    \n    System.out.println(isJavaFun);\n    System.out.println(isFishTasty);\n  }\n}\n\nCorrect Answer:\n{\n(String[] args)\n\nOutput:\n",
+        question: "1.) public class Main ___\n  public static void main______ \n    boolean isJavaFun = true;\n    boolean isFishTasty = false;    \n    System.out.println(isJavaFun);\n    System.out.println(isFishTasty);\n  }\n}\n\nCorrect Answer:\n{\n(String[] args)\n\nOutput:\n",
         choices: [
           "{",
           "[",
@@ -1800,69 +1805,69 @@ ABC`,
 ],
   "normal": [
     {
-        'question': '1.\nprint("Hello, World")\n',
+        'question': '1.\nprint("Hello, World___")\n',
         'choices': ['!', '!/', '!)'],
         'correctAnswer': '!',
         'output': 'Hello, World!'
     },
 
     {
-        'question': '1.\_______("Hello, World")\n',
+        'question': '1.\n______("Hello, World")\n',
         'choices': ['println', 'print', 'printl'],
-        'correctAnswer': '!',
+        'correctAnswer': 'print',
         'output': 'Hello, World!'
     },
 
     {
         'question': '2.\ndef myfunc(n): 2.(a)________\n  return lambda a : a * n\n\nmydoubler = myfunc(2)\n2.(b)___________ myfunc(3)\n\nprint(mydoubler(11))\nprint(mytripler(11))\n',
-        'choices': ['1a.) a * b', '1a.) a * c','1a.) b * c'],
-        'correctAnswer': '1a.) a * b',
+        'choices': ['a * b', 'a * c','b * c'],
+        'correctAnswer': 'a * b',
         'output': 'what is the second one ? '
     },
     {
         'question': '2.\ndef myfunc(n): 2.(a)___a * b___\n  return lambda a : a * n\n\nmydoubler = myfunc(2)\n2.(b)___________ myfunc(3)\n\nprint(mydoubler(11))\nprint(mytripler(11))\n',
-        'choices': ['2b.) Mytripler =', '2b.) Mytripler=','2b.) mytripler ='],
-        'correctAnswer': '2b.) mytripler =',
+        'choices': ['Mytripler =', 'Mytripler=','mytripler ='],
+        'correctAnswer': 'mytripler =',
         'output': '22\n33'
     },
 
     {
         'question': '3.\na = 33\nb = 33\nif 3a.)______\n  print("b is greater than a")\nelif 3b.)_______\n  print("a and b are equal")\n',
-        'choices': ['a.) b > a:', 'a.) b > a;','a.) B > A;'],
+        'choices': ['b > a:', 'b > a;','B > A;'],
         'correctAnswer': 'a.) b > a:',
         'output': 'what is the second one ? '
     },
     {
         'question': '3.\na = 33\nb = 33\nif 3a.)___a.) b > a:____\n  print("b is greater than a")\nelif 3b.)_______\n  print("a and b are equal")\n',
-        'choices': ['b.) A == B', 'b.) a == b:','b.) A == b;'],
-        'correctAnswer': 'b.) a == b:',
+        'choices': ['A == B', 'a == b:','A == b;'],
+        'correctAnswer': 'a == b:',
         'output': 'a and b are equal'
     },
     {
         'question': '4\ntry:\n  print(x)\n4a.)________\n  print("Something went wrong")\nfinally:\n  4b.)________"The \'try except\' is finished")\n',
-        'choices': ['a.) except:', 'a.) Except:','a.) Except;'],
-        'correctAnswer': 'a.) except:',
+        'choices': ['except:', 'Except:','Except;'],
+        'correctAnswer': 'except:',
         'output': 'what is th second one ? '
     },
 
 
     {
         'question': '4\ntry:\n  print(x)\n4a.)____ except:____\n  print("Something went wrong")\nfinally:\n  4b.)________"The \'try except\' is finished")\n',
-        'choices': ['b.) print(', 'b.) print;','b.) print:'],
-        'correctAnswer': 'b.) print(',
+        'choices': ['print(', 'print;','print:'],
+        'correctAnswer': ' print',
         'output': 'Something went wrong\nThe \'try except\' is finished'
     },
 
     {
         'question': '5\nclass Person:\n  def 5a.)________(self, name, age):\n    self.name = name\n    self.age = age\n\np1 = Person("John", 36)\n\nprint(p1.name)\nprint 5.b)__________\n',
-        'choices': ['a.) __init:__', 'a.) __init__','a.)init'],
+        'choices': ['__init:__', ' __init__','init'],
         'correctAnswer': ' __init__',
         'output': 'what is the second one ? '
     },
     {
         'question': '5\nclass Person:\n  def 5a.)___init___(self, name, age):\n    self.name = name\n    self.age = age\n\np1 = Person("John", 36)\n\nprint(p1.name)\nprint 5.b)__________\n',
-        'choices': ['b.) (p1.age)', 'b.) (p1_age)','b.) (P1.age)'],
-        'correctAnswer': 'b.) (P1.age)',
+        'choices': ['(p1.age)', '(p1_age)','(P1.age)'],
+        'correctAnswer': '(P1.age)',
         'output': 'John\n36'
     },
     
@@ -2099,13 +2104,16 @@ function checkAnswer(event) {
 
   if (hiddenField !== null && hiddenField !== "") {
     if (hiddenField === currentQuestion.correctAnswer) {
-      resultElement.innerHTML = "Correct! <br>" + "output: &nbsp&nbsp" + currentQuestion.output;
-      resultElement.style.fontSize = "20px";
-      resultElement.style.color = "#39FF14";
-      resultElement.style.fontFamily = "rockwell";
-      score++;
-      resultElement.style.textShadow = "0 0 15px #39FF14, 0 0 20px red, 0 0 20px blue";
-    } else {
+  setTimeout(function() {
+    resultElement.innerHTML = "Correct! <br>" + "output: &nbsp&nbsp" + currentQuestion.output;
+    resultElement.style.fontSize = "20px";
+    resultElement.style.color = "#39FF14";
+    resultElement.style.fontFamily = "rockwell";
+    score++;
+    resultElement.style.textShadow = "0 0 15px #39FF14, 0 0 20px red, 0 0 20px blue";
+  }, 4000); // 4000 milliseconds = 4 seconds
+}
+ else {
       resultElement.textContent = "Incorrect!";
       resultElement.style.fontSize = "30px";
       resultElement.style.color = "#ffcccb";
@@ -2158,18 +2166,44 @@ function endGame() {
   document.getElementById("score").textContent = " YOUR SCORE IS ! \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" + score + "/" + quizData[currentLanguage][currentDifficulty].length;
   document.getElementById("score").style.display = "block";
 
+
+
+
   // Reload the page after 3 seconds
   setTimeout(function() {
     location.reload();
   }, 5000);
 }
+function goBack() {
+  if (currentQuestionIndex > 0) {
+    currentQuestionIndex--;
+    showQuestion();
+  }
+}
 
 
 
- function goBack() {
-      document.getElementById("form1").style.display = "block";
-      document.getElementById("form2").style.display = "none";
+
+
+ function exit() {
+      document.getElementById("form1").style.display = "none";
+      document.getElementById("form2").style.display = "block";
       document.getElementById("form3").style.display = "none";
+      document.getElementById("game").style.display = "none";
+      document.getElementById("score").style.display = "none";
+      document.getElementById("backButton").style.display = "none";
+    }function exit1() {
+      document.getElementById("form1").style.display = "none";
+      document.getElementById("form2").style.display = "block";
+      document.getElementById("form3").style.display = "none";
+      document.getElementById("game").style.display = "none";
+      document.getElementById("score").style.display = "none";
+      document.getElementById("backButton").style.display = "none";
+    }
+function exit2() {
+      document.getElementById("form1").style.display = "none";
+      document.getElementById("form2").style.display = "none";
+      document.getElementById("form3").style.display = "block";
       document.getElementById("game").style.display = "none";
       document.getElementById("score").style.display = "none";
       document.getElementById("backButton").style.display = "none";
