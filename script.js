@@ -3,26 +3,26 @@ const quizData = {
   "easy": [
     {
     "question": "1.\n#include <stdio.h> \n __ main() { \n  printf(\"Hello World!\"); \n return 0; }\n\nCorrect answer:",
-    "choices": ["^", "<", "*"],
-    "correctAnswer": "<" ,
+    "choices": ["int", "<", "*Printf"],
+    "correctAnswer": "int" ,
     "output": "Hello World!"
   },
   {
-    "question": "2.\n#include <stdio.h> \n int main() { \n  printf(\"Hello students!\"); \n  printf(\"Im here to teach C programming.\"); \n return 0; }\n\nCorrect answer:",
-    "choices": ["+", ";","int"],
-    "correctAnswer": "+",
+    "question": "2.\n#include <stdio.h> \n int main___ { \n  printf(\"Hello students!\"); \n  printf(\"Im here to teach C programming.\"); \n return 0; }\n\nCorrect answer:",
+    "choices": ["printf", "()","int"],
+    "correctAnswer": "()",
     "output": "Hello students!Im here to teach C programming."
   },
   {
     "question": "3.\n#include <stdio.h>\nint main() {\n  printf(\"Hello Teacher!____\");\n  printf(\"I am learning C.\\nAnd it is awesome!\");\n  return 0;\n}\n\nCorrect answer:",
-    "choices": ["\\m", "\\n", "And"],
+    "choices": ["I'm", "You", "And"],
     "correctAnswer": "\\n",
     "output": "Hello Teacher!\nI am learning C.\nAnd it is awesome!"
   },
   {
-    "question": "4.\n#include <stdio.h>\nint main() {\n  int myNum = 15;\n  printf(\"%d\", myNum);\n  return 0;\n}\n\nCorrect answer:",
-    "choices": ["%", "$", "&"],
-    "correctAnswer": "%",
+    "question": "4.\n#include <stdio.h>\nint main() {\n  int ____ = 15;\n  printf(\"%d\", myNum);\n  return 0;\n}\n\nCorrect answer:",
+    "choices": ["main", "myNum", "int"],
+    "correctAnswer": "myNum",
     "output": "15"
   },
   {
@@ -38,7 +38,7 @@ const quizData = {
     "output": "2"
   },
   {
-    "question": "7.\n____#include <stdio.h>\nint main() {\n  int myNum = 100 + 50;\n  printf(\"%d\", myNum);\n  return 0;\n}\n\nCorrect answer:",
+    "question": "7.\n____include <stdio.h>\nint main() {\n  int myNum = 100 + 50;\n  printf(\"%d\", myNum);\n  return 0;\n}\n\nCorrect answer:",
     "choices": ["%", "+", "#"],
     "correctAnswer": "#",
     "output": "150"
@@ -77,9 +77,9 @@ const quizData = {
     "output": "WHAT IS THE SECOND ONE ?"
   },
   {
-    "question": "2.\n#include <stdio.h>\nint main() {\n    int number;\n    printf(\"Enter an integer: \");\n    1.a)_scanf_(\"%d\", &number);\n    // true if number is less than 0\n    if (number < 0) {\n        printf(\"You entered %d.1.b)______\", number);\n    }\n    printf(\"The if statement is easy.\"); for \n    return 0;\n}\n\nCorrect answer\nscanf\n\\n",
-    "choices": ["\n/N", "\\n", "%d"],
-    "correctAnswer": "\\n",
+    "question": "2.\n#include <___.h>\nint main() {\n    int number;\n    printf(\"Enter an integer: \");\n    1.a)_scanf_(\"%d\", &number);\n    // true if number is less than 0\n    if (number < 0) {\n        printf(\"You entered %d.1.b)______\", number);\n    }\n    printf(\"The if statement is easy.\"); for \n    return 0;\n}\n\nCorrect answer\nscanf\n\\n",
+    "choices": ["STdio", "stdio", "%d"],
+    "correctAnswer": "stdio",
     "output": "Enter an integer: 6\nThe if statement is easy."
   },
 
