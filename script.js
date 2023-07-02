@@ -821,31 +821,222 @@ ABC`,
 
 
   "normal": [
-    {
-      "question": "Which of the following is the correct way to declare a constant in C++?",
-      "choices": ["const","constexpr", "constant"],
-      "correctAnswer": "const"
-    },
-    {
-      "question": "What is the output of the following code?\n\n#include <iostream>\n\nint main() {\n  int x = 2;\n  x *= 3;\n  std::cout << x;\n  return 0;\n}",
-      "choices": ["2", "3", "6", "Error"],
-      "correctAnswer": "6"
-    },
-    {
-      "question": "Which data type is used to store a single character in C++?",
-      "choices": ["char", "string", "float"],
-      "correctAnswer": "char"
-    },
-    {
-      "question": "What is the result of the following expression in C++?\n\n3 + 2 * 4",
-      "choices": ["11", "20", "9", "14"],
-      "correctAnswer": "11"
-    },
-    {
-      "question": "Which operator is used for logical AND in C++?",
-      "choices": ["&&", "&", "||", "|"],
-      "correctAnswer": "&&"
-    }
+   {
+    question: `#include <iostream>
+using namespace std;
+
+__________{
+  cout << "Hello World!";
+  return 0;
+}`,
+    choices: [
+      ">>",
+      "int main()",
+      "Cout<",
+      "int main()"
+    ],
+    correctAnswer: "int main()",
+    output: "Hello World!"
+  },
+
+
+  {
+    question: `#include <iostream>
+using namespace std;
+
+int main() {
+  ______ 15;   // Now myNum is 15
+  myNum = 10;       // Now myNum is 10
+  cout << myNum;
+  return 0;
+}`,
+    choices: [
+      "myNum =",
+      "int =",
+      "NUM =",
+      "myNum ="
+    ],
+    correctAnswer: "myNum =",
+    output: "10"
+  },
+
+
+  {
+    question: `#include <iostream>
+using _________;
+
+int main() {
+  int x = 5;
+  int y = 6;
+  int sum = x + y;
+  cout << sum;
+  return 0;
+}`,
+    choices: [
+      "myNum=",
+      "NAMEspace STD",
+      "namespace std"
+    ],
+    correctAnswer: "namespace std",
+    output: "11"
+  },
+
+
+  {
+    question: `#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5, y = 6, z = 50;  
+  _________x + y + z;
+  return 0;
+}`,
+    choices: [
+      "Cout <<",
+      "Court<<",
+      "COUT<<£"
+    ],
+    correctAnswer: "Cout <<",
+    output: "61"
+  },
+
+
+  {
+    question: `#include <iostream>
+using namespace std;
+
+int main() {
+  int _______
+  x = y = z = 50;
+  cout << x + y + z;
+  return 0;
+}`,
+    choices: [
+      "XYZ",
+     
+      "AbC",
+      "x,y,z;"
+    ],
+    correctAnswer: "x,y,z;",
+    output: "150"
+  },
+
+
+  {
+    question: `_________
+using namespace std;
+int main() {
+  const int minutesPerHour = 60;
+  const float PI = 3.14;
+  cout << minutesPerHour << "\\n";
+  cout << PI;
+  return 0;
+}`,
+    choices: [
+      "#include <iostream>",
+      "include(iostream)",
+      "# <iostream>"
+    ],
+    answer: "#include <iostream>",
+    output: "60\n3.14"
+  },
+
+
+
+  {
+    question: `#include <iostream>
+using namespace std;
+int main() {
+  int x, y;
+  _______
+  cout << "Type a number: ";
+  cin >> x;
+  cout << "Type another number: ";
+  cin >> y;
+  sum = x + y;
+  cout << "Sum is: " << sum;
+  return 0;
+}`,
+    choices: [
+      "int sum;",
+      "INT sum:",
+      "int Num;"
+    ],
+    correctAnswer: "int sum;",
+    output: "Type a number: 3\nType another number: 6\nSum is: 9"
+  },
+
+
+
+  {
+    question: `#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+  int myNum = 5;
+  _______ 5.99;
+  double myDoubleNum = 9.98;
+  char myLetter = 'D';
+  bool myBoolean = true;
+  string myString = "Hello";
+   
+  cout << "int: " << myNum << "\\n";
+  cout << "float: " << myFloatNum << "\\n";
+  cout << "double: " << myDoubleNum << "\\n";
+  cout << "char: " << myLetter << "\\n";
+  cout << "bool: " << myBoolean << "\\n";
+  cout << "string: " << myString << "\\n";
+ 
+  return 0;
+}`,
+    choices: [
+      "float myFloatNum =",
+      "Floatmyfloatnum",
+      "\"String:\""
+    ],
+    correctAnswer: "float myFloatNum =",
+    output: "int: 5\nfloat: 5.99\ndouble: 9.98\nchar: D\nbool: 1\nstring: Hello"
+  },
+
+
+
+
+  {
+    question: `#include <iostream>
+int main() {
+  _________
+  bool isCodingFun = true;
+  bool isFishTasty = false;
+  cout << isCodingFun << "\\n";
+  cout << isFishTasty;
+  return 0;
+}`,
+    choices: [
+      "using namespace std;",
+      "Namespace std:",
+      "name Space std+"
+    ],
+    correctAnswer: "using namespace std;",
+    output: "1\n0"
+  },
+
+
+
+
+  {
+    question: `#include <iostream>
+int main() {
+  _________
+  return 0;
+}`,
+    choices: [
+      "RETURN;",
+      "return 0;",
+      "Turn 0:"
+    ],
+    correctAnswer: "return 0;",
+    output: "35000\n120000"
+  }
   ],
 
 
@@ -1358,26 +1549,344 @@ ABC`,
   ],
   "hard": [
     {
-      "question": "What will be the output of the following JavaScript code?\n\nconsole.log(2 + '2');",
-      "choices": ["22", "TypeError", "NaN"],
-      "correctAnswer": "22"
-    },
-    {
-      "question": "What is the output of the following code?\n\nconsole.log(typeof NaN);",
-      "choices": ["number", "string", "NaN"],
-      "correctAnswer": "number"
-    },
+    question: `1.) <!DOCTYPE html>
+______
+<body>
+
+<h1>JavaScript String Operators</h1>
+
+<p>All conditional operators can be used on both numbers and strings.</p>
+
+<p id="demo">_________
+<script>
+let text1 = "A";
+let text2 = "B";
+________ text1 < text2;
+document.getElementById("demo").innerHTML = "Is A less than B? " + result;
+</script>
+
+</body>
+</html>
+
+Correct answer:
+<html>
+</p>`,
+    choices: [
+      "let result =",
+      "result =",
     
-    {
-      "question": "Which method is used to add new elements to the beginning of an array in JavaScript?",
-      "choices": ["unshift()", "push()", "add()"],
-      "correctAnswer": "unshift()"
-    },
-    {
-      "question": "What is the output of the following code?\n\nconsole.log(5 + true);",
-      "choices": ["6", "5", "TypeError" ],
-      "correctAnswer": "6"
-    }
+      "let result:"
+    ],
+    correctAnswer: "let result =",
+    output: "Is A less than B? true"
+  },
+
+
+
+  {
+    question: `2.) <!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript String Operators</h1>
+<h2>The + Operator</h2>
+<p>The + operator concatenates (adds) strings.</p>
+
+<p id=____demo"></p>
+
+_______
+let text1 = "John";
+let text2 = "Doe"___
+let text3 = text1 + " " + text2;
+document.getElementById("demo").innerHTML = text3;
+</script>
+
+</body>
+</html>
+
+Correct answer:
+"`,
+    choices: [
+      "\"",
+      "'",
+      "''",
+      "``"
+    ],
+    correctAnswer: "\"",
+    output: "John Doe"
+  },
+
+
+
+  {
+    question: `3.) <!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript String Operator______
+<h2>The + Operator</h2>
+<p>Adding a number and a string, returns a string.</p>
+
+______"demo"></p>
+
+<script>
+let x = 5 + 5;
+let y = "5" + 5;
+let z = "Hello" + 5;
+document.getElementById("demo").innerHTML =
+x + "<br>" + y + "<br>" + z;
+</script>
+
+______
+</html>
+
+Correct answer:
+</h1>
+<p id=`,
+    choices: [
+      "\"",
+      "'",
+      "``",
+      "''"
+    ],
+    correctAnswer: "\"",
+    output: "10\n55\nHello5"
+  },
+
+
+
+  {
+    question: `4.) <!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Arithmetic</h1>
+<h2>Arithmetic Operations</h2>
+______A typical arithmetic operation takes two numbers (or expressions) and produces a new number.</p>
+
+<p id="demo"></p>
+
+<script>
+_____ a = 3;
+let x = (100 + 50) * a____
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
+Correct answer:
+<p>`,
+    choices: [
+      "let",
+      "const",
+      "var",
+      "int"
+    ],
+    correctAnswer: "let",
+    output: "450"
+  },
+
+
+
+  {
+    question: `5.) <!DOCTYPE html>
+<html>
+<body>
+
+___h1>JavaScript Arithmetic</h1>
+<h2>The % Operator</h2>
+
+<p id="demo"></p>
+
+<script>
+let x = 5;
+let y = 2;
+let z = x ____y;
+document.getElementById("demo").innerHTML = z;
+</script>
+
+</body>
+<__html>
+Correct answer:
+<`,
+    choices: [
+      "<",
+      "%",
+      "/",
+      ">"
+    ],
+    correctAnswer: "<",
+    output: "1"
+  },
+
+
+
+  {
+    question: `6.) <!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Arithmetic</h1>
+<h2>Operator Precedence</h2>
+<p>Multiplication has precedence over addition.</p>
+
+<p id=_____></p>
+
+<script>
+document.getElementById("demo").innerHTML = 100 ___ 50 * 3;
+</script>
+
+</body>
+</html>
+Correct answer:
++`,
+    choices: [
+      "!",
+      "\"demo\"",
+      "+",
+      "?"
+    ],
+    correctAnswer: "+",
+    output: "250"
+  },
+
+
+  {
+    question: `7.) <!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Functions</h1>
+
+<p>Invoke (call) a function that converts from Fahrenheit to Celsius:</p>
+<p id="demo"></p>
+
+<script>
+function toCelsius(f) {
+  ____ (5/9) * (f-32);
+}
+
+______ toCelsius(77);
+document.getElementById("demo").innerHTML = value;
+</script>
+
+</body>
+______
+Correct answer:
+return`,
+    choices: [
+      "return",
+      "let value =",
+      "Return",
+      "int value="
+    ],
+    correctAnswer: "return",
+    output: "25"
+  },
+
+
+
+  {
+    question: `8.) <!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Functions</h1>
+<p>Using a function as a variable:</p>
+
+___________
+<script>
+let text = "The temperature is " + toCelsius(77) + " Celsius.";
+document.getElementById("demo").innerHTML = text;
+
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+} 
+</script>
+
+</body>
+</html>
+
+Correct answer:
+
+<p id="demo"></p>`,
+    choices: [
+      "<p id=\"demo\"></p>",
+      "<p id=\"demo\">",
+      "<p id = \"demo\"></p>",
+      "<p id = \"demo\">"
+    ],
+    correctAnswer: "<p id=\"demo\"></p>",
+    output: "The temperature is 25 Celsius."
+  },
+
+
+  {
+    question: `9.) <!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The slice() Method</h2>
+
+<p>The sliced (extracted) part of the string is:</p>
+_______="demo"></p>
+
+<script>
+_____ "Apple, Banana, Kiwi";
+let part = text.slice(7,13);
+document.getElementById("demo").innerHTML = part; 
+</script>
+
+</body>
+</html>
+
+Correct answer:
+<p id`,
+    choices: [
+      "<p id",
+      "<p>",
+      "Get txt =",
+      "<p"
+    ],
+    correctAnswer: "<p id",
+    output: "Banana"
+  },
+
+
+
+  {
+    question: `10.) <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Numbers</h2>
+
+<p>Numbers can be written with or without decimals:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 3.14;
+let y = 3;
+________________("demo").innerHTML = x + "<br>" + y;
+</script>
+
+</body>
+</html>
+
+Correct answer:
+
+document.getElementById`,
+    choices: [
+      "document.getElementById",
+      "Document.letelementbyId",
+      "document.getElementById",
+      "document.getElementById"
+    ],
+    correctAnswer: "document.getElementById",
+    output: "3.14\n3"
+  }
   ],
 },  
 
@@ -2104,14 +2613,13 @@ function checkAnswer(event) {
 
   if (hiddenField !== null && hiddenField !== "") {
     if (hiddenField === currentQuestion.correctAnswer) {
-  setTimeout(function() {
     resultElement.innerHTML = "Correct! <br>" + "output: &nbsp&nbsp" + currentQuestion.output;
     resultElement.style.fontSize = "20px";
     resultElement.style.color = "#39FF14";
     resultElement.style.fontFamily = "rockwell";
     score++;
     resultElement.style.textShadow = "0 0 15px #39FF14, 0 0 20px red, 0 0 20px blue";
-  }, 4000); // 4000 milliseconds = 4 seconds
+ // 4000 milliseconds = 4 seconds
 }
  else {
       resultElement.textContent = "Incorrect!";
