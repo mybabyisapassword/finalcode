@@ -48,8 +48,9 @@ body::before {
 }
 
 body {
-  margin: 0;
+  margin-left: 400px;
   padding: 0;
+  width: 80vh;
   height: 100vh; /* Use viewport height for full screen height */
   display: flex;
   flex-direction: column;
