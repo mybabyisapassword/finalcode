@@ -50,8 +50,8 @@ body::before {
 body {
   margin-left: 0;
   padding: 0;
-  width: 100vh;
-  height: 150vh; /* Use viewport height for full screen height */
+  width: 200vh;
+  height: 200vh; /* Use viewport height for full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
