@@ -229,7 +229,7 @@ button[type="button"] {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  column-gap: 500px;
+  column-gap: 100px;
 }
 
 .choicesimgs {
