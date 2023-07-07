@@ -65,33 +65,33 @@ const quizData = {
   ],
   "normal": [
    {
-    "question": "1.\n#include <stdio.h>\nint main() 1.b)__\n  int 1.a)______ 15;\n  printf(\"%d\", myNum);\n  return 0;\n}\n\nCorrect answer\nmyNum =",
+    "question": "1.\n#include <stdio.h>\nint main() 1.b)__\n  int 1.a)______ 15;\n  printf(\"%d\", myNum);\n  return 0;\n}\n",
     "choices": ["A.)\nMynum", "myNum =", "num"],
     "correctAnswer": "myNum =",
     "output": "15"
   },
   {
-    "question": "2.\n#include <stdio.h>\nint main() {\n    int number;\n    printf(\"Enter an integer: \");\n    1.a)______(\"%d\", &number);\n    // true if number is less than 0\n    if (number < 0) {\n        printf(\"You entered %d.1.b)______\", number);\n    }\n    printf(\"The if statement is easy.\"); for \n    return 0;\n}\n\nCorrect answer\nscanf\n\\n",
+    "question": "2.\n#include <stdio.h>\nint main() {\n    int number;\n    printf(\"Enter an integer: \");\n    1.a)______(\"%d\", &number);\n    // true if number is less than 0\n    if (number < 0) {\n        printf(\"You entered %d.1.b)______\", number);\n    }\n    printf(\"The if statement is easy.\"); for \n    return 0;\n}\n",
     "choices": ["printf", "scanf", "Print()"],
     "correctAnswer": "scanf",
     "output": "WHAT IS THE SECOND ONE ?"
   },
   {
-    "question": "2.\n#include <___.h>\nint main() {\n    int number;\n    printf(\"Enter an integer: \");\n    1.a)_scanf_(\"%d\", &number);\n    // true if number is less than 0\n    if (number < 0) {\n        printf(\"You entered %d.1.b)______\", number);\n    }\n    printf(\"The if statement is easy.\"); for \n    return 0;\n}\n\nCorrect answer\nscanf\n\\n",
+    "question": "2.\n#include <___.h>\nint main() {\n    int number;\n    printf(\"Enter an integer: \");\n    1.a)_scanf_(\"%d\", &number);\n    // true if number is less than 0\n    if (number < 0) {\n        printf(\"You entered %d.1.b)______\", number);\n    }\n    printf(\"The if statement is easy.\"); for \n    return 0;\n}\n",
     "choices": ["STdio", "stdio", "%d"],
     "correctAnswer": "stdio",
     "output": "Enter an integer: 6\nThe if statement is easy."
   },
 
   {
-    "question": "3.\n#include <stdio.h>\nint main() {\n    int number1, number2;\n    printf(\"Enter two integers: \");\n    scanf(\"%d %d\", &number1, &number2);\n\n    if (number1 >= number2) {\n      if (number1 == number2) {\n        printf(\"Result: %d = %d\",number1,number2);\n      }\n      else {\n        printf(\"1.a)____> %d\", number1, number2);\n      }\n    }\n    else {\n        1.b)______(\"Result: %d < %d\",number1, number2);\n    }\n\n    return 0;\n}\n\nCorrect answer\n_____ ",
+    "question": "3.\n#include <stdio.h>\nint main() {\n    int number1, number2;\n    printf(\"Enter two integers: \");\n    scanf(\"%d %d\", &number1, &number2);\n\n    if (number1 >= number2) {\n      if (number1 == number2) {\n        printf(\"Result: %d = %d\",number1,number2);\n      }\n      else {\n        printf(\"1.a)____> %d\", number1, number2);\n      }\n    }\n    else {\n        1.b)______(\"Result: %d < %d\",number1, number2);\n    }\n\n    return 0;\n}\n",
     "choices": ["}", "Result: %d", "0"],
     "correctAnswer": "Result: %d",
     "output": "WHAT IS THE SECOND ONE ?"
   },
 
   {
-    "question": "3.\n#include <stdio.h>\nint main() {\n    int number1, number2;\n    printf(\"Enter two integers: \");\n    scanf(\"%d %d\", &number1, &number2);\n\n    if (number1 >= number2) {\n      if (number1 == number2) {\n        printf(\"Result: %d = %d\",number1,number2);\n      }\n      else {\n        printf(\"1.a)Result: %d>\", number1, number2);\n      }\n    }\n    else {\n        1.b)______(\"Result: %d < %d\",number1, number2);\n    }\n\n    return 0;\n}\n\nCorrect answer\nResult: %d ",
+    "question": "3.\n#include <stdio.h>\nint main() {\n    int number1, number2;\n    printf(\"Enter two integers: \");\n    scanf(\"%d %d\", &number1, &number2);\n\n    if (number1 >= number2) {\n      if (number1 == number2) {\n        printf(\"Result: %d = %d\",number1,number2);\n      }\n      else {\n        printf(\"1.a)Result: %d>\", number1, number2);\n      }\n    }\n    else {\n        1.b)______(\"Result: %d < %d\",number1, number2);\n    }\n\n    return 0;\n}\n",
     "choices": ["printf", "int", "Print();"],
     "correctAnswer": "printf",
     "output": "Result: 2 < 7"
@@ -102,7 +102,7 @@ const quizData = {
 
 
   {
-    "question": "// Print numbers from 1 to 10\n#include <stdio.h>\n\nint main() {\n  1.a)______\n  for (i = 1; i < 11; ++i)\n  {\n    printf(\"1.b)_____ \", i);\n  }\n  return 0;\n}\n\nCorrect answer:\nint i;\n%d",
+    "question": "// Print numbers from 1 to 10\n#include <stdio.h>\n\nint main() {\n  1.a)______\n  for (i = 1; i < 11; ++i)\n  {\n    printf(\"1.b)_____ \", i);\n  }\n  return 0;\n}\n",
     "choices": ["Int", "int ;", "int i;"],
     "correctAnswer": "int i;",
     "output": "WHAT IS THE SECOND ONE ?"
@@ -110,7 +110,7 @@ const quizData = {
 
 
   {
-    "question": "// Print numbers from 1 to 10\n#include <stdio.h>\n\nint main() {\n  1.a)__int i;__\n  for (i = 1; i < 11; ++i)\n  {\n    printf(\"1.b)_____ \", i);\n  }\n  return 0;\n}\n\nCorrect answer:\nint i;\n%d",
+    "question": "// Print numbers from 1 to 10\n#include <stdio.h>\n\nint main() {\n  1.a)__int i;__\n  for (i = 1; i < 11; ++i)\n  {\n    printf(\"1.b)_____ \", i);\n  }\n  return 0;\n}\n",
     "choices": ["%d", "%m", "=="],
     "correctAnswer": "%d",
     "output": "1 2 3 4 5 6 7 8 9 10"
@@ -120,7 +120,7 @@ const quizData = {
 
 
   {
-    "question": "// Print numbers from 1 to 5\n\n#include <stdio.h>\nint main() {\n  int i = 1;\n    \n  1.a)_____ (i <= 5) {\n    printf(\"%d\\n\", i);\n1.b)_____  }\n\n  return 0;\n}\n\nCorrect answer:\nwhile\n    ++i;",
+    "question": "// Print numbers from 1 to 5\n\n#include <stdio.h>\nint main() {\n  int i = 1;\n    \n  1.a)_____ (i <= 5) {\n    printf(\"%d\\n\", i);\n1.b)_____  }\n\n  return 0;\n}\n",
     "choices": ["While", "while", "When"],
     "correctAnswer": "while",
     "output": "WHAT IS THE SECODE ONE ?"
@@ -128,7 +128,7 @@ const quizData = {
 
 
 {
-    "question": "// Print numbers from 1 to 5\n\n#include <stdio.h>\nint main() {\n  int i = 1;\n    \n  1.a)___while__ (i <= 5) {\n    printf(\"%d\\n\", i);\n1.b)_____  }\n\n  return 0;\n}\n\nCorrect answer:\nwhile\n    ++i;",
+    "question": "// Print numbers from 1 to 5\n\n#include <stdio.h>\nint main() {\n  int i = 1;\n    \n  1.a)___while__ (i <= 5) {\n    printf(\"%d\\n\", i);\n1.b)_____  }\n\n  return 0;\n}\n",
     "choices": ["++:", "++i;", "j==;"],
     "correctAnswer": "++i;",
     "output": "1\n2\n3\n4\n5"
@@ -139,7 +139,7 @@ const quizData = {
 
 
   {
-    "question": "#include <stdio.h>\n\nint main() {\n  int my1.a)______= {25, 50, 75, 100};\n  int i;\n  \n  for (i = 0; i < 4; i++) {\n    printf(\"%d\\n\", 1.b)_______);\n  }\n \n  return 0;\n}\n\nCorrect answer\nNumbers[]",
+    "question": "#include <stdio.h>\n\nint main() {\n  int my1.a)______= {25, 50, 75, 100};\n  int i;\n  \n  for (i = 0; i < 4; i++) {\n    printf(\"%d\\n\", 1.b)_______);\n  }\n \n  return 0;\n}\n",
     "choices": ["()", "Numbers[]", "[]"],
     "correctAnswer": "Numbers[]",
     "output": "25\n50\n75\n100"
@@ -148,7 +148,7 @@ const quizData = {
 
 
 {
-    "question": "#include <stdio.h>\n\nint main() {\n  int my1.a)___Numbers[]___= {25, 50, 75, 100};\n  int i;\n  \n  for (i = 0; i < 4; i++) {\n    printf(\"%d\\n\", 1.b)_______);\n  }\n \n  return 0;\n}\n\nCorrect answer\nNumbers[]",
+    "question": "#include <stdio.h>\n\nint main() {\n  int my1.a)___Numbers[]___= {25, 50, 75, 100};\n  int i;\n  \n  for (i = 0; i < 4; i++) {\n    printf(\"%d\\n\", 1.b)_______);\n  }\n \n  return 0;\n}\n",
     "choices": ["number", "myNumbers[i]", "("],
     "correctAnswer": "myNumbers[i]",
     "output": "25\n50\n75\n100"
@@ -198,55 +198,55 @@ const quizData = {
   "easy": [
     
   {
-    question: '1. <____DOCTYPE html>\n<html>\n    <head>\n    <title>First Web Page</title>\n</head>\n<body>Hello World!</body>\n</html>\nOutput:\nHello World!\nCorrect Answer: !\nChoices:\n?\n!\n#',
+    question: '1. <____DOCTYPE html>\n<html>\n    <head>\n    <title>First Web Page</title>\n</head>\n<body>Hello World!</body>\n</html>\nOutput:\nHello World!',
     correctAnswer: '!',
     choices: ['?', '!', '#'],
     output:"Hello World!"
   },
   {
-    question: '2. html document\n<!DOCTYPE html>\n<html>\n<head>\n<title>Page Title</title>\n</head>\n<body>\n<h1>The Car<____ >\n<p>The Car type is honda and its color red.</p>\n</body>\n</html>\nOutput:\nThe Car\nThe Car type is honda and its color red.\nCorrect answer: /h1\nChoices:\n/H1\nh1\n/h1',
+    question: '2. html document\n<!DOCTYPE html>\n<html>\n<head>\n<title>Page Title</title>\n</head>\n<body>\n<h1>The Car<____ >\n<p>The Car type is honda and its color red.</p>\n</body>\n</html>\nOutput:\nThe Car\nThe Car type is honda and its color red.\n',
     correctAnswer: '/h1',
     choices: ['/H1', 'h1', '/h1'],
     output:"The Car\nThe Car type is honda and its color red."
   },
   {
-    question: '3. html links\n<!DOCTYPE html>\n<html>\n<body>\n<h2> HTML _____</h2>\n<a href="https://www.identicode.com">\nidenticode</a>\n</body>\n</html>\nOutput:\nHTML Links\nidenticode\nCorrect Answer: Links\nChoices:\n“Links”\nlinks\nLinks',
+    question: '3. html links\n<!DOCTYPE html>\n<html>\n<body>\n<h2> HTML _____</h2>\n<a href="https://www.identicode.com">\nidenticode</a>\n</body>\n</html>\nOutput:\nHTML Links\nidenticode\n',
     correctAnswer: 'Links',
     choices: ['"Links"', 'links', 'Links'],
     output:"HTML Links\nidenticode"
   },
   {
-    question: '4. html image\n<!DOCTYPE html>\n<html>\n<body>\n<h2> HTML Images</h2>\n<img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/A-Cat.jpg/1200px-A-Cat.jpg?20101227100718"\n_______="300"\nheight="200.75">\n</body>\n</html>\nOutput:\nHTML Images\n\nCorrect Answer: width\nChoices:\n/width\nwidth\nWidth',
+    question: '4. html image\n<!DOCTYPE html>\n<html>\n<body>\n<h2> HTML Images</h2>\n<img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/A-Cat.jpg/1200px-A-Cat.jpg?20101227100718"\n_______="300"\nheight="200.75">\n</body>\n</html>\nOutput:\nHTML Images\n',
     correctAnswer: 'width',
     choices: ['/width', 'width', 'Width'],
     output:"HTML Images width"
   },
   {
-    question: '5. html image\n<!DOCTYPE html>\n<html>\n<body>\n\n<h2>HTML Image</h2>\n<img src__"pic_trulli.jpg" alt="Trulli" \nwidth="500" \nheight="333">\n\n</body>\n</html>\nOutput:\nHTML Image\n\nCorrect Answer: =\nChoices:\n=\n:\n-',
+    question: '5. html image\n<!DOCTYPE html>\n<html>\n<body>\n\n<h2>HTML Image</h2>\n<img src__"pic_trulli.jpg" alt="Trulli" \nwidth="500" \nheight="333">\n\n</body>\n</html>\nOutput:\nHTML Image\n',
     correctAnswer: '=',
     choices: ['=', ':', '-'],
     output:"HTML Image"
   },
   {
-    question: '6. html Button\n<!DOCTYPE html>\n<html>\n<body>\n<h2>HTML Buttons</h2>\n<p>HTML buttons are defined with the button tag:</p>\n<button>Click me<______ >\n</body>\n</html>\nOutput:\nHTML Buttons\nHTML buttons are defined with the button tag:\n(Click me)\nCorrect answer: /button\nChoices:\n/button\nButton\nButton',
+    question: '6. html Button\n<!DOCTYPE html>\n<html>\n<body>\n<h2>HTML Buttons</h2>\n<p>HTML buttons are defined with the button tag:</p>\n<button>Click me<______ >\n</body>\n</html>\nOutput:\nHTML Buttons\nHTML buttons are defined with the button tag:\n(Click me)\n',
     correctAnswer: '/button',
     choices: ['/button', '</p>', '</>'],
     output:"HTML Buttons\nHTML buttons are defined with the button tag:\n(Click me)"
   },
   {
-    question: '<!DOCTYPE>\n<html>\n<body>\n<h2>An Unordered HTML List</h2>\n<ul>\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Milk<___>\n</ul>  \n</body>\n</html>\nOutput:\nAn Unordered HTML List\nCoffee\nTea\nMilk\nCorrect Answer: /li\nChoices:\n/Li\nli\n/li',
+    question: '<!DOCTYPE>\n<html>\n<body>\n<h2>An Unordered HTML List</h2>\n<ul>\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Milk<___>\n</ul>  \n</body>\n</html>\nOutput:\nAn Unordered HTML List\nCoffee\nTea\nMilk\n',
     correctAnswer: '/li',
     choices: ['/Li', 'li', '/li'],
     output:"An Unordered HTML List\n .Coffee\n.Tea\n.Milk"
   },
   {
-    question: '<!DOCTYPE html>\n<html>\n<body>\n\n<!-- This is a comment -->\n______This is a paragraph.</p>\n<!-- Comments are not displayed in the browser -->\n\n</body>\n</html>\nOutput:\nThis is a paragraph\n\nCorrect answer:\n<p>\nChoices:\n<h1>\n</h>\n<p>',
+    question: '<!DOCTYPE html>\n<html>\n<body>\n\n<!-- This is a comment -->\n______This is a paragraph.</p>\n<!-- Comments are not displayed in the browser -->\n\n</body>\n</html>\nOutput:\nThis is a paragraph\n',
     correctAnswer: '<p>',
     choices: ['<h1>', '</h>', '<p>'],
     output:"This is a paragraph "
   },
   {
-    question: '<!DOCTYPE html>\n<html>\n<body>\n<h2>HTML Links</h2>\n<p>HTML links are defined with the a tag:</p>\n_________"https://www.Identicode.com">Identicode</a>\n</body>\n</html>\n\nOutput:\nHTML Links\nHTML links are defined with the a tag:\n\nIdenticode\nCorrect answer:\n<a href=\nChoices :\nhref=\n<a href=\na href =',
+    question: '<!DOCTYPE html>\n<html>\n<body>\n<h2>HTML Links</h2>\n<p>HTML links are defined with the a tag:</p>\n_________"https://www.Identicode.com">Identicode</a>\n</body>\n</html>\n\nOutput:\nHTML Links\nHTML links are defined with the a tag:\n\nIdenticode\n',
     correctAnswer: '<a href=',
     choices: ['body', '<a href=', '<div'],
     output:"HTML Links\n"
@@ -254,26 +254,26 @@ const quizData = {
 ],
   "normal": [
     {
-        'question': '1. <!DOCTYPE html>\n<html>\n<body>\n\n<h1>Heading 1</h1>\n<h2>Heading 2</h2>\n<h3>Heading 3</h3>\n<h4>Heading 4</h4>\n<h5>Heading 5</h5>\n<h6>Heading 6</h6>\n\n</body>\n</html>\n\nOutput:\nHeading 1\nHeading 2\nHeading 3\nHeading 4\nHeading 5\nHeading 6\nCorrect Answer:\n1a.) <body>\n1b.) </html>\nChoices:\n1a.) <Body>\n1a.) </body>\n1a.) <body>\n1b.) </Html>\n1b.) <html>\n1b.) </html>',
+        'question': '1. <!DOCTYPE html>\n<html>\n<body>\n\n<h1>Heading 1</h1>\n<h2>Heading 2</h2>\n<h3>Heading 3</h3>\n<h4>Heading 4</h4>\n<h5>Heading 5</h5>\n<h6>Heading 6</h6>\n\n</body>\n</html>\n\nOutput:\nHeading 1\nHeading 2\nHeading 3\nHeading 4\nHeading 5\nHeading 6\n',
         'choices': ['a.) <Body>', 'a.) </body>', 'a.) <body>'],
         'correctAnswer': 'a.) <body>',
         'output': 'What is the second one ?'
     },
     {
-        'question': '1. <!DOCTYPE html>\n<html>\nn___<body>__\n\n<h1>Heading 1</h1>\n<h2>Heading 2</h2>\n<h3>Heading 3</h3>\n<h4>Heading 4</h4>\n<h5>Heading 5</h5>\n<h6>Heading 6</h6>\n\n</body>\n</html>\n\nOutput:\nHeading 1\nHeading 2\nHeading 3\nHeading 4\nHeading 5\nHeading 6\nCorrect Answer:\n1a.) <body>\n1b.) </html>\nChoices:\n1a.) <Body>\n1a.) </body>\n1a.) <body>\n1b.) </Html>\n1b.) <html>\n1b.) </html>',
+        'question': '1. <!DOCTYPE html>\n<html>\nn___<body>__\n\n<h1>Heading 1</h1>\n<h2>Heading 2</h2>\n<h3>Heading 3</h3>\n<h4>Heading 4</h4>\n<h5>Heading 5</h5>\n<h6>Heading 6</h6>\n\n</body>\n</html>\n\nOutput:\nHeading 1\nHeading 2\nHeading 3\nHeading 4\nHeading 5\nHeading 6\n',
         'choices': ['b.) </Html>', 'b.) <html>', 'b.) </html>'],
         'correctAnswer': 'b.) </html>',
         'output': 'Heading 1\nHeading 2\nHeading 3\nHeading 4\nHeading 5\nHeading 6'
     },
 
     {
-        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n1a.)__I am normal</p>\n<p style="color:red;">I am red</p>\n<p style="color:blue;">I am blue</p>\n<p style="1b.)________50px;">I am big</p>\n\n</body>\n</html>\n\nOutput:\nI am normal\nI am red\nI am blue\nI am big\nCorrect Answer:\n1a.) <p>\n1b.) font-size:\nChoices:\n1a.) <P>\n1a.) <p>\n1a.) </p>\n1b.) font size\n1b.) font-size:\n1b.) Font-size:',
+        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n1a.)__I am normal</p>\n<p style="color:red;">I am red</p>\n<p style="color:blue;">I am blue</p>\n<p style="1b.)________50px;">I am big</p>\n\n</body>\n</html>\n\nOutput:\nI am normal\nI am red\nI am blue\nI am big\n',
         'choices': ['a.) <P>', 'a.) <p>', 'a.) </p>'],
         'correctAnswer': 'a.) <p>',
         'output': 'what is the second one ?'
     },
     {
-        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n1a.)__<p>__I am normal</p>\n<p style="color:red;">I am red</p>\n<p style="color:blue;">I am blue</p>\n<p style="1b.)________50px;">I am big</p>\n\n</body>\n</html>\n\nOutput:\nI am normal\nI am red\nI am blue\nI am big\nCorrect Answer:\n1a.) <p>\n1b.) font-size:\nChoices:\n1a.) <P>\n1a.) <p>\n1a.) </p>\n1b.) font size\n1b.) font-size:\n1b.) Font-size:',
+        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n1a.)__<p>__I am normal</p>\n<p style="color:red;">I am red</p>\n<p style="color:blue;">I am blue</p>\n<p style="1b.)________50px;">I am big</p>\n\n</body>\n</html>\n\nOutput:\nI am normal\nI am red\nI am blue\nI am big\n',
         'choices': [ 'b.) font-size:', 'b.) font-size;', 'b.) Font-size:'],
         'correctAnswer': 'b.) font-size:',
         'output': 'I am normal\nI am red\nI am blue\nI am big'
@@ -283,13 +283,13 @@ const quizData = {
 
 
     {
-        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<h1 style="background1a.)_______:powderblue;">This is a heading</h1>\n<p style=1b.)___________-color:tomato;">This is a paragraph.</p>\n\n</body>\n</html>\n\nOutput:\nThis is a heading\nThis is a paragraph.\n\nCorrect Answer:\n1a.) -color:\n1b.) "background\nChoices:\n1a.) -Color:\n1a.) color:\n1a.) -color:\n1b.) “background\n1b.) background\n1b.) “Background',
+        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<h1 style="background1a.)_______:powderblue;">This is a heading</h1>\n<p style=1b.)___________-color:tomato;">This is a paragraph.</p>\n\n</body>\n</html>\n\nOutput:\nThis is a heading\nThis is a paragraph.\n\n',
         'choices': ['a.) -Color:', 'a.) color:', 'a.) -color:'],
         'correctAnswer': 'a.) -color:',
         'output': 'what is the second one ? '
     },
     {
-        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<h1 style="background1a.)____-color:___:powderblue;">This is a heading</h1>\n<p style=1b.)___________-color:tomato;">This is a paragraph.</p>\n\n</body>\n</html>\n\nOutput:\nThis is a heading\nThis is a paragraph.\n\nCorrect Answer:\n1a.) -color:\n1b.) "background\nChoices:\n1a.) -Color:\n1a.) color:\n1a.) -color:\n1b.) “background\n1b.) background\n1b.) “Background',
+        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<h1 style="background1a.)____-color:___:powderblue;">This is a heading</h1>\n<p style=1b.)___________-color:tomato;">This is a paragraph.</p>\n\n</body>\n</html>\n\nOutput:\nThis is a heading\nThis is a paragraph.\n',
         'choices': ['b.) "background:', 'b.) background', 'b.) "Background'],
         'correctAnswer': 'b.) "Background',
         'output': 'This is a heading\nThis is a paragraph.'
@@ -299,13 +299,13 @@ const quizData = {
 
 
     {
-        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<p>1a.)___This text is bold</b></p>\n<p><i>This text is italic</i></p>\n<p>This is1b.)______ subscript</sub> and <sup>superscript</sup></p>\n\n</body>\n</html>\n\nOutput:\nThis text is bold\nThis text is italic\nThis is subscript and superscript\nCorrect Answer:\n1a.) <b>\n1b.) <sub>\nChoices:\n1a.) </b>\n1a.) <B>\n1a.) <b>\n1b.) </sub>\n1b.) <Sub>\n1b.) <sub>',
+        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<p>1a.)___This text is bold</b></p>\n<p><i>This text is italic</i></p>\n<p>This is1b.)______ subscript</sub> and <sup>superscript</sup></p>\n\n</body>\n</html>\n\nOutput:\nThis text is bold\nThis text is italic\nThis is subscript and superscript\n',
         'choices': ['a.) </b>', 'a.) <B>', 'a.) <b>'],
         'correctAnswer': 'a.) <b>',
         'output': 'what is the second one ? '
     },
     {
-        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<p>1a.)__ <b>___This text is bold</b></p>\n<p><i>This text is italic</i></p>\n<p>This is1b.)______ subscript</sub> and <sup>superscript</sup></p>\n\n</body>\n</html>\n\nOutput:\nThis text is bold\nThis text is italic\nThis is subscript and superscript\nCorrect Answer:\n1a.) <b>\n1b.) <sub>\nChoices:\n1a.) </b>\n1a.) <B>\n1a.) <b>\n1b.) </sub>\n1b.) <Sub>\n1b.) <sub>',
+        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<p>1a.)__ <b>___This text is bold</b></p>\n<p><i>This text is italic</i></p>\n<p>This is1b.)______ subscript</sub> and <sup>superscript</sup></p>\n\n</body>\n</html>\n\nOutput:\nThis text is bold\nThis text is italic\nThis is subscript and superscript\n',
         'choices': ['b.) </sub>', 'b.) <Sub>', 'b.) <sub>'],
         'correctAnswer': 'b.) <sub>',
         'output': 'This text is bold\nThis text is italic\nThis is subscript and superscript'
@@ -315,13 +315,13 @@ const quizData = {
 
 
     {
-        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<h2>Absolute URLs</h2>\n<p><a href="https://www.w3.org/">W3C</a></p>\n<p><a href="https://www.google.com/">Google</a></p>\n\n<h2>Relative URLs</h2>\n<p><a href="html_images.asp">HTML Images</a></p>\n<p><a href="/css/default.asp">CSS Tutorial</a></p>\n\n</body>\n</html>\n\nOutput:\nAbsolute URLs\nW3C\nGoogle\nRelative URLs\nHTML Images\nCSS Tutorial\nCorrect Answer:\n1a.) URLs</h2>\n1b.) <a href=\nChoices:\n1a.) URLs</h2>\n1a.) urls</h2>\n1a.) URLS</h2>\n1b.) </a href=\n1b.) <a Href=\n1b.) <a href=',
+        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<h2>Absolute URLs</h2>\n<p><a href="https://www.w3.org/">W3C</a></p>\n<p><a href="https://www.google.com/">Google</a></p>\n\n<h2>Relative URLs</h2>\n<p><a href="html_images.asp">HTML Images</a></p>\n<p><a href="/css/default.asp">CSS Tutorial</a></p>\n\n</body>\n</html>\n\nOutput:\nAbsolute URLs\nW3C\nGoogle\nRelative URLs\nHTML Images\nCSS Tutorial',
         'choices': ['a.) URLs</h2>', 'a.) urls</h2>', 'a.) URLS</h2>'],
         'correctAnswer': 'a.) URLs</h2>',
         'output': 'what is the second one ? '
     },
     {
-        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<h2>Absolute URLs</h2>\n<p><a href="https://www.w3.org/">W3C</a></p>\n<p><a href="https://www.google.com/">Google</a></p>\n\n<h2>Relative URLs</h2>\n<p><a href="html_images.asp">HTML Images</a></p>\n<p><a href="/css/default.asp">CSS Tutorial</a></p>\n\n</body>\n</html>\n\nOutput:\nAbsolute URLs\nW3C\nGoogle\nRelative URLs\nHTML Images\nCSS Tutorial\nCorrect Answer:\n1a.) URLs</h2>\n1b.) <a href=\nChoices:\n1a.) URLs</h2>\n1a.) urls</h2>\n1a.) URLS</h2>\n1b.) </a href=\n1b.) <a Href=\n1b.) <a href=',
+        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<h2>Absolute URLs</h2>\n<p><a href="https://www.w3.org/">W3C</a></p>\n<p><a href="https://www.google.com/">Google</a></p>\n\n<h2>Relative URLs</h2>\n<p><a href="html_images.asp">HTML Images</a></p>\n<p><a href="/css/default.asp">CSS Tutorial</a></p>\n\n</body>\n</html>\n\nOutput:\nAbsolute URLs\nW3C\nGoogle\nRelative URLs\nHTML Images\nCSS Tutorial\n',
         'choices': ['b.) </a href=', 'b.) <a Href=', 'b.) <a href='],
         'correctAnswer': 'b.) <a href=',
         'output': 'Absolute URLs\nW3C\nGoogle\nRelative URLs\nHTML Images\nCSS Tutorial'
@@ -331,13 +331,13 @@ const quizData = {
 
 
     {
-        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<h2>Link to an Email Address</h2>\n\n<p>To create a link that opens in the user\'s email program (to let them send a new email), use mailto: inside the href attribute:</p>\n\n<p><a href="mailto:someone@example.com">Send email</a></p>\n\n</body>\n</html>\n\nOutput:\nLink to an Email Address\nTo create a link that opens in the user\'s email program (to let them send a new email), use mailto: inside the href attribute:\nSend email\nCorrect Answer:\n1a.) <html>\n1b.) </a>\nChoices:\n1a.) <Html>\n1a.) html\n1a.) <html>\n1b.) /a\n1b.) </a>\n1b.) <a>',
+        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<h2>Link to an Email Address</h2>\n\n<p>To create a link that opens in the user\'s email program (to let them send a new email), use mailto: inside the href attribute:</p>\n\n<p><a href="mailto:someone@example.com">Send email</a></p>\n\n</body>\n</html>\n\nOutput:\nLink to an Email Address\nTo create a link that opens in the user\'s email program (to let them send a new email), use mailto: inside the href attribute:\nSend email',
         'choices': ['a.) <Html>', 'a.) html', 'a.) <html>'],
         'correctAnswer': 'a.) <html>',
         'output': 'what is the second one ?'
      },
     {
-        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<h2>Link to an Email Address</h2>\n\n<p>To create a link that opens in the user\'s email program (to let them send a new email), use mailto: inside the href attribute:</p>\n\n<p><a href="mailto:someone@example.com">Send email</a></p>\n\n</body>\n</html>\n\nOutput:\nLink to an Email Address\nTo create a link that opens in the user\'s email program (to let them send a new email), use mailto: inside the href attribute:\nSend email\nCorrect Answer:\n1a.) <html>\n1b.) </a>\nChoices:\n1a.) <Html>\n1a.) html\n1a.) <html>\n1b.) /a\n1b.) </a>\n1b.) <a>',
+        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<h2>Link to an Email Address</h2>\n\n<p>To create a link that opens in the user\'s email program (to let them send a new email), use mailto: inside the href attribute:</p>\n\n<p><a href="mailto:someone@example.com">Send email</a></p>\n\n</body>\n</html>\n\nOutput:\nLink to an Email Address\nTo create a link that opens in the user\'s email program (to let them send a new email), use mailto: inside the href attribute:\nSend email',
         'choices': ['b.) /a', 'b.) </a>', 'b.) <a>'],
         'correctAnswer': 'b.) </a>',
         'output': 'Link to an Email Address\nTo create a link that opens in the user\'s email program (to let them send a new email), use mailto: inside the href attribute:\nSend email'
@@ -347,14 +347,14 @@ const quizData = {
 
 
     {
-        'question': '<!DOCTYPE html>\n<html>\n<head>\n<style>\n1a.)__________ {\n  background-color: lightblue;\n  color: black;\n  padding: 40px;\n  1b.)_________ center;\n} \n</style>\n</head>\n<body>\n\n<h2>The id Attribute</h2>\n<p>Use CSS to style an element with the id "myHeader":</p>\n\n<h1 id="myHeader">My Header</h1>\n\n</body>\n</html>\n\nOutput:\nThe id Attribute\nUse CSS to style an element with the id "myHeader":\nMy Header\nCorrect Answer:\n1a.) #myHeader\n1b.) text-align:\nChoices:\n1a.) #myHeader\n1a.) #MyHeader\n1a.) myHeader\n1b.) text align:\n1b.) text_align:\n1b.) text-align:',
+        'question': '<!DOCTYPE html>\n<html>\n<head>\n<style>\n1a.)__________ {\n  background-color: lightblue;\n  color: black;\n  padding: 40px;\n  1b.)_________ center;\n} \n</style>\n</head>\n<body>\n\n<h2>The id Attribute</h2>\n<p>Use CSS to style an element with the id "myHeader":</p>\n\n<h1 id="myHeader">My Header</h1>\n\n</body>\n</html>\n\nOutput:\nThe id Attribute\nUse CSS to style an element with the id "myHeader":\nMy Header',
         'choices': ['a.) #myHeader', 'a.) #MyHeader', 'a.) myHeader'],
         'correctAnswer': 'a.) #myHeader',
         'output': 'what is the second one ?'
     },
 
     {
-        'question': '<!DOCTYPE html>\n<html>\n<head>\n<style>\n1a.)_____#myHeader_____ {\n  background-color: lightblue;\n  color: black;\n  padding: 40px;\n  1b.)_________ center;\n} \n</style>\n</head>\n<body>\n\n<h2>The id Attribute</h2>\n<p>Use CSS to style an element with the id "myHeader":</p>\n\n<h1 id="myHeader">My Header</h1>\n\n</body>\n</html>\n\nOutput:\nThe id Attribute\nUse CSS to style an element with the id "myHeader":\nMy Header\nCorrect Answer:\n1a.) #myHeader\n1b.) text-align:\nChoices:\n1a.) #myHeader\n1a.) #MyHeader\n1a.) myHeader\n1b.) text align:\n1b.) text_align:\n1b.) text-align:',
+        'question': '<!DOCTYPE html>\n<html>\n<head>\n<style>\n1a.)_____#myHeader_____ {\n  background-color: lightblue;\n  color: black;\n  padding: 40px;\n  1b.)_________ center;\n} \n</style>\n</head>\n<body>\n\n<h2>The id Attribute</h2>\n<p>Use CSS to style an element with the id "myHeader":</p>\n\n<h1 id="myHeader">My Header</h1>\n\n</body>\n</html>\n\nOutput:\nThe id Attribute\nUse CSS to style an element with the id "myHeader":\nMy Header',
         'choices': ['b.) text align:', 'b.) text_align:', 'b.) text-align:'],
         'correctAnswer': 'b.) text-align:',
         'output': 'The id Attribute\nUse CSS to style an element with the id "myHeader":\nMy Header'
@@ -367,13 +367,13 @@ const quizData = {
 
 
     {
-        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My First JavaScript</h1>\n\n<p>JavaScript can change the content of an HTML element:</p>\n\n<button type="button" onclick="myFunction()">Click Me!</button>\n\n<p id="demo">This is a demonstration.</p>\n\n<script>\nfunction myFunction() { \n  document.getElementById("demo").innerHTML = "Hello JavaScript!";\n}\n</script>\n\n</body>\n</html>\n\nOutput:\nMy First JavaScript\nJavaScript can change the content of an HTML element:\nClick Me!\nThis is a demonstration.\nCorrect Answer:\n1a.) \n1b.) \nChoices:\n1a.) \n1a.) \n1a.) \n1b.) \n1b.) \n1b.) ',
+        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My First JavaScript</h1>\n\n<p>JavaScript can change the content of an HTML element:</p>\n\n<button type="button" onclick="myFunction()">Click Me!</button>\n\n<p id="demo">This is a demonstration.</p>\n\n<script>\nfunction myFunction() { \n  document.getElementById("demo").innerHTML = "Hello JavaScript!";\n}\n</script>\n\n</body>\n</html>\n\nOutput:\nMy First JavaScript\nJavaScript can change the content of an HTML element:\nClick Me!\nThis is a demonstration.',
         'choices': ['a.()', 'a.{}', 'a.)'],
         'correctAnswer': '1a.)',
         'output': 'what is the second one ? '
     },
      {
-        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My First JavaScript</h1>\n\n<p>JavaScript can change the content of an HTML element:</p>\n\n<button type="button" onclick="myFunction()">Click Me!</button>\n\n<p id="demo">This is a demonstration.</p>\n\n<script>\nfunction myFunction() { \n  document.getElementById("demo").innerHTML = "Hello JavaScript!";\n}\n</script>\n\n</body>\n</html>\n\nOutput:\nMy First JavaScript\nJavaScript can change the content of an HTML element:\nClick Me!\nThis is a demonstration.\nCorrect Answer:\n1a.) \n1b.) \nChoices:\n1a.) \n1a.) \n1a.) \n1b.) \n1b.) \n1b.) ',
+        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My First JavaScript</h1>\n\n<p>JavaScript can change the content of an HTML element:</p>\n\n<button type="button" onclick="myFunction()">Click Me!</button>\n\n<p id="demo">This is a demonstration.</p>\n\n<script>\nfunction myFunction() { \n  document.getElementById("demo").innerHTML = "Hello JavaScript!";\n}\n</script>\n\n</body>\n</html>\n\nOutput:\nMy First JavaScript\nJavaScript can change the content of an HTML element:\nClick Me!\nThis is a demonstration.',
         'choices': ['b.()', 'b.{}', 'b.)'],
         'correctAnswer': 'b.)',
         'output': 'My First JavaScript\nJavaScript can change the content of an HTML element:\nClick Me!\nThis is a demonstration.'
@@ -382,14 +382,14 @@ const quizData = {
 
 
     {
-        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My First JavaScript</h1>\n\n<button 1a.)________"button"\nonclick="document.getElementById(\'demo\').innerHTML = Date()">\nClick me to display Date and Time.</button>\n\n<p id=1b.)________></p>\n\n</body>\n</html> \nOutput:\nMy First JavaScript\nClick me to display Date and Time.\n\nCorrect Answer:\n1a.) type=\n1b.) "demo"\nChoices:\n1a.) type=\n1a.) Type=\n1a.) type=\n1b.) "Demo"\n1b.) \'demo\'\n1b.) "demo"',
+        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My First JavaScript</h1>\n\n<button 1a.)________"button"\nonclick="document.getElementById(\'demo\').innerHTML = Date()">\nClick me to display Date and Time.</button>\n\n<p id=1b.)________></p>\n\n</body>\n</html> \nOutput:\nMy First JavaScript\nClick me to display Date and Time.\n',
         'choices': ['a.) type=', 'a.) Type=', 'a.) type='],
         'correctAnswer': 'a.) type=',
         'output': 'what is the second one ? '
     },
 
     {
-        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My First JavaScript</h1>\n\n<button 1a.)________"button"\nonclick="document.getElementById(\'demo\').innerHTML = Date()">\nClick me to display Date and Time.</button>\n\n<p id=1b.)________></p>\n\n</body>\n</html> \nOutput:\nMy First JavaScript\nClick me to display Date and Time.\n\nCorrect Answer:\n1a.) type=\n1b.) "demo"\nChoices:\n1a.) type=\n1a.) Type=\n1a.) type=\n1b.) "Demo"\n1b.) \'demo\'\n1b.) "demo"',
+        'question': '<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My First JavaScript</h1>\n\n<button 1a.)________"button"\nonclick="document.getElementById(\'demo\').innerHTML = Date()">\nClick me to display Date and Time.</button>\n\n<p id=1b.)________></p>\n\n</body>\n</html> \nOutput:\nMy First JavaScript\nClick me to display Date and Time.\n',
         'choices': ['b.) "Demo"', 'b.) \'demo\'', 'b.) "demo"'],
         'correctAnswer': 'b.) "demo"',
         'output': 'My First JavaScript\nClick me to display Date and Time.'
@@ -543,13 +543,7 @@ int main_____ {
   cout << "Hello World!";
   return 0;
 }
-Correct answer: ()
-Choices:
-&
->>
-()
-Output:
-Hello World!`,
+`,
     choices: ["&", ">>", "()"],
     correctAnswer: "()",
     output: "Hello World!"
@@ -567,13 +561,7 @@ int main() {
   cout << "I am learning C++";
   return 0;
 }
-Correct answer: <<
-Choices:
-++
-<<
-:
-Output:
-Hello! I am learning C++`,
+`,
     choices: ["++", "<<", ":"],
     correctAnswer: "<<",
     output: "Hello! I am learning C++"
@@ -591,16 +579,7 @@ ________
   cout << "I am learning C++";
   return 0;
 }
-Correct answer:
-int main() 
-
-Choices:
-int main()
-;
-{
-Output:
-Hello World!  
-I am learning C++`,
+`,
     choices: ["int main()", "int main{};", "{"],
     correctAnswer: "int main()",
     output: "Hello World!\n\nI am learning C++"
@@ -617,14 +596,7 @@ int main() {
   cout << myNum;
   return 0;
 }
-Correct answer: =
-
-Choices:
-%
-=
-{}
-Output:
-15`,
+`,
     choices: ["%", "=", "{}"],
     correctAnswer: "=",
     output: "15"
@@ -640,14 +612,7 @@ int main() {
   cout << "I am " << myAge << " ______ old.";
   return 0;
 }
-Correct answer: years
-
-Choices:
-Yrs
-years
-YEARS
-Output:
-I am 35 years old.`,
+`,
     choices: ["Yrs", "years", "YEARS"],
     correctAnswer: "years",
     output: "I am 35 years old."
@@ -667,14 +632,7 @@ int main() {
   cout << m;
   return 0;
 }
-Correct answer: \\n
-Choices:
-\\n
-""
-,
-Output:
-60 
-60`,
+`,
     choices: ["\\n", "\"\"", ","],
     correctAnswer: "\\n",
     output: "60\n60"
@@ -695,14 +653,7 @@ ____main() {
   cout << PI;
   return 0;
 }
-Correct answer: int
-Choices:
-INT
-iNT
-int
-Output:
-60
-3.14`,
+`,
     choices: ["INT", "iNT", "int"],
     correctAnswer: "int",
     output: "60\n3.14"
@@ -725,15 +676,7 @@ int main() {
   cout << "Sum is: " << sum;
   return ___;
 } 
-Correct answer: 0
-Choices:
-7
-1
-4
-Output:
-Type a number: 4 
-Type another number: 7 
-Sum is: 11`,
+`,
     choices: ["7", "1","0"],
     correctAnswer: "0",
     output: "Type a number: 4\nType another number: 7\nSum is: 11"
@@ -752,14 +695,7 @@ int main() {
   cout << isFishTasty;
   return 0;
 }
-Correct answer: true
-Choices:
-True
-False
-Maybe
-Output:
-True
-False`,
+`,
     choices: ["True", "False", "Maybe"],
     correctAnswer: "True",
     output: "True\nFalse"
@@ -779,13 +715,7 @@ int main () {
   cout << c;
   return 0;
 }
-Correct answer: char
-Choices:
-Chart
-Char
-&
-Output:
-ABC`,
+`,
     choices: ["Chart", "Char", "&"],
     correctAnswer: "Char",
     output: "ABC"
@@ -1089,7 +1019,7 @@ int main() {\n\n
 
   {
     question: `3. #include <iostream>
-using namespace std;
+using namespace std; int
 ________
 {
   cout << "Hello World! \n\n";
@@ -1097,8 +1027,8 @@ ________
   return 0;
 }
 `,
-    choices: ["int main()", "int main{};", "{"],
-    correctAnswer: "int main()",
+    choices: ["main()", "main{};", "{"],
+    correctAnswer: "main()",
     output: "Hello World!\n\nI am learning C++"
   },
 
@@ -1140,13 +1070,13 @@ int main() {
   {
     question: `6. #include <iostream>
 using namespace std;
-int main() {
+int main() {\n
   // Good name
-  int minutesPerHour = 60;
+  int minutesPerHour = 60;\n
   // OK, but not so easy to understand what m actually is
-  int m = 60;
+  int m = 60;\n
   cout << minutesPerHour << "____";
-  cout << m;
+  cout << m;\n
   return 0;
 }
 `,
@@ -1162,11 +1092,11 @@ int main() {
 
   {
     question: `7. #include <iostream>
-using namespace std;
+using namespace std;\n
 ____main() {
-  const int minutesPerHour = 60;
+  const int minutesPerHour = 60;\n
   const float PI = 3.14;
-  cout << minutesPerHour << "\\n";
+  cout << minutesPerHour << "\\n";\n
   cout << PI;
   return 0;
 }
@@ -1181,16 +1111,16 @@ ____main() {
 
   {
     question: `8. #include <iostream>
-using namespace std;
+using namespace std;\n
 int main() {
-  int x, y;
-  int sum;
-  cout << "Type a number: ";
-  cin >> x;
-  cout << "Type another number: ";
-  cin >> y;
-  sum = x + y;
-  cout << "Sum is: " << sum;
+  int x, y;\n\n
+  int sum;\n
+  cout << "Type a number: ";\n
+  cin >> x;\n
+  cout << "Type another number: ";\n
+  cin >> y;\n
+  sum = x + y;\n
+  cout << "Sum is: " << sum;\n
   return ___;
 } 
 `,
@@ -1203,13 +1133,13 @@ int main() {
 
   {
     question: `9. #include <iostream>
-using namespace std;
+using namespace std;\n\n
 
 int main() {
-  bool isCodingFun = ____;
+  bool isCodingFun = ____;\n
   bool isFishTasty = false;
-  cout << isCodingFun << "\\n";
-  cout << isFishTasty;
+  cout << isCodingFun << "\\n";\n
+  cout << isFishTasty;\n
   return 0;
 }
 `,
@@ -1224,12 +1154,12 @@ int main() {
 
   {
     question: `10. #include <iostream>
-using namespace std; 
-int main () {
-  ______a = 65, b = 66, c = 67;
-  cout << a;
-  cout << b;
-  cout << c;
+using namespace std; \n
+int main () {\n
+  ______a = 65, b = 66, c = 67;\n
+  cout << a;\n
+  cout << b;\n
+  cout << c;\n
   return 0;
 }
 `,
@@ -1250,7 +1180,7 @@ int main () {
     question: `
       <h2>What Can JavaScript Do?</h2>\n
       <p ___"demo">JavaScript can change HTML content.</p>\n
-      <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>\n
+      <button type="button" onclick='document.getElementById("demo").innerHTML =\n "Hello JavaScript!"'>Click Me!</button>\n
     `,
     choices: [
       'id=',
@@ -1258,7 +1188,7 @@ int main () {
       'id ='
     ],
     correctAnswer: 'id=',
-    output:'The output of the code you provided would be an HTML button with the following structure:'
+    output:'The output of the code you provided would \n\nbe an HTML button with the following structure:'
   },
 
 
@@ -1269,7 +1199,7 @@ int main () {
       <h2>JavaScript in Body</h2>\n
       <p id="demo"></p>
       _______\n
-      document.getElementById("demo").innerHTML = "My First JavaScript";
+      document.getElementById("demo").innerHTML = "My First JavaScript";\n\n
     `,
     choices: [
       '<Script>',
@@ -1297,7 +1227,7 @@ int main () {
       '<button'
     ],
     correctAnswer: '<button',
-    output:'The output of the provided code would be an HTML page displaying a heading that says "Demo JavaScript in Head," a paragraph with the text "A Paragraph.," and a button labeled "Try it."'
+    output:'The output of the provided code would be an HTML page displaying a heading that says \n\n"Demo JavaScript in Head," a paragraph with the text "A Paragraph.," \n\nand a button labeled "Try it."'
   },
 
 
@@ -1320,7 +1250,7 @@ int main () {
       '</p>'
     ],
     correctAnswer: '</p>',
-    output:'The output would be an HTML page with a heading saying "Demo External JavaScript," a paragraph with the text "A Paragraph.," a button labeled "Try it," a paragraph mentioning the link to an external JavaScript file, and another paragraph stating that the function myFunction() is stored in the external file "myScript.js," which is linked to the HTML page using the <script> tag with the src attribute set to "myScript.js".'
+    output:'The output would be an HTML page with a heading saying "Demo External JavaScript," \n\na paragraph with the text "A Paragraph.," a button labeled "Try it," \n\n\n\n\n\na paragraph mentioning the link to an external JavaScript file, and another paragraph stating that\n\n\n\n the function myFunction() is stored in the external file "myScript.js," which is linked to \n\nthe HTML page using the <script> tag with the src attribute set to "myScript.js".'
   },
 
 
@@ -1343,7 +1273,7 @@ int main () {
       '</body>'
     ],
     correctAnswer: '<body>',
-    output:'The output would be an HTML page with a heading saying "External JavaScript," a paragraph with the text "A Paragraph.," a button labeled "Click Me," a paragraph mentioning the use of a full web URL to link to the external JavaScript file "myScript.js," and another paragraph stating that the function myFunction() is stored in the external file "myScript.js," which is linked to the HTML page using the <script> tag with the src attribute set to "https://www.w3schools.com/js/myScript.js".'
+    output:'The output would be an HTML page with a heading saying "External JavaScript," \n\na paragraph with the text "A Paragraph.," a button labeled "Click Me,"\n\n a paragraph mentioning the use of a full web URL to link to the external JavaScript file \n\n\n\n\n\n\n\n\n\n"myScript.js," and another paragraph stating that the function \n\n\n\n\n\n\n\nmyFunction() is stored in the external file "myScript.js," \n\n\n\n\n\nwhich is linked to the HTML page using the <script> tag with t\n\n\n\nhe src attribute set to "https://www.w3schools.com/js/myScript.js".'
   },
 
 
@@ -1365,7 +1295,7 @@ int main () {
       '<!DOCTYPE Html>'
     ],
     correctAnswer: '<!DOCTYPE html>',
-    output:'The output would be an HTML page displaying a heading saying "My First Web Page," a paragraph saying "My First Paragraph.," and an empty paragraph, which is filled by JavaScript code to display the result of the expression "5 + 6," which is "11."'
+    output:'The output would be an HTML page displaying a heading saying\n\n "My First Web Page," a paragraph saying "My First Paragraph.," \n\nand an empty paragraph, which is filled by JavaScript code to display the result of\n\n\n\n\n\n the expression "5 + 6," which is "11."'
   },
 
 
@@ -1388,7 +1318,7 @@ int main () {
       '</h2>'
     ],
     correctAnswer: '</h2>',
-    output:'The output would be an HTML page with a heading saying "Activate Debugging," and three paragraphs with instructions for activating debugging, followed by a JavaScript code block that logs the result of the expression "5 + 6" (which is 11) to the browser console.'
+    output:'The output would be an HTML page with a heading saying "Activate Debugging,"\n\n\n\n and three paragraphs with instructions for activating debugging,\n\n followed by a JavaScript code block that logs the result of the expression \n\\n\nn"5 + 6" (which is 11) to the browser console.'
   },
 
 
@@ -1404,7 +1334,7 @@ int main () {
       'Print()'
     ],
     correctAnswer: 'print()',
-    output:'The output would be an HTML page with a heading saying "The window.print() Method," a paragraph with the text "Click the button to print the current page," and a button labeled "Print this page." When the button is clicked, it triggers the window.print() method, which opens the browser s print dialog to print the current page.'
+    output:'The output would be an HTML page with a heading saying \n\n"The window.print() Method," a paragraph with the text "Click the\n\n button to print the current page," and a button labeled "Print this page."\n\n When the button is clicked, it triggers the window.print() method, which opens \n\nthe browser s print dialog to print the current page.'
   },
 
 
@@ -1426,7 +1356,7 @@ int main () {
       '"demo"'
     ],
     correctAnswer: '"demo"',
-    output:'The output would be an HTML page displaying a heading saying "JavaScript Statements," a paragraph about JavaScript statements being executed by the browser, and an empty paragraph with the id "demo" that is filled with the text "Hello Dolly." using JavaScript.'
+    output:'The output would be an HTML page displaying a heading saying "JavaScript Statements,"\n\n a paragraph about JavaScript statements being executed by the browser, \n\nand an empty paragraph with the id "demo" that is filled with the text "Hello Dolly." using JavaScript.'
   },
 
 
@@ -1447,7 +1377,7 @@ int main () {
       '.InnerHTML'
     ],
     correctAnswer: '.innerHTML',
-    output:'The output would be an HTML page with a heading saying "JavaScript Numbers," a paragraph stating that numbers can be written with or without decimals, an empty paragraph with the id attribute set to "demo," and a JavaScript code block that sets the content of the element with the id "demo" (<p id="demo"></p>) to the number 10.50 using the innerHTML property.'
+    output:'The output would be an HTML page with a heading saying "JavaScript Numbers," \n\na paragraph stating that numbers can be written with or without decimals\n\nan empty paragraph with the id attribute set to "demo," and a JavaScript code block that sets the content of the element with the id "demo" (<p id="demo"></p>) to the number 10.50 using the innerHTML property.'
   }
   ],
 
@@ -1484,29 +1414,29 @@ int main () {
 ______
 <body>
 
-<h1>JavaScript String Operators</h1>
+<h1>JavaScript String Operators</h1>\n
 
-<p>All conditional operators can be used on both numbers and strings.</p>
+<p>All conditional operators can be used on both numbers and strings.</p>\n
 
 <p id="demo">_________
-<script>
-let text1 = "A";
-let text2 = "B";
-________ text1 < text2;
-document.getElementById("demo").innerHTML = "Is A less than B? " + result;
-</script>
+<script>\n
+let text1 = "A";\n
+let text2 = "B";\n
+________ text1 < text2;\n
+document.getElementById("demo").innerHTML = "Is A less than B? " + result;\n
+</script>\n
 
-</body>
-</html>
+</body>\n
+</html>\n
 
 Correct answer:
 <html>
 </p>`,
     choices: [
       "let result =",
-      "result =",
+      "result",
     
-      "let result:"
+      "let"
     ],
     correctAnswer: "let result =",
     output: "Is A less than B? true"
@@ -1516,27 +1446,26 @@ Correct answer:
 
   {
     question: `2.) <!DOCTYPE html>
-<html>
-<body>
+<html>\n
+<body>\n
 
-<h1>JavaScript String Operators</h1>
-<h2>The + Operator</h2>
-<p>The + operator concatenates (adds) strings.</p>
+<h1>JavaScript String Operators</h1>\n
+<h2>The + Operator</h2>\n
+<p>The + operator concatenates (adds) strings.</p>\n
 
-<p id=____demo"></p>
+<p id=____demo"></p>\n
 
 _______
-let text1 = "John";
+let text1 = "John";\n
 let text2 = "Doe"___
-let text3 = text1 + " " + text2;
-document.getElementById("demo").innerHTML = text3;
-</script>
+let text3 = text1 + " " + text2;\n
+document.getElementById("demo").innerHTML = text3;\n
+</script>\n
 
-</body>
+</body>\n
 </html>
-
-Correct answer:
-"`,
+\n
+`,
     choices: [
       "\"",
       "'",
@@ -1551,29 +1480,27 @@ Correct answer:
 
   {
     question: `3.) <!DOCTYPE html>
-<html>
+<html>\n
 <body>
+\n
+<h1>JavaScript String Operator______\n
+<h2>The + Operator</h2>\n
+<p>Adding a number and a string, returns a string.</p>\n
 
-<h1>JavaScript String Operator______
-<h2>The + Operator</h2>
-<p>Adding a number and a string, returns a string.</p>
+______"demo"></p>\n
 
-______"demo"></p>
-
-<script>
+<script>\n
 let x = 5 + 5;
-let y = "5" + 5;
-let z = "Hello" + 5;
-document.getElementById("demo").innerHTML =
+let y = "5" + 5;\n
+let z = "Hello" + 5;\n
+document.getElementById("demo").innerHTML =\n
 x + "<br>" + y + "<br>" + z;
-</script>
+</script>\n
 
 ______
-</html>
+</html>\n
 
-Correct answer:
-</h1>
-<p id=`,
+`,
     choices: [
       "\"",
       "'",
@@ -1588,29 +1515,27 @@ Correct answer:
 
   {
     question: `4.) <!DOCTYPE html>
-<html>
-<body>
+<html>\n\n\n
+<body>\n\n
 
-<h1>JavaScript Arithmetic</h1>
-<h2>Arithmetic Operations</h2>
-______A typical arithmetic operation takes two numbers (or expressions) and produces a new number.</p>
-
+<h1>JavaScript Arithmetic</h1>\n
+<h2>Arithmetic Operations</h2>\n
+______A typical arithmetic operation takes two numbers (or expressions) and produces a new number.</p>\n
+\n
 <p id="demo"></p>
-
+\n
 <script>
-_____ a = 3;
-let x = (100 + 50) * a____
-document.getElementById("demo").innerHTML = x;
-</script>
+_____ a = 3;\n
+let x = (100 + 50) * a____\n
+document.getElementById("demo").innerHTML = x;\n
+</script>\n
 
-</body>
+</body>\n
 </html>
-Correct answer:
-<p>`,
+`,
     choices: [
       "let",
       "const",
-      "var",
       "int"
     ],
     correctAnswer: "let",
@@ -1621,25 +1546,24 @@ Correct answer:
 
   {
     question: `5.) <!DOCTYPE html>
-<html>
-<body>
+<html>\n
+<body>\n
 
-___h1>JavaScript Arithmetic</h1>
-<h2>The % Operator</h2>
+___h1>JavaScript Arithmetic</h1>\n
+<h2>The % Operator</h2>\n
 
-<p id="demo"></p>
+<p id="demo"></p>\n
 
-<script>
-let x = 5;
-let y = 2;
-let z = x ____y;
-document.getElementById("demo").innerHTML = z;
-</script>
-
-</body>
-<__html>
-Correct answer:
-<`,
+<script>\n
+let x = 5;\n
+let y = 2;\n\n
+let z = x ____y;\n
+document.getElementById("demo").innerHTML = z;\n
+</script>\n
+\n
+</body>\n\n
+<__html>\n
+`,
     choices: [
       "<",
       "%",
@@ -1654,28 +1578,27 @@ Correct answer:
 
   {
     question: `6.) <!DOCTYPE html>
-<html>
-<body>
+<html>\n
+<body>\n\n
 
-<h1>JavaScript Arithmetic</h1>
-<h2>Operator Precedence</h2>
-<p>Multiplication has precedence over addition.</p>
+<h1>JavaScript Arithmetic</h1>\n
+<h2>Operator Precedence</h2>\n
+<p>Multiplication has precedence over addition.</p>\n
 
-<p id=_____></p>
+<p id=_____></p>\n
 
-<script>
-document.getElementById("demo").innerHTML = 100 ___ 50 * 3;
-</script>
+<script>\n
+document.getElementById("demo").innerHTML = 100 ___ 50 * 3;\n
+</script>\n
 
-</body>
-</html>
-Correct answer:
-+`,
+</body>\n
+</html>\n
+`,
     choices: [
       "!",
       "\"demo\"",
-      "+",
-      "?"
+      "+"
+      
     ],
     correctAnswer: "+",
     output: "250"
@@ -1684,32 +1607,30 @@ Correct answer:
 
   {
     question: `7.) <!DOCTYPE html>
-<html>
-<body>
+<html>\n
+<body>\n
 
-<h1>JavaScript Functions</h1>
+<h1>JavaScript Functions</h1>\n\n
 
-<p>Invoke (call) a function that converts from Fahrenheit to Celsius:</p>
+<p>Invoke (call) a function that converts from Fahrenheit to Celsius:</p>\n
 <p id="demo"></p>
-
+\n
 <script>
-function toCelsius(f) {
+function toCelsius(f) {\n
   ____ (5/9) * (f-32);
-}
+}\n
 
 ______ toCelsius(77);
-document.getElementById("demo").innerHTML = value;
-</script>
+document.getElementById("demo").innerHTML = value;\n
+</script>\n
 
 </body>
-______
-Correct answer:
-return`,
+______\n
+`,
     choices: [
       "return",
-      "let value =",
       "Return",
-      "int value="
+      "value="
     ],
     correctAnswer: "return",
     output: "25"
@@ -1719,32 +1640,29 @@ return`,
 
   {
     question: `8.) <!DOCTYPE html>
-<html>
-<body>
+<html>\n
+<body>\n
 
-<h1>JavaScript Functions</h1>
-<p>Using a function as a variable:</p>
+<h1>JavaScript Functions</h1>\n
+<p>Using a function as a variable:</p>\n
 
 ___________
-<script>
-let text = "The temperature is " + toCelsius(77) + " Celsius.";
-document.getElementById("demo").innerHTML = text;
+<script>\n
+let text = "The temperature is " + toCelsius(77) + " Celsius.";\n
+document.getElementById("demo").innerHTML = text;\n
 
-function toCelsius(fahrenheit) {
-  return (5/9) * (fahrenheit-32);
+function toCelsius(fahrenheit) {\n
+  return (5/9) * (fahrenheit-32);\n
 } 
-</script>
+</script>\n\n
 
-</body>
-</html>
+</body>\n
+</html>\n
 
-Correct answer:
-
-<p id="demo"></p>`,
+`,
     choices: [
       "<p id=\"demo\"></p>",
       "<p id=\"demo\">",
-      "<p id = \"demo\"></p>",
       "<p id = \"demo\">"
     ],
     correctAnswer: "<p id=\"demo\"></p>",
@@ -1754,31 +1672,28 @@ Correct answer:
 
   {
     question: `9.) <!DOCTYPE html>
-<html>
-<body>
+<html>\n\n
+<body>\n
 
-<h1>JavaScript Strings</h1>
-<h2>The slice() Method</h2>
+<h1>JavaScript Strings</h1>\n
+<h2>The slice() Method</h2>\n
 
-<p>The sliced (extracted) part of the string is:</p>
-_______="demo"></p>
+<p>The sliced (extracted) part of the string is:</p>\n
+_______="demo"></p>\n
 
 <script>
-_____ "Apple, Banana, Kiwi";
-let part = text.slice(7,13);
-document.getElementById("demo").innerHTML = part; 
-</script>
+_____ "Apple, Banana, Kiwi";\n
+let part = text.slice(7,13);\n
+document.getElementById("demo").innerHTML = part; \n
+</script>\n\n\n
 
-</body>
-</html>
-
-Correct answer:
-<p id`,
+</body>\n\n
+</html>\n
+`,
     choices: [
       "<p id",
       "<p>",
-      "Get txt =",
-      "<p"
+      "<p = "
     ],
     correctAnswer: "<p id",
     output: "Banana"
@@ -1788,34 +1703,31 @@ Correct answer:
 
   {
     question: `10.) <!DOCTYPE html>
-<html>
-<body>
+<html>\n\n
+<body>\n
 
-<h2>JavaScript Numbers</h2>
+<h2>JavaScript Numbers</h2>\n
 
-<p>Numbers can be written with or without decimals:</p>
+<p>Numbers can be written with or without decimals:</p>\n
 
-<p id="demo"></p>
+<p id="demo"></p>\n
 
-<script>
+<script>\n
 let x = 3.14;
-let y = 3;
-________________("demo").innerHTML = x + "<br>" + y;
-</script>
+let y = 3;\n
+________.getElementById("demo").innerHTML = x + "<br>" + y;\n
+</script>\n
 
-</body>
+</body>\n
 </html>
-
-Correct answer:
-
-document.getElementById`,
+\n
+`,
     choices: [
-      "document.getElementById",
-      "Document.letelementbyId",
-      "document.getElementById",
-      "document.getElementById"
+      "document",
+      "Docs",
+      "document=",
     ],
-    correctAnswer: "document.getElementById",
+    correctAnswer: "document",
     output: "3.14\n3"
   }
   ],
@@ -1828,61 +1740,61 @@ document.getElementById`,
   "java": {
   "easy": [
      {
-    question: "1.) public class ______\n  public static void main(String[] args) {\n    System.out.println(\"Hello World\");\n  }\n}\n\nChoices:\nMain {\nmain {\nMain{\n\nCorrect Answer: ",
+    question: "1.) public class ______\n  public static void main(String[] args) {\n    System.out.println(\"Hello World\");\n  }\n}\n",
     choices: ["Main {", "main {", "Main{"],
     correctAnswer: "Main {",
     output: "Hello World!"
   },
   {
-    question: "2.) public class Main {\n  public static void main(______ args) {\n    System.out.println(\"Hello World!\");\n    System.out.println(\"I am learning Java.\");\n    System.out.println(\"It is awesome!\");\n  }\n}\n\nChoices:\nstring[]\nString[]\nString []\n\nCorrect Answer: ",
+    question: "2.) public class Main {\n  public static void main(______ args) {\n    System.out.println(\"Hello World!\");\n    System.out.println(\"I am learning Java.\");\n    System.out.println(\"It is awesome!\");\n  }\n}\n",
     choices: ["string[]", "String[]", "String []"],
     correctAnswer: "String[]",
     output: "Hello World!\nI am learning Java.\nIt is awesome!"
   },
   {
-    question: "3.) public class Main {\n  public static void main(String[] args) {\n    System____print(\"Hello World! \");\n    System.out.print(\"I will print on the same line.\");\n  }\n}\n\nChoices:\n.out.\n.Out.\n,out,\n\nCorrect Answer: ",
+    question: "3.) public class Main {\n  public static void main(String[] args) {\n    System____print(\"Hello World! \");\n    System.out.print(\"I will print on the same line.\");\n  }\n}\n",
     choices: [".out.", ".Out.", ",out,"],
     correctAnswer: ".out.",
     output: "Hello World! I will print on the same line."
   },
   {
-    question: "4.) _____ class Main {\n  public static void main(String[] args) {\n    System.out.println(3);\n    System.out.println(358);\n    System.out.println(50000);\n  }\n}\n\nChoices:\nPublic\npublic_\npublic\n\nCorrect Answer: ",
+    question: "4.) _____ class Main {\n  public static void main(String[] args) {\n    System.out.println(3);\n    System.out.println(358);\n    System.out.println(50000);\n  }\n}\n",
     choices: ["Public", "public_", "public"],
     correctAnswer: "public",
     output: "3\n358\n50000"
   },
   {
-    question: "5.) public class Main {\n  public static void main(String[] args) {\n    ______.out.println(3 + 3);\n  }\n}\n\nChoices:\nSystem.\nsystem\nSystem\n\nCorrect Answer: ",
+    question: "5.) public class Main {\n  public static void main(String[] args) {\n    ______.out.println(3 + 3);\n  }\n}\n",
     choices: ["System.", "system", "System"],
     correctAnswer: "System",
     output: "6"
   },
   {
-    question: "6.) public class Main {\n  public static void main(String[] args) {\n    System.out.println(2 * 5_\n  }\n}\n\nChoices:\n);\n)\n):\n\nCorrect Answer: ",
+    question: "6.) public class Main {\n  public static void main(String[] args) {\n    System.out.println(2 * 5_\n  }\n}\n",
     choices: [");", ")", "):"],
     correctAnswer: ");",
     output: "10"
   },
   {
-    question: "7.) public class Main {\n  public static void main(String[] args) {\n    String name = \"John\";\n    System.out.println______;\n  }\n}\n\nChoices:\n(name);\n(Name)\n(name)\n\nCorrect Answer: ",
+    question: "7.) public class Main {\n  public static void main(String[] args) {\n    String name = \"John\";\n    System.out.println______;\n  }\n}\n",
     choices: ["(name);", "(Name)", "(name)"],
     correctAnswer: "(name)",
     output: "John"
   },
   {
-    question: "8.) public class Main {\n  public static void main(String[] args) {\n    int _______ = 15;\n    System.out.println(myNum);\n  }\n}\n\nChoices:\nmynum\nmyNum\nMyNum\n\nCorrect Answer: ",
+    question: "8.) public class Main {\n  public static void main(String[] args) {\n    int _______ = 15;\n    System.out.println(myNum);\n  }\n}",
     choices: ["mynum", "myNum", "MyNum"],
     correctAnswer: "myNum",
     output: "15"
   },
   {
-    question: "9.) public class Main {\n  public static void main(String[] args) {\n    int myNum = 15;\n    ________ 20;  // myNum is now 20\n    System.out.println(myNum);\n  }\n}\n\nChoices:\nmyNum =\nmyNum -\nmyNum:\n\nCorrect Answer: ",
+    question: "9.) public class Main {\n  public static void main(String[] args) {\n    int myNum = 15;\n    ________ 20;  // myNum is now 20\n    System.out.println(myNum);\n  }\n}\n",
     choices: ["myNum =", "myNum -", "myNum:"],
     correctAnswer: "myNum =",
     output: "20"
   },
   {
-    question: "10.) public class Main {\n  public static void main(String[] args) {\n    String name = \"John\";\n    System.out______(\"Hello \" + name);\n  }\n}\n\nChoices:\nprintln\n.println\n_println\n\nCorrect Answer: ",
+    question: "10.) public class Main {\n  public static void main(String[] args) {\n    String name = \"John\";\n    System.out______(\"Hello \" + name);\n  }\n}\n",
     choices: ["println", ".println", "_println"],
     correctAnswer: ".println",
     output: "Hello John"
@@ -1890,13 +1802,13 @@ document.getElementById`,
   ],
   "normal": [
     {
-    question: "1.) public class Main {\n  public static void main(String[] _____\n    String greeting = \"Hello World\";\n    System.out._____(greeting);\n  }\n}\n\nChoices:\n(a.) Args) {\n(a.) args)\n(a.) args) {\n(b.) println\n(b.) Println\n(b.) print.ln\n\nCorrect Answer:\n",
+    question: "1.) public class Main {\n  public static void main(String[] _____\n    String greeting = \"Hello World\";\n    System.out._____(greeting);\n  }\n}\n",
     choices: ["(a.) Args) {", "(a.) args)", "(a.) args) {"],
     correctAnswer: "(a.) args) {",
     output: "what is the second one ? "
   },
   {
-    question: "1.) public class Main {\n  public static void main(String[] _____\n    String greeting = \"Hello World\";\n    System.out._____(greeting);\n  }\n}\n\nChoices:\n(a.) Args) {\n(a.) args)\n(a.) args) {\n(b.) println\n(b.) Println\n(b.) print.ln\n\nCorrect Answer:\n",
+    question: "1.) public class Main {\n  public static void main(String[] _____\n    String greeting = \"Hello World\";\n    System.out._____(greeting);\n  }\n}\n",
     choices: ["(b.) println", "(b.) Println", "(b.) print.ln"],
     correctAnswer: "(b.) println",
     output: "Hello World"
@@ -1906,14 +1818,14 @@ document.getElementById`,
 
 
   {
-    question: "2.) public class Main {\n  public static void main(String[] args) {\n    String ________ = \"John \";\n    String lastName = \"Doe\";\n    String fullName = firstName + lastName;\n    System.out.println_________;  \n  }\n}\n\nChoices:\n(a.) firstName\n(a.) FirstName\n(a.) firstname\n(b.) [fullName]\n(b.) {fullName}\n(b.) (fullName)\n\nCorrect Answer:\n",
+    question: "2.) public class Main {\n  public static void main(String[] args) {\n    String ________ = \"John \";\n    String lastName = \"Doe\";\n    String fullName = firstName + lastName;\n    System.out.println_________;  \n  }\n}\n",
     choices: ["(a.) firstName", "(a.) FirstName", "(a.) firstname"],
     correctAnswer: "(a.) firstName",
     output: "what is the second one ?"
   },
 
    {
-    question: "2.) public class Main {\n  public static void main(String[] args) {\n    String ________ = \"John \";\n    String lastName = \"Doe\";\n    String fullName = firstName + lastName;\n    System.out.println_________;  \n  }\n}\n\nChoices:\n(a.) firstName\n(a.) FirstName\n(a.) firstname\n(b.) [fullName]\n(b.) {fullName}\n(b.) (fullName)\n\nCorrect Answer:\n",
+    question: "2.) public class Main {\n  public static void main(String[] args) {\n    String ________ = \"John \";\n    String lastName = \"Doe\";\n    String fullName = firstName + lastName;\n    System.out.println_________;  \n  }\n}\n",
     choices: ["(b.) [fullName]", "(b.) {fullName}", "(b.) (fullName)"],
     correctAnswer: "(b.) (fullName)",
     output: "John Doe"
@@ -1923,14 +1835,14 @@ document.getElementById`,
 
 
   {
-    question: "3.) public ____ Main {\n  public static void main(String[] args) {\n    ____ = 5, y = 6, z = 50;\n    System.out.println(x + y + z);\n  }\n}\n\nChoices:\n(a.) Class\n(a.) class\n(a.) _class_\n(b.) int_x\n(b.) int x\n(b.) Int x\n\nCorrect Answer:\n",
+    question: "3.) public ____ Main {\n  public static void main(String[] args) {\n    ____ = 5, y = 6, z = 50;\n    System.out.println(x + y + z);\n  }\n}\n",
     choices: ["(a.) Class", "(a.) class", "(a.) _class_"],
     correctAnswer: "(a.) class",
     output: "what is the second one ? "
   },
 
     {
-    question: "3.) public ____ Main {\n  public static void main(String[] args) {\n    ____ = 5, y = 6, z = 50;\n    System.out.println(x + y + z);\n  }\n}\n\nChoices:\n(a.) Class\n(a.) class\n(a.) _class_\n(b.) int_x\n(b.) int x\n(b.) Int x\n\nCorrect Answer:\n",
+    question: "3.) public ____ Main {\n  public static void main(String[] args) {\n    ____ = 5, y = 6, z = 50;\n    System.out.println(x + y + z);\n  }\n}\n",
     choices: ["(b.) int_x", "(b.) int x", "(b.) Int x"],
     correctAnswer: "(b.) int x",
     output: "61"
@@ -1941,13 +1853,13 @@ document.getElementById`,
 
 
   {
-    question: "4.) public class Main {\n  public static void main(String[] args) {\n    int x, y, __\n    x = y = z = 50;\n    System.out.println(x + y + __\n  }\n}\n\nChoices:\n(a.) z;\n(a.) z\n(a.) Z;\n(b.) z);\n(b.) Z);\n(b.) z)\n\nCorrect Answer:\n",
+    question: "4.) public class Main {\n  public static void main(String[] args) {\n    int x, y, __\n    x = y = z = 50;\n    System.out.println(x + y + __\n  }\n}\n",
     choices: ["(a.) z;", "(a.) z", "(a.) Z;"],
     correctAnswer: "(a.) z;",
     output: "what is the second one ? "
   },
   {
-    question: "4.) public class Main {\n  public static void main(String[] args) {\n    int x, y, __\n    x = y = z = 50;\n    System.out.println(x + y + __\n  }\n}\n\nChoices:\n(a.) z;\n(a.) z\n(a.) Z;\n(b.) z);\n(b.) Z);\n(b.) z)\n\nCorrect Answer:\n",
+    question: "4.) public class Main {\n  public static void main(String[] args) {\n    int x, y, __\n    x = y = z = 50;\n    System.out.println(x + y + __\n  }\n}\n",
     choices: ["(b.) z);", "(b.) Z);", "(b.) z)"],
     correctAnswer: "(b.) z);",
     output: "150"
@@ -1961,13 +1873,13 @@ document.getElementById`,
 
 
   {
-    question: "5.) public class Main {\n  public static void main(String[] args) {\n    ____ myNum = 100;\n    System.out.println_________  \n  }\n}\n\nChoices:\n(a.) byte_\n(a.) byte\n(a.) Byte\n(b.) (myNum);\n(b.) (myNum)\n(b.) (MyNum);\n\nCorrect Answer:\n",
+    question: "5.) public class Main {\n  public static void main(String[] args) {\n    ____ myNum = 100;\n    System.out.println_________  \n  }\n}\n",
     choices: ["(a.) byte_", "(a.) byte", "(a.) Byte"],
     correctAnswer: "(a.) byte",
     output: "what is the second one ?"
   },
   {
-    question: "5.) public class Main {\n  public static void main(String[] args) {\n    ____ myNum = 100;\n    System.out.println_________  \n  }\n}\n\nChoices:\n(a.) byte_\n(a.) byte\n(a.) Byte\n(b.) (myNum);\n(b.) (myNum)\n(b.) (MyNum);\n\nCorrect Answer:\n",
+    question: "5.) public class Main {\n  public static void main(String[] args) {\n    ____ myNum = 100;\n    System.out.println_________  \n  }\n}\n",
     choices: ["(b.) (myNum);", "(b.) (myNum)", "(b.) (MyNum);"],
     correctAnswer: "(b.) (myNum);",
     output: "100"
@@ -1981,12 +1893,12 @@ document.getElementById`,
 
 
   {
-    question: "6.) public class Main {\n  public static void main(String[] args) {\n    short myNum = _____\n    System.out.println(myNum);  \n  }\n_\n\nChoices:\n(a.) 5000;\n(a.) 5000\n(a.) “5000”;\n(b.) }\n(b.) ]\n(b.) )\n\nCorrect Answer:\n",
+    question: "6.) public class Main {\n  public static void main(String[] args) {\n    short myNum = _____\n    System.out.println(myNum);  \n  }\n_\n",
     choices: ["(a.) 5000;", "(a.) 5000", "(a.) 500;"],
     correctAnswer: "(a.) 5000;",
     output: "what is the second one ? "
   },{
-    question: "6.) public class Main {\n  public static void main(String[] args) {\n    short myNum = _____\n    System.out.println(myNum);  \n  }\n_\n\nChoices:\n(a.) 5000;\n(a.) 5000\n(a.) “5000”;\n(b.) }\n(b.) ]\n(b.) )\n\nCorrect Answer:\n",
+    question: "6.) public class Main {\n  public static void main(String[] args) {\n    short myNum = _____\n    System.out.println(myNum);  \n  }\n_\n",
     choices: ["(b.) }", "(b.) ]", "(b.) )"],
     correctAnswer: "(b.) }",
     output: "5000"
@@ -1996,12 +1908,12 @@ document.getElementById`,
 
 
   {
-    question: "7.) public class Main {\n  public static void main(String[] args) {\n    char ________ = 'B';\n    System.out.println(myGrade__\n  }\n}\n\nChoices:\n(a.) my.Grade\n(a.) MyGrade\n(a.) myGrade\n(b.) )\n(b.) ‘);\n(b.) );\n\nCorrect Answer:\n",
+    question: "7.) public class Main {\n  public static void main(String[] args) {\n    char ________ = 'B';\n    System.out.println(myGrade__\n  }\n}\n",
     choices: ["(a.) my.Grade", "(a.) MyGrade", "(a.) myGrade"],
     correctAnswer: "(a.) myGrade",
     output: "what is the second one ? "
   },  {
-    question: "7.) public class Main {\n  public static void main(String[] args) {\n    char ________ = 'B';\n    System.out.println(myGrade__\n  }\n}\n\nChoices:\n(a.) my.Grade\n(a.) MyGrade\n(a.) myGrade\n(b.) )\n(b.) ‘);\n(b.) );\n\nCorrect Answer:\n",
+    question: "7.) public class Main {\n  public static void main(String[] args) {\n    char ________ = 'B';\n    System.out.println(myGrade__\n  }\n}\n",
     choices: ["(b.) )", "(b.) ');", "(b.) );"],
     correctAnswer: "(b.) );",
     output: "B"
@@ -2011,13 +1923,13 @@ document.getElementById`,
 
 
   {
-    question: "8.) public class Main {\n  public _________ main(String[] args) {\n    char myVar1 = 65, _______ = 66, myVar3 = 67;\n    System.out.println(myVar1);\n    System.out.println(myVar2);\n    System.out.println(myVar3);\n  }\n}\n\nChoices:\n(a.) static_void\n(a.) Static void\n(a.) static void\n(b.) MyVar2\n(b.) my.Var2\n(b.) myVar2\n\nCorrect Answer:\n",
+    question: "8.) public class Main {\n  public _________ main(String[] args) {\n    char myVar1 = 65, _______ = 66, myVar3 = 67;\n    System.out.println(myVar1);\n    System.out.println(myVar2);\n    System.out.println(myVar3);\n  }\n}\n",
     choices: ["(a.) static_void", "(a.) Static void", "(a.) static void"],
     correctAnswer: "(a.) static void",
     output: "what is the second one ? "
   },
   {
-    question: "8.) public class Main {\n  public _________ main(String[] args) {\n    char myVar1 = 65, _______ = 66, myVar3 = 67;\n    System.out.println(myVar1);\n    System.out.println(myVar2);\n    System.out.println(myVar3);\n  }\n}\n\nChoices:\n(a.) static_void\n(a.) Static void\n(a.) static void\n(b.) MyVar2\n(b.) my.Var2\n(b.) myVar2\n\nCorrect Answer:\n",
+    question: "8.) public class Main {\n  public _________ main(String[] args) {\n    char myVar1 = 65, _______ = 66, myVar3 = 67;\n    System.out.println(myVar1);\n    System.out.println(myVar2);\n    System.out.println(myVar3);\n  }\n}\n",
     choices: ["(b.) MyVar2", "(b.) my.Var2", "(b.) myVar2"],
     correctAnswer: "(b.) myVar2",
     output: "A\nB\nC"
@@ -2028,13 +1940,13 @@ document.getElementById`,
 
 
   {
-    question: "9.) __________ Main {\n  public static void main(String[] args) {\n    double myNum = 19.99__\n    System.out.println(myNum);  \n  }\n}\n\nChoices:\n(a.) public_class\n(a.) Public class\n(a.) public class\n(b.) d;\n(b.) D;\n(b.) ;\n\nCorrect Answer:\n",
+    question: "9.) __________ Main {\n  public static void main(String[] args) {\n    double myNum = 19.99__\n    System.out.println(myNum);  \n  }\n}\n",
     choices: ["(a.) public_class", "(a.) Public class;", "(a.) public class"],
     correctAnswer: "(a.) public class",
     output: "what is the second one ? "
   },
    {
-    question: "9.) __________ Main {\n  public static void main(String[] args) {\n    double myNum = 19.99__\n    System.out.println(myNum);  \n  }\n}\n\nChoices:\n(a.) public_class\n(a.) Public class\n(a.) public class\n(b.) d;\n(b.) D;\n(b.) ;\n\nCorrect Answer:\n",
+    question: "9.) __________ Main {\n  public static void main(String[] args) {\n    double myNum = 19.99__\n    System.out.println(myNum);  \n  }\n}\n",
     choices: ["(b.) d;", "(b.) D;", "(b.) ;"],
     correctAnswer: "(b.) d;",
     output: "19.99"
@@ -2046,13 +1958,13 @@ document.getElementById`,
 
 
   {
-    question: "10.) public class Main {\n  public static void main(String[] _____ {\n    ___________ = 5.75f;\n    System.out.println(myNum);  \n  }\n}\n\nChoices:\n(a.) args)\n(a.) args);\n(a.) Args)\n(b.) Float myNum\n(b.) float_myNum\n(b.) float myNum\n\nCorrect Answer:\n",
+    question: "10.) public class Main {\n  public static void main(String[] _____ {\n    ___________ = 5.75f;\n    System.out.println(myNum);  \n  }\n}\n",
     choices: ["(a.) args)", "(a.) args);", "(a.) Args)"],
     correctAnswer: "(a.) args)",
     output: "what is the second one ?"
   },
   {
-    question: "10.) public class Main {\n  public static void main(String[] _____ {\n    ___________ = 5.75f;\n    System.out.println(myNum);  \n  }\n}\n\nChoices:\n(a.) args)\n(a.) args);\n(a.) Args)\n(b.) Float myNum\n(b.) float_myNum\n(b.) float myNum\n\nCorrect Answer:\n",
+    question: "10.) public class Main {\n  public static void main(String[] _____ {\n    ___________ = 5.75f;\n    System.out.println(myNum);  \n  }\n}\n",
     choices: ["(b.) Float myNum", "(b.) float_myNum", "(b.) float myNum"],
     correctAnswer: "(b.) float myNum",
     output: "5.75"
@@ -2064,7 +1976,7 @@ document.getElementById`,
   ],
 "hard": [
           {
-        question: "1.) public class Main ___\n  public static void main______ \n    boolean isJavaFun = true;\n    boolean isFishTasty = false;    \n    System.out.println(isJavaFun);\n    System.out.println(isFishTasty);\n  }\n}\n\nCorrect Answer:\n{\n(String[] args)\n\nOutput:\n",
+        question: "1.) public class Main ___\n  public static void main______ \n    boolean isJavaFun = true;\n    boolean isFishTasty = false;    \n    System.out.println(isJavaFun);\n    System.out.println(isFishTasty);\n  }\n}\n",
         choices: [
           "{",
           "[",
@@ -2077,102 +1989,98 @@ document.getElementById`,
 
 
       {
-        question: "2.) public class Main {\n ___________________\n    int myInt = 9;\n    double myDouble = myInt; // Automatic casting: int to double\n\n    System.out.println(myInt);\n    System.out.println(myDouble);\n  }\n}\n\nCorrect Answer:\n public static void main(String[] args) {\n\nOutput:\n",
+        question: "2.) public class Main {\n (String[] ___) {\n    int myInt = 9;\n    double myDouble = myInt; // Automatic casting: int to double\n\n    System.out.println(myInt);\n    System.out.println(myDouble);\n  }\n}\n",
         choices: [
           
-          "(String[])",
-          "(String[] args) {",
-          "(String[])"
+          "(args)",
+          "args",
+          "(String)"
         ],
-        correctAnswer: "(String[] args) {",
+        correctAnswer: "args",
         output: "9\n9.0"
       },
       {
-        question: "3.) public class Main {\n  public static void main(String[] args) {\n______________ 9.78d;\n    int myInt = (int) myDouble; // Explicit casting: double to int\n\n    System.out.println(myDouble);\n    System.out.println(myInt);\n  }\n}\n\nCorrect Answer:\n    double myDouble =\n\nOutput:\n",
+        question: "3.) public class Main {\n  public static void main(String[] args) {\ndouble myDouble __ 9.78d;\n    int myInt = (int) myDouble; // Explicit casting: double to int\n\n    System.out.println(myDouble);\n    System.out.println(myInt);\n  }\n}\n",
         choices: [
-          "double myDouble =",
-          "myDouble =",
-          "double myDouble",
-          "myDouble"
+          "println",
+          "=",
+          
+          "=="
         ],
-        correctAnswer: "double myDouble =",
+        correctAnswer: "=",
         output: "9.78\n9"
       },
       {
-        question: "4.) public class Main {\n  public static void main(String[] args) {\n    ___________ 100 + 50;\n    int sum2 = sum1 + 250;\n    int sum3 = sum2 + sum2;\n    System.out.println(sum1);\n    System.out.println(sum2);\n    System.out.println(sum3);  \n  }\n}\n\nCorrect Answer:\nint sum1 =\n\nOutput:\n",
+        question: "4.) public class Main {\n  public static void main(String[] args) {\n    ___________ 100 + 50;\n    int sum2 = sum1 + 250;\n    int sum3 = sum2 + sum2;\n    System.out.println(sum1);\n    System.out.println(sum2);\n    System.out.println(sum3);  \n  }\n}\n",
         choices: [
           "int sum1 =",
           "sum1 =",
-          "int sum1",
           "sum1"
         ],
         correctAnswer: "int sum1 =",
         output: "150\n400\n800"
       },
       {
-        question: "5.) public class Main {\n  public static void main(String[] args) {\n    int x = 5;\n    int y = 3;\n  ________________; // returns true, because 5 is higher than 3\n  }\n}\n\nCorrect Answer:\n  System.out.println(x > y)\n\nOutput:\n",
+        question: "5.) public class Main {\n  public static void main(String[] args) {\n    int x = 5;\n    int y = 3;\n  System.out.println(x > y); // returns true, because 5 is higher than 3\n  }\n}\n",
         choices: [
-          "System.out.println(x > y)",
-          "System.out.println(x < y)",
-          "System.out.println(x >= y)",
-          "System.out.println(x <= y)"
+          "x > y",
+          "txt",
+          "(x > y)"
         ],
-        correctAnswer: "System.out.println(x > y)",
+        correctAnswer: "(x > y)",
         output: "true"
       },
       {
-        question: "6.) public class Main {\n  public static void main(String[] args) {\n_____________ \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";\n    System.out.println(\"The length of the txt string is: \" + txt.length());\n  }\n}\n\nCorrect Answer:\n\n    String txt =\n\nOutput:\nThe length of the txt string is: 26",
+        question: "6.) public class Main {\n  public static void main(String[] args) {\nString ____ = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";\n    System.out.println(\"The length of the txt string is: \" + txt.length());\n  }\n}\n",
         choices: [
-          "String txt =",
-          "String txt",
-          "txt =",
+          "print",
+          "text",
           "txt"
         ],
-        correctAnswer: "String txt =",
+        correctAnswer: "txt",
         output: "The length of the txt string is: 26"
       },
       {
-        question: "7.) public class Main {\n  public static void main(String[] args) {\n    String txt = \"Hello World\";\n    System.out.println(txt.toUpperCase());\n ________________(txt.toLowerCase());\n  }\n}\n\nCorrect Answer:\n   System.out.println\n\nOutput:\nHELLO WORLD\nhello world",
+        question: "7.) public class Main {\n  public static void main(String[] args) {\n    String txt = \"Hello World\";\n    System.out.println(txt.toUpperCase());\n System.out._____(txt.toLowerCase());\n  }\n}\n",
         choices: [
-          "System.out.println",
-          "System.out",
-          "System",
-          "System.out.print"
+          "println",
+          "text",
+          "System"
+          
         ],
-        correctAnswer: "System.out.println",
+        correctAnswer: "println",
         output: "HELLO WORLD\nhello world"
       },
       {
-        question: "8.) public class Main {\n  public static void main(String[] args) {\n    String txt = \"We are the so-called \\\"Vikings\\\" from the north.\";\n    System.out.__________\n  }\n}\n\nCorrect Answer:\nprintln(txt);\n\nOutput:\nWe are the so-called \"Vikings\" from the north.",
+        question: "8.) public class Main {\n  public static void main(String[] args) {\n    String txt = \"We are the so-called \\\"Vikings\\\" from the north.\";\n    System.__.println(txt);\n  }\n}\n",
         choices: [
-          "println(txt);",
-          "print(txt);",
-          "txt.print();",
-          "out.println(txt);"
+          "out",
+          "text",
+          "ln"
+          
         ],
-        correctAnswer: "println(txt);",
+        correctAnswer: "out",
         output: "We are the so-called \"Vikings\" from the north."
       },
       {
-        question: "9.) public class Main {\n  public static void main(String[] args) {\n    int ____________ (int)(Math.random() * 101);  // 0 to 100\n    System.out.println(randomNum);\n  }\n}\n\nCorrect Answer:\nrandomNum =\n\nOutput:\n",
+        question: "9.) public class Main {\n  public static void main(String[] args) {\n    ____ randomNum = (int)(Math.random() * 101);  // 0 to 100\n    System.out.println(randomNum);\n  }\n}\n",
         choices: [
           "randomNum =",
-          "randomNum",
-          "int randomNum =",
-          "int randomNum"
+          "for",
+          
+          "int"
         ],
-        correctAnswer: "int randomNum =",
+        correctAnswer: "int ",
         output: "92"
       },
       {
-        question: "10.) public class Main {\n  public static void main(String[] args) {\n    int i = 0;\n    ____\n  _______________\n;\n    }\n    while (i < 5);  \n  }\n}\n\nCorrect Answer:\ndo {\n    System.out.println(i);\n      i++",
+        question: "10.) public class Main {\n  public static void main(String[] args) {\n    int i = 0;\n    ____\n   System.out.println(i);\n i++;\n    }\n    while (i < 5);  \n  }\n}\n",
         choices: [
-          "do {\n    System.out.println(i);\n      i++",
-          "for (i = 0; i < 5; i++) {\n    System.out.println(i);",
-          "while (i < 5) {\n    System.out.println(i);\n      i++",
-          "if (i < 5) {\n    System.out.println(i);\n      i++"
+          "do {",
+          "while {",
+          "if {"
         ],
-        correctAnswer: "do {\n    System.out.println(i);\n      i++",
+        correctAnswer: "do {",
         output: "0\n1\n2\n3\n4"
       }
   ],
@@ -2266,7 +2174,7 @@ document.getElementById`,
     },
     {
         'question': '2.\ndef myfunc(n): 2.(a)___a * b___\n  return lambda a : a * n\n\nmydoubler = myfunc(2)\n2.(b)___________ myfunc(3)\n\nprint(mydoubler(11))\nprint(mytripler(11))\n',
-        'choices': ['Mytripler =', 'Mytripler=','mytripler ='],
+        'choices': ['Mytripler =', '=','mytripler ='],
         'correctAnswer': 'mytripler =',
         'output': '22\n33'
     },
