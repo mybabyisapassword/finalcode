@@ -33,6 +33,9 @@
   }
 }
 
+#language {
+  animation: rainbow 5s infinite;
+}
 body::before {
   content: "";
   position: fixed;
@@ -47,11 +50,11 @@ body::before {
 body {
   margin: 0;
   padding: 0;
+  height: 100vh; /* Use viewport height for full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
   background-image: url("image/background.png");
   background-position: center;
   background-size: cover;
@@ -90,11 +93,8 @@ body {
   cursor: pointer;
 }
 
-.button-style,
-.button-submit,
-.button-end,
-.button-next,
-.button-start {
+.button-style {
+  background-color: #4371c6;
   width: 200px;
   height: 50px;
   border-radius: 15px;
@@ -102,27 +102,35 @@ body {
   transition: background-color 0.3s ease-in-out;
 }
 
-.button-style,
+.button-style:hover {
+  background-color: red;
+  color: white;
+}
+
 .button-submit {
   background-color: #4371c6;
+  width: 200px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 25px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button-submit:hover {
+  background-color: red;
 }
 
 .button-end {
   background-color: royalblue;
+  width: 200px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 25px;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.button-next,
-.button-start {
-  background-color: green;
-}
-
-.button-style:hover,
-.button-submit:hover,
-.button-end:hover,
-.button-next:hover,
-.button-start:hover {
+.button-end:hover {
   background-color: red;
-  color: white;
 }
 
 @media only screen and (max-width: 768px) {
@@ -131,10 +139,38 @@ body {
   }
 }
 
+.button-next {
+  background-color: green;
+  width: 200px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 25px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button-next:hover {
+  background-color: red;
+}
+
+.button-start {
+  background-color: green;
+  width: 200px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 25px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button-start:hover {
+  background-color: red;
+}
+
 #score {
   font-size: 40px;
   color: white;
 }
+
+
 
 form {
   display: flex;
@@ -147,11 +183,12 @@ form {
 select,
 input[type="radio"] {
   margin: 10px;
-  font-size: 20px;
+  font-size: 20;
 }
 
 #game {
   display: flex;
+  position: fixed;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -160,7 +197,7 @@ input[type="radio"] {
 
 #question {
   color: white;
-  margin-left: 40px;
+  margin-left: 10px;
   font-size: 20px;
   font-weight: bold;
   padding: 10px;
@@ -168,12 +205,12 @@ input[type="radio"] {
 
 #choices {
   color: white;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   padding: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+      flex-direction: column;
+      align-items: center;
 }
 
 .checkAnswer {
@@ -190,7 +227,6 @@ button[type="button"] {
 #form3 {
   font-size: 30px;
 }
-
 .question {
   font-size: 18px;
 }
@@ -229,7 +265,7 @@ button[type="button"] {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  column-gap: 100px;
+  coulmn-gap: 500px;
 }
 
 .choicesimgs {
@@ -254,3 +290,4 @@ button[type="button"] {
   justify-content: center;
   text-align: center;
 }
+
