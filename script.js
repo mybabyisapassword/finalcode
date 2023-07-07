@@ -33,7 +33,7 @@ const quizData = {
   },
   {
     "question": "6.\n#include <stdio.h>\nint main() {\n  int x = 5;\n  ______= 2;\n  int sum = 5 / 2;\n  printf(\"%d\", sum);\n  return 0;\n}\n\nCorrect answer:",
-    "choices": ["int y", "printf", "Println"],
+    "choices": ["int y", "sum", "int x"],
     "correctAnswer": "int y",
     "output": "2"
   },
@@ -51,13 +51,13 @@ const quizData = {
   },
   {
     "question": "9.\n#include <stdio.h>\nint main() {\n  if (20 > 18) {\n    ______(\"20 is greater than 18\");\n  }\n  return 0;\n}\n\nCorrect answer:",
-    "choices": ["printf", "Println", "int main"],
+    "choices": ["printf", "int", "main"],
     "correctAnswer": "printf",
     "output": "20 is greater than 18"
   },
   {
     "question": "10.\n#include <stdio.h>\nint main() {\n  short a;\n  long b;\n\n\n  printf(\"1.a)______ of short = %d bytes\\n\", sizeof(a));\n  printf(\"size of long = %d 1.b)______\\n\", sizeof(b));\n  return 0;\n}\n\nCorrect answer:\n",
-    "choices": ["SIZE","size","Seize"],
+    "choices": ["SIZE","size","Size"],
     "correctAnswer": "size",
     "output": "size of short = 2 bytes\nsize of long = 8 bytes"
   },
@@ -66,13 +66,13 @@ const quizData = {
   "normal": [
    {
     "question": "1.\n#include <stdio.h>\nint main() 1.b)__\n  int 1.a)______ 15;\n  printf(\"%d\", myNum);\n  return 0;\n}\n\nCorrect answer\nmyNum =",
-    "choices": ["A.)\nMynum", "myNum =", "number"],
+    "choices": ["A.)\nMynum", "myNum =", "num"],
     "correctAnswer": "myNum =",
     "output": "15"
   },
   {
     "question": "2.\n#include <stdio.h>\nint main() {\n    int number;\n    printf(\"Enter an integer: \");\n    1.a)______(\"%d\", &number);\n    // true if number is less than 0\n    if (number < 0) {\n        printf(\"You entered %d.1.b)______\", number);\n    }\n    printf(\"The if statement is easy.\"); for \n    return 0;\n}\n\nCorrect answer\nscanf\n\\n",
-    "choices": ["\nprintf", "scanf", "Println()"],
+    "choices": ["printf", "scanf", "Print()"],
     "correctAnswer": "scanf",
     "output": "WHAT IS THE SECOND ONE ?"
   },
@@ -84,16 +84,16 @@ const quizData = {
   },
 
   {
-    "question": "3.\n#include <stdio.h>\nint main() {\n    int number1, number2;\n    printf(\"Enter two integers: \");\n    scanf(\"%d %d\", &number1, &number2);\n\n    if (number1 >= number2) {\n      if (number1 == number2) {\n        printf(\"Result: %d = %d\",number1,number2);\n      }\n      else {\n        printf(\"1.a)____> %d\", number1, number2);\n      }\n    }\n    else {\n        1.b)______(\"Result: %d < %d\",number1, number2);\n    }\n\n    return 0;\n}\n\nCorrect answer\nResult: %d ",
-    "choices": ["\nresult:&d", "Result: %d", "Result"],
+    "question": "3.\n#include <stdio.h>\nint main() {\n    int number1, number2;\n    printf(\"Enter two integers: \");\n    scanf(\"%d %d\", &number1, &number2);\n\n    if (number1 >= number2) {\n      if (number1 == number2) {\n        printf(\"Result: %d = %d\",number1,number2);\n      }\n      else {\n        printf(\"1.a)____> %d\", number1, number2);\n      }\n    }\n    else {\n        1.b)______(\"Result: %d < %d\",number1, number2);\n    }\n\n    return 0;\n}\n\nCorrect answer\n_____ ",
+    "choices": ["}", "Result: %d", "0"],
     "correctAnswer": "Result: %d",
     "output": "WHAT IS THE SECOND ONE ?"
   },
 
   {
     "question": "3.\n#include <stdio.h>\nint main() {\n    int number1, number2;\n    printf(\"Enter two integers: \");\n    scanf(\"%d %d\", &number1, &number2);\n\n    if (number1 >= number2) {\n      if (number1 == number2) {\n        printf(\"Result: %d = %d\",number1,number2);\n      }\n      else {\n        printf(\"1.a)Result: %d>\", number1, number2);\n      }\n    }\n    else {\n        1.b)______(\"Result: %d < %d\",number1, number2);\n    }\n\n    return 0;\n}\n\nCorrect answer\nResult: %d ",
-    "choices": ["\nprintf", "println", "Print();"],
-    "correctAnswer": "\nprintf",
+    "choices": ["printf", "int", "Print();"],
+    "correctAnswer": "printf",
     "output": "Result: 2 < 7"
   },
 
@@ -103,7 +103,7 @@ const quizData = {
 
   {
     "question": "// Print numbers from 1 to 10\n#include <stdio.h>\n\nint main() {\n  1.a)______\n  for (i = 1; i < 11; ++i)\n  {\n    printf(\"1.b)_____ \", i);\n  }\n  return 0;\n}\n\nCorrect answer:\nint i;\n%d",
-    "choices": ["A.)\nInt", "int ;", "int i;"],
+    "choices": ["Int", "int ;", "int i;"],
     "correctAnswer": "int i;",
     "output": "WHAT IS THE SECOND ONE ?"
   },
@@ -111,8 +111,8 @@ const quizData = {
 
   {
     "question": "// Print numbers from 1 to 10\n#include <stdio.h>\n\nint main() {\n  1.a)__int i;__\n  for (i = 1; i < 11; ++i)\n  {\n    printf(\"1.b)_____ \", i);\n  }\n  return 0;\n}\n\nCorrect answer:\nint i;\n%d",
-    "choices": ["B.)\n%d", "%m", "=="],
-    "correctAnswer": "B.)\n%d",
+    "choices": ["%d", "%m", "=="],
+    "correctAnswer": "%d",
     "output": "1 2 3 4 5 6 7 8 9 10"
   },
 
@@ -121,7 +121,7 @@ const quizData = {
 
   {
     "question": "// Print numbers from 1 to 5\n\n#include <stdio.h>\nint main() {\n  int i = 1;\n    \n  1.a)_____ (i <= 5) {\n    printf(\"%d\\n\", i);\n1.b)_____  }\n\n  return 0;\n}\n\nCorrect answer:\nwhile\n    ++i;",
-    "choices": ["A.)\nWhile", "while", "When"],
+    "choices": ["While", "while", "When"],
     "correctAnswer": "while",
     "output": "WHAT IS THE SECODE ONE ?"
   },
@@ -129,7 +129,7 @@ const quizData = {
 
 {
     "question": "// Print numbers from 1 to 5\n\n#include <stdio.h>\nint main() {\n  int i = 1;\n    \n  1.a)___while__ (i <= 5) {\n    printf(\"%d\\n\", i);\n1.b)_____  }\n\n  return 0;\n}\n\nCorrect answer:\nwhile\n    ++i;",
-    "choices": ["B.)\nI++:", "++i;", "j==;"],
+    "choices": ["++:", "++i;", "j==;"],
     "correctAnswer": "++i;",
     "output": "1\n2\n3\n4\n5"
   },
@@ -140,7 +140,7 @@ const quizData = {
 
   {
     "question": "#include <stdio.h>\n\nint main() {\n  int my1.a)______= {25, 50, 75, 100};\n  int i;\n  \n  for (i = 0; i < 4; i++) {\n    printf(\"%d\\n\", 1.b)_______);\n  }\n \n  return 0;\n}\n\nCorrect answer\nNumbers[]",
-    "choices": ["A.)\nnumber()", "Numbers[]", "Num[]"],
+    "choices": ["()", "Numbers[]", "[]"],
     "correctAnswer": "Numbers[]",
     "output": "25\n50\n75\n100"
   },
@@ -149,7 +149,7 @@ const quizData = {
 
 {
     "question": "#include <stdio.h>\n\nint main() {\n  int my1.a)___Numbers[]___= {25, 50, 75, 100};\n  int i;\n  \n  for (i = 0; i < 4; i++) {\n    printf(\"%d\\n\", 1.b)_______);\n  }\n \n  return 0;\n}\n\nCorrect answer\nNumbers[]",
-    "choices": ["B.)\nMynumber()", "myNumbers[i]", "Int num()"],
+    "choices": ["number", "myNumbers[i]", "("],
     "correctAnswer": "myNumbers[i]",
     "output": "25\n50\n75\n100"
   },
@@ -230,7 +230,7 @@ const quizData = {
   {
     question: '6. html Button\n<!DOCTYPE html>\n<html>\n<body>\n<h2>HTML Buttons</h2>\n<p>HTML buttons are defined with the button tag:</p>\n<button>Click me<______ >\n</body>\n</html>\nOutput:\nHTML Buttons\nHTML buttons are defined with the button tag:\n(Click me)\nCorrect answer: /button\nChoices:\n/button\nButton\nButton',
     correctAnswer: '/button',
-    choices: ['/button', 'Button', 'Button'],
+    choices: ['/button', '</p>', '</>'],
     output:"HTML Buttons\nHTML buttons are defined with the button tag:\n(Click me)"
   },
   {
@@ -248,7 +248,7 @@ const quizData = {
   {
     question: '<!DOCTYPE html>\n<html>\n<body>\n<h2>HTML Links</h2>\n<p>HTML links are defined with the a tag:</p>\n_________"https://www.Identicode.com">Identicode</a>\n</body>\n</html>\n\nOutput:\nHTML Links\nHTML links are defined with the a tag:\n\nIdenticode\nCorrect answer:\n<a href=\nChoices :\nhref=\n<a href=\na href =',
     correctAnswer: '<a href=',
-    choices: ['href=', '<a href=', 'a href ='],
+    choices: ['body', '<a href=', '<div'],
     output:"HTML Links\n"
   },
 ],
@@ -823,7 +823,7 @@ ABC`,
   "normal": [
    {
     question: `#include <iostream>
-using namespace std;
+using namespace std;\n
 
 __________{
   cout << "Hello World!";
@@ -831,7 +831,7 @@ __________{
 }`,
     choices: [
       ">>",
-      "int main()",
+     
       "Cout<",
       "int main()"
     ],
@@ -842,16 +842,16 @@ __________{
 
   {
     question: `#include <iostream>
-using namespace std;
+using namespace std;\n
 
 int main() {
-  ______ 15;   // Now myNum is 15
+  ______ 15;   // Now myNum is 15\n
   myNum = 10;       // Now myNum is 10
   cout << myNum;
   return 0;
 }`,
     choices: [
-      "myNum =",
+     
       "int =",
       "NUM =",
       "myNum ="
@@ -862,19 +862,19 @@ int main() {
 
 
   {
-    question: `#include <iostream>
+    question: `#include <iostream>\n
 using _________;
 
-int main() {
-  int x = 5;
-  int y = 6;
-  int sum = x + y;
-  cout << sum;
+int main() {\n
+  int x = 5;\n
+  int y = 6;\n
+  int sum = x + y;\n
+  cout << sum;\n
   return 0;
 }`,
     choices: [
       "myNum=",
-      "NAMEspace STD",
+      "num=",
       "namespace std"
     ],
     correctAnswer: "namespace std",
@@ -883,18 +883,18 @@ int main() {
 
 
   {
-    question: `#include <iostream>
-using namespace std;
+    question: `#include <iostream>\n\n
+using namespace std;\n
 
-int main() {
-  int x = 5, y = 6, z = 50;  
-  _________x + y + z;
+int main() {\n
+  int x = 5, y = 6, z = 50;  \n\n
+  _________x + y + z;\n
   return 0;
 }`,
     choices: [
       "Cout <<",
       "Court<<",
-      "COUT<<£"
+      "COUT<<"
     ],
     correctAnswer: "Cout <<",
     output: "61"
@@ -902,13 +902,13 @@ int main() {
 
 
   {
-    question: `#include <iostream>
-using namespace std;
+    question: `#include <iostream>\n
+using namespace std;\n
 
-int main() {
-  int _______
-  x = y = z = 50;
-  cout << x + y + z;
+int main() {\n
+  int _______\n
+  x = y = z = 50;\n
+  cout << x + y + z;\n
   return 0;
 }`,
     choices: [
@@ -923,21 +923,21 @@ int main() {
 
 
   {
-    question: `_________
-using namespace std;
+    question: `#include_________
+using namespace std;\n
 int main() {
-  const int minutesPerHour = 60;
+  const int minutesPerHour = 60;\n
   const float PI = 3.14;
-  cout << minutesPerHour << "\\n";
+  cout << minutesPerHour << "\\n";\n
   cout << PI;
   return 0;
 }`,
     choices: [
-      "#include <iostream>",
-      "include(iostream)",
-      "# <iostream>"
+      "<iostream",
+      "(iostream)",
+      "<iostream>"
     ],
-    answer: "#include <iostream>",
+    answer: "<iostream>",
     output: "60\n3.14"
   },
 
@@ -945,17 +945,17 @@ int main() {
 
   {
     question: `#include <iostream>
-using namespace std;
+using namespace std;\n
 int main() {
-  int x, y;
+  int x, y;\n
   _______
   cout << "Type a number: ";
-  cin >> x;
+  cin >> x;\n\n
   cout << "Type another number: ";
-  cin >> y;
+  cin >> y;\n
   sum = x + y;
   cout << "Sum is: " << sum;
-  return 0;
+  return 0;\n
 }`,
     choices: [
       "int sum;",
@@ -970,31 +970,32 @@ int main() {
 
   {
     question: `#include <iostream>
-#include <string>
+#include <string>\n
 using namespace std;
-int main() {
+int main() {\n
   int myNum = 5;
-  _______ 5.99;
+  float
+  _______ 5.99;\n
   double myDoubleNum = 9.98;
-  char myLetter = 'D';
+  char myLetter = 'D';\n
   bool myBoolean = true;
-  string myString = "Hello";
+  string myString = "Hello";\n
    
-  cout << "int: " << myNum << "\\n";
-  cout << "float: " << myFloatNum << "\\n";
-  cout << "double: " << myDoubleNum << "\\n";
-  cout << "char: " << myLetter << "\\n";
-  cout << "bool: " << myBoolean << "\\n";
-  cout << "string: " << myString << "\\n";
+  cout << "int: " << myNum << "\\n";\n
+  cout << "float: " << myFloatNum << "\\n";\n
+  cout << "double: " << myDoubleNum << "\\n";\n
+  cout << "char: " << myLetter << "\\n";\n
+  cout << "bool: " << myBoolean << "\\n";\n
+  cout << "string: " << myString << "\\n";\n
  
   return 0;
 }`,
     choices: [
-      "float myFloatNum =",
-      "Floatmyfloatnum",
+      " myFloatNum =",
+      "floatnum",
       "\"String:\""
     ],
-    correctAnswer: "float myFloatNum =",
+    correctAnswer: " myFloatNum =",
     output: "int: 5\nfloat: 5.99\ndouble: 9.98\nchar: D\nbool: 1\nstring: Hello"
   },
 
@@ -1003,20 +1004,20 @@ int main() {
 
   {
     question: `#include <iostream>
-int main() {
-  _________
-  bool isCodingFun = true;
-  bool isFishTasty = false;
+int main() {\nusing 
+  _________ std;
+  bool isCodingFun = true;\n
+  bool isFishTasty = false;\n
   cout << isCodingFun << "\\n";
-  cout << isFishTasty;
+  cout << isFishTasty;\n
   return 0;
 }`,
     choices: [
-      "using namespace std;",
-      "Namespace std:",
-      "name Space std+"
+      "namespace",
+      "Namespace",
+      "nameSpace"
     ],
-    correctAnswer: "using namespace std;",
+    correctAnswer: "namespace",
     output: "1\n0"
   },
 
@@ -1025,14 +1026,14 @@ int main() {
 
   {
     question: `#include <iostream>
-int main() {
+int main() {\n
   _________
   return 0;
 }`,
     choices: [
       "RETURN;",
       "return 0;",
-      "Turn 0:"
+      "Turn:"
     ],
     correctAnswer: "return 0;",
     output: "35000\n120000"
@@ -1054,12 +1055,12 @@ int main() {
   "hard": [
      {
     question: `1. #include <iostream>
-using namespace std;
+using namespace std;\n
 int main_____ {
-  cout << "Hello World!";
+  cout << "Hello World!";\n
   return 0;
 }
-Correct answer: ()
+Correct answer: ()\n
 Choices:
 &
 >>
@@ -1076,12 +1077,12 @@ Hello World!`,
 
   {
     question: `2. C++ Output (Print Text)
-#include <iostream>
+#include <iostream>\n
 using namespace std;
-int main() {
+int main() {\n\n
   cout ____"Hello World!";
-  cout << "I am learning C++";
-  return 0;
+  cout << "I am learning C++";\n
+  return 0;\n
 }
 Correct answer: <<
 Choices:
