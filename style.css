@@ -197,21 +197,23 @@ input[type="radio"] {
 
 #question {
   color: white;
-  margin-left: 10px;
-  font-size: 20px;
+  margin-left: 5px;
+  font-size: 16px;
   font-weight: bold;
-  padding: 10px;
+  padding: 5px;
 }
+
 
 #choices {
   color: white;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
-  padding: 10px;
+  padding: 5px;
   display: flex;
-      flex-direction: column;
-      align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 .checkAnswer {
   font-size: 30px;

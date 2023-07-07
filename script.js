@@ -1060,13 +1060,7 @@ int main_____ {
   cout << "Hello World!";\n
   return 0;
 }
-Correct answer: ()\n
-Choices:
-&
->>
-()
-Output:
-Hello World!`,
+`,
     choices: ["&", ">>", "()"],
     correctAnswer: "()",
     output: "Hello World!"
@@ -1084,13 +1078,7 @@ int main() {\n\n
   cout << "I am learning C++";\n
   return 0;\n
 }
-Correct answer: <<
-Choices:
-++
-<<
-:
-Output:
-Hello! I am learning C++`,
+`,
     choices: ["++", "<<", ":"],
     correctAnswer: "<<",
     output: "Hello! I am learning C++"
@@ -1108,16 +1096,7 @@ ________
   cout << "I am learning C++";
   return 0;
 }
-Correct answer:
-int main() 
-
-Choices:
-int main()
-;
-{
-Output:
-Hello World!  
-I am learning C++`,
+`,
     choices: ["int main()", "int main{};", "{"],
     correctAnswer: "int main()",
     output: "Hello World!\n\nI am learning C++"
@@ -1134,14 +1113,7 @@ int main() {
   cout << myNum;
   return 0;
 }
-Correct answer: =
-
-Choices:
-%
-=
-{}
-Output:
-15`,
+`,
     choices: ["%", "=", "{}"],
     correctAnswer: "=",
     output: "15"
@@ -1157,14 +1129,7 @@ int main() {
   cout << "I am " << myAge << " ______ old.";
   return 0;
 }
-Correct answer: years
-
-Choices:
-Yrs
-years
-YEARS
-Output:
-I am 35 years old.`,
+`,
     choices: ["Yrs", "years", "YEARS"],
     correctAnswer: "years",
     output: "I am 35 years old."
@@ -1184,14 +1149,7 @@ int main() {
   cout << m;
   return 0;
 }
-Correct answer: \\n
-Choices:
-\\n
-""
-,
-Output:
-60 
-60`,
+`,
     choices: ["\\n", "\"\"", ","],
     correctAnswer: "\\n",
     output: "60\n60"
@@ -1212,14 +1170,7 @@ ____main() {
   cout << PI;
   return 0;
 }
-Correct answer: int
-Choices:
-INT
-iNT
-int
-Output:
-60
-3.14`,
+`,
     choices: ["INT", "iNT", "int"],
     correctAnswer: "int",
     output: "60\n3.14"
@@ -1242,15 +1193,7 @@ int main() {
   cout << "Sum is: " << sum;
   return ___;
 } 
-Correct answer: 0
-Choices:
-7
-1
-4
-Output:
-Type a number: 4 
-Type another number: 7 
-Sum is: 11`,
+`,
     choices: ["7", "1","0"],
     correctAnswer: "0",
     output: "Type a number: 4\nType another number: 7\nSum is: 11"
@@ -1269,14 +1212,7 @@ int main() {
   cout << isFishTasty;
   return 0;
 }
-Correct answer: true
-Choices:
-True
-False
-Maybe
-Output:
-True
-False`,
+`,
     choices: ["True", "False", "Maybe"],
     correctAnswer: "True",
     output: "True\nFalse"
@@ -1296,13 +1232,7 @@ int main () {
   cout << c;
   return 0;
 }
-Correct answer: char
-Choices:
-Chart
-Char
-&
-Output:
-ABC`,
+`,
     choices: ["Chart", "Char", "&"],
     correctAnswer: "Char",
     output: "ABC"
