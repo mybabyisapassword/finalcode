@@ -197,7 +197,7 @@ input[type="radio"] {
 
 #question {
   color: white;
-  margin-left: 5px;
+  margin:  5px;
   font-size: 16px;
   font-weight: bold;
   padding: 5px;
@@ -206,7 +206,8 @@ input[type="radio"] {
 
 #choices {
   color: white;
-  font-size: 18px;
+  margin: 5px;
+  font-size: 16px;
   font-weight: bold;
   padding: 5px;
   display: flex;
@@ -230,7 +231,7 @@ button[type="button"] {
   font-size: 30px;
 }
 .question {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .logo {
@@ -281,6 +282,7 @@ button[type="button"] {
 .questioncontainer {
   margin: 10px;
   margin-left: 10px;
+  font-size: 16px;
   padding: 5px;
   background-color: black;
 }
