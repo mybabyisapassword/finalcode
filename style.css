@@ -198,7 +198,7 @@ input[type="radio"] {
 #question {
   color: white;
   margin:  5px;
-  font-size: 10px;
+  font-size: 20px;
   font-weight: bold;
   padding: 5px;
 }
@@ -231,7 +231,7 @@ button[type="button"] {
   font-size: 30px;
 }
 .question {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .logo {
@@ -282,7 +282,7 @@ button[type="button"] {
 .questioncontainer {
   margin: 10px;
   margin-left: 10px;
-  font-size: 10px;
+  font-size: 20px;
   padding: 5px;
   background-color: black;
 }

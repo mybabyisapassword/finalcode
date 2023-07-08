@@ -416,8 +416,6 @@ const quizData = {
         'output': 'My First JavaScript\nClick me to display Date and Time.'
     },
     // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
 
 ],
   "hard": [
@@ -554,10 +552,6 @@ const quizData = {
     correctAnswer: ">",
     output:"<span style='font-size:100px;'>I will display &#8627; </span>"
   }
-
-      // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
   ],
 },
 
@@ -748,11 +742,7 @@ int main () {
     correctAnswer: "Char",
     output: "ABC"
   }
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
+
 
 
   ],
@@ -1199,17 +1189,6 @@ int main () {\n
     correctAnswer: "Char",
     output: "ABC"
   }
-
-
-      // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-
-
   ],
 },
 
@@ -1422,14 +1401,6 @@ int main () {\n
     correctAnswer: '.innerHTML',
     output:'The output would be an HTML page with a heading saying "JavaScript Numbers," \n\na paragraph stating that numbers can be written with or without decimals\n\nan empty paragraph with the id attribute set to "demo," and a JavaScript code block that sets the content of the element with the id "demo" (<p id="demo"></p>) to the number 10.50 using the innerHTML property.'
   }
-
-      // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
   ],
 
 
@@ -1458,15 +1429,6 @@ int main () {\n
       "choices": ["true", "false", "NaN"],
       "correctAnswer": "false"
     },
-
-        // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-
   ],
   "hard": [
     {
@@ -1790,17 +1752,6 @@ ________.getElementById("demo").innerHTML = x + "<br>" + y;\n
     correctAnswer: "document",
     output: "3.14\n3"
   }
-
-
-      // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-
-
   ],
 },  
 
@@ -1870,17 +1821,6 @@ ________.getElementById("demo").innerHTML = x + "<br>" + y;\n
     correctAnswer: ".println",
     output: "Hello John"
   }
-
-
-      // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-
-
   ],
   "normal": [
     {
@@ -2052,14 +1992,6 @@ ________.getElementById("demo").innerHTML = x + "<br>" + y;\n
     output: "5.75"
   }
 
-      // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-
 
 
 
@@ -2173,18 +2105,6 @@ ________.getElementById("demo").innerHTML = x + "<br>" + y;\n
         correctAnswer: "do {",
         output: "0\n1\n2\n3\n4"
       }
-
-
-
-          // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-
-
   ],
 },
 
@@ -2252,17 +2172,6 @@ ________.getElementById("demo").innerHTML = x + "<br>" + y;\n
         'correctAnswer': 'Hello',
         'output': 'Hello, World!'
     }
-
-
-        // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-
-
 ],
   "normal": [
     {
@@ -2402,17 +2311,6 @@ ________.getElementById("demo").innerHTML = x + "<br>" + y;\n
     },
 
 
-        // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-
-
-
-
 
 ],
   "hard": [
@@ -2476,17 +2374,6 @@ ________.getElementById("demo").innerHTML = x + "<br>" + y;\n
         'correctAnswer': 'sum = num1 + num2',
         'output': 'The sum of 1.5 and 6.3 is 7.8'
     }
-
-
-        // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-    // ADD QUIZ HERE// ADD QUIZ HERE
-
-    
 ]
 ,
 }
@@ -2569,7 +2456,7 @@ choice.style.fontSize = "15px";
 choice.style.backgroundColor = "white";
 choice.style.color = "black";
 choice.style.border = "none";
-choice.style.width = "100px";
+choice.style.width = "115px";
 choice.style.borderRadius = "10px";
 
 // Add event listener to check answer on button click
