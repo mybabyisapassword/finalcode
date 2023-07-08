@@ -9,13 +9,14 @@
 
 
 <div class="form0" style="display: none;">
-    <div type="button" onclick="home()"class="button-home"></div>
+    <div type="button" onclick="home()"class="button-home">home</div>
   </div>
+
   <form id="form1">
     
       <img src="image/back1.jpg" alt="Game Logo" class="logo"><br><br>
 <b>
-      <font style="color: black;" size="55">Welcome To Indenticode!</font> 
+      <font style="color: black;" size="30">Welcome To Indenticode!</font> 
       <h2 style="color: black;">
       To Enhance your knowledge in<br> programming language<br><br>
     </h2>
@@ -46,6 +47,16 @@
     <div class="button-row">
       <button type="button" onclick="startGame('hard')" class="button-start">Hard</button>
     </div>
+    <b>
+    <div id="baButton" onclick="exit1()" class="button-back" style=" background-color: transparent;
+  width: 200px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 25px;
+  transition: background-color 0.3s ease-in-out;
+  float: left;
+  margin-right: 80px; ">Back</div>
+  </b>
   </form>
 
   <div id="game" style="display: none;">
@@ -53,15 +64,42 @@
     <div class="questioncontainer">
     <h2 id="question"></h2>
   </div>
+
+
+
+
+
+  <div class="submit-container">
+    <div class="hardfield">
+<font size="30px">
+      <input type="text" style="width: 300px; height: 45px; font-size: 30px," name="hiddenField" id="hardfield" style="text-align: center;">
+       </font>
+    </div>
+    <button class="hardbutton" id="hardbutton" style="text-align: center; margin: 10px; padding: 20px; border-radius: 15px; background-color: #4371c6; border: none; color: white; ">Submit</button>
+  </div>
+
     <form id="quizForm">
       <div style="display: grid; grid-template-columns: repeat(4, 1fr);" id="choices"></div>
+      <b>
+        <center>
+
+
+      <div id="baButton" onclick="exit2()" class="button-back" style=" background-color: deepskyblue;
+  width: 200px;
+  height: 30px;
+  border-radius: 15px;
+  font-size: 25px;
+  transition: background-color 0.3s ease-in-out;
+  float: left;
+ 
+  ;
+ ">Back</div>
+ </center>
+    </b>
+     
     </form>
   </div>
   <div id="score" style="display: none;"></div>
-  <button type="button" style="display: none;" onclick="endGame()"class="button-end">End Game</button>
-
-
-  
+ 
 </body>
 </html>
-
