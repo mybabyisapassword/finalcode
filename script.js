@@ -152,9 +152,9 @@ const quizData = {
   ],
   "hard": [
     {
-       "question": "Fill in the blank:\n\n```c\n#include <stdio.h>\nint main()\n{\n    float number1 = 13.5;\n    double number2 = 12.4;\n    ______________\n    printf(\"number2 = %lf\", number2);\n    return 0;\n}\n```\n\nCorrect answer:\n printf(\"number1 = %f\\n\", number1);\n\nOutput:\nnumber1 = 13.500000\nnumber2 = 12.400000",
-     "choices": ["printf(\"number1 = %f\\n\" number1);", "11", "Compiler error"],
-      "correctAnswer": "printf(\"number1 = %f\\n\" number1);"
+      "question": "What is the output of the following code?\n\n```c\n#include <stdio.h>\n\nint main() {\n   int x = 10;\n   int *p = &x;\n   printf(\"%d\", *p++);\n   return 0;\n}\n```\n",
+      "choices": ["10", "11", "Compiler error"],
+      "correctAnswer": "10"
     },
     {
       "question": "What is the output of the following code?\n\n```c\n#include <stdio.h>\n\nint main() {\n   int arr[5];\n   printf(\"%d\", sizeof(arr));\n   return 0;\n}\n```\n",
@@ -551,16 +551,12 @@ const quizData = {
 
 };
 
+
+
 let currentLanguage = '';
 let currentDifficulty = '';
 let currentQuestionIndex = 0;
 let score = 0;
-
-document.addEventListener('DOMContentLoaded', function() {
-  var hardButton = document.getElementById('hardbutton');
-  hardButton.addEventListener("click", checkAnswer);
-});
-
 
 function showform1() {
   document.getElementById("form1").style.display = "block";
@@ -589,22 +585,13 @@ function startGame(difficulty) {
   showQuestion();
   const form0 = document.querySelector(".form0");
 
+  // Check if the game is active (game is not None)
   if (game !== null) {
-    form0.style.display = "none";
-    if (difficulty === "hard") {
-      document.getElementById("hardfield").style.display = "flex";
-      document.getElementById("hardbutton").style.display = "flex";
-      const choicesElement = document.getElementById("choices");
-      choicesElement.style.display = "none";
-    } else {
-      document.getElementById("hardfield").style.display = "none";
-      document.getElementById("hardbutton").style.display = "none";
-    }
+    form0.style.display = "block"; // Display the form0
   } else {
-    form0.style.display = "none";
+    form0.style.display = "none"; // Hide the form0
   }
 }
-
 
 function showQuestion() {
   const questionElement = document.getElementById("question");
@@ -641,36 +628,21 @@ function checkAnswer(event) {
   const selectedAnswer = event.target.value;
   const currentQuestion = quizData[currentLanguage][currentDifficulty][currentQuestionIndex];
   const resultElement = document.getElementById("result");
-  const hiddenField = document.getElementById('hardfield').value; 
 
-  if (hiddenField !== null && hiddenField !== "") {
-    if (hiddenField === currentQuestion.correctAnswer) {
-      resultElement.innerHTML = "Correct! <br>" + "output: &nbsp&nbsp" + currentQuestion.output;
-      resultElement.style.fontSize = "20px";
-      resultElement.style.color = "#39FF14";
-      resultElement.style.fontFamily = "rockwell";
-      score++;
-      resultElement.style.textShadow = "0 0 15px #39FF14, 0 0 20px red, 0 0 20px blue";
-    } else {
-      resultElement.textContent = "Incorrect!";
-      resultElement.style.fontSize = "30px";
-      resultElement.style.color = "#ffcccb";
-      resultElement.style.textShadow = "0 0 10px #ffcccb, 0 0 20px #ffcccb, 0 0 30px #ffcccb";
-    }
+  if (selectedAnswer === currentQuestion.correctAnswer) {
+    resultElement.innerHTML = "Correct! <br>" + "output: &nbsp&nbsp" + currentQuestion.output;
+    resultElement.style.fontSize = "20px";
+    resultElement.style.color = "#39FF14";
+    resultElement.style.fontFamily = "rockwell";
+    score++;
+
+    // Add glow effect
+    resultElement.style.textShadow = "0 0 15px #39FF14, 0 0 20px red, 0 0 20px blue";
   } else {
-    if (selectedAnswer === currentQuestion.correctAnswer) {
-      resultElement.innerHTML = "Correct! <br>" + "output: &nbsp&nbsp" + currentQuestion.output;
-      resultElement.style.fontSize = "20px";
-      resultElement.style.color = "#39FF14";
-      resultElement.style.fontFamily = "rockwell";
-      score++;
-      resultElement.style.textShadow = "0 0 15px #39FF14, 0 0 20px red, 0 0 20px blue";
-    } else {
-      resultElement.textContent = "Incorrect!";
-      resultElement.style.fontSize = "30px";
-      resultElement.style.color = "#ffcccb";
-      resultElement.style.textShadow = "0 0 10px #ffcccb, 0 0 20px #ffcccb, 0 0 30px #ffcccb";
-    }
+    resultElement.textContent = "Incorrect!";
+    resultElement.style.fontSize = "30px";
+    resultElement.style.color = "#ffcccb";
+    resultElement.style.textShadow = "0 0 10px #ffcccb, 0 0 20px #ffcccb, 0 0 30px #ffcccb";
   }
 
   event.target.checked = false;
