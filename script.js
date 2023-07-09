@@ -2451,7 +2451,7 @@ function showQuestion() {
     choice.style.display = "block"; // Set display to "block" to stack buttons vertically
 choice.style.marginLeft = ""; // Add margin to center the buttons horizontally
 choice.style.padding = "20px";
-choice.style.margin = "1vh"
+choice.style.margin = "2vh"
 choice.style.fontSize = "15px";
 choice.style.backgroundColor = "white";
 choice.style.color = "black";
@@ -2567,7 +2567,7 @@ function endGame() {
 
 //para ito sa back sa quiz bali baback sha sa prev question 
 //tinanggal ko kc ayaw nyo kiya pinalitan ng back to another form
-function goBack() {
+function exit2() {
   if (currentQuestionIndex > 0) {
     currentQuestionIndex--;
     showQuestion();
@@ -2587,18 +2587,28 @@ function goBack() {
       document.getElementById("backButton").style.display = "none";
     }function exit1() {
       document.getElementById("form1").style.display = "none";
-      document.getElementById("form2").style.display = "block";// pag ni click mo yung back button matik pupunta sa form2 kiya naka block
-      //Ang paglalagay ng block na element na may id na form2 ay ipapakita ang form kong ano naka lagay sa id 
+      document.getElementById("form2").style.display = "block";y//Ang paglalagay ng block na element na may id na form2 ay ipapakita ang form kong ano naka lagay sa id 
       document.getElementById("form3").style.display = "none";
       document.getElementById("game").style.display = "none";
       document.getElementById("score").style.display = "none";
       document.getElementById("backButton").style.display = "none";
     }
 function exit2() {
-      document.getElementById("form1").style.display = "none";
-      document.getElementById("form2").style.display = "none";
-      document.getElementById("form3").style.display = "block";
-      document.getElementById("game").style.display = "none";
-      document.getElementById("score").style.display = "none";
-      document.getElementById("backButton").style.display = "none";
-    }
+
+  document.getElementById("form1").style.display = "block";
+  document.getElementById("form2").style.display = "none";
+  document.getElementById("form3").style.display = "none";
+  document.getElementById("game").style.display = "none";
+  document.getElementById("score").style.display = "none";
+  document.getElementById("choices").innerHTML = "block"; // Clear the choices
+
+  // Auto-refresh the page after 5 seconds (5000 milliseconds)
+  setTimeout(function() {
+    location.reload();
+  }, 500);
+}
+
+// Adding event listener to an element with the ID "myButton"
+document.getElementById("myButton").addEventListener("click", exit2);
+
+
