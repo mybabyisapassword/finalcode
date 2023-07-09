@@ -12,16 +12,6 @@
     <div type="button" onclick="home()"class="button-home">home</div>
   </div>
 
-
-
-
-
-
-
-
-
-
-
   <form id="form1">
     
       <img src="image/back1.jpg" alt="Game Logo" class="logo"><br><br>
@@ -33,25 +23,23 @@
     <button type="button" onclick="showForm2()" class="button-style">Start</button>
   </form></b>
 
-  <form id="form2" style="display: none;">
-    <h2 style="font-size: 35px; color: white;">Choose a Programming Language</h2>
-    <div class="image-grid">  
-      <img src="image/c+.png" class="choicesimgs" alt="Image 1" onclick="showForm3('c++')">
-      <img src="image/c.png" class="choicesimgs" alt="Image 2" onclick="showForm3('c')">
-      <img src="image/java.png" class="choicesimgs" alt="Image 3" onclick="showForm3('java')">
-      <img src="image/js.png" class="choicesimgs" alt="Image 4" onclick="showForm3('js')">
-      <img src="image/html.webp" class="choicesimgs" alt="Image 5" onclick="showForm3('html')">
-      <img src="image/python.png" class="choicesimgs" alt="Image 6" onclick="showForm3('python')">
-    </div>  
-  </form>
+  <style>
+  #form3 {
+    display: none;
+  }
+</style>
 
-
-
-
-
-
-
-
+<form id="form2" style="display: none;">
+  <h2 style="font-size: 35px; color: white;">Choose a Programming Language</h2>
+  <div class="image-grid">  
+    <img src="image/c+.png" class="choicesimgs" alt="Image 1" onclick="showForm3('c++')">
+    <img src="image/c.png" class="choicesimgs" alt="Image 2" onclick="showForm3('c')">
+    <img src="image/java.png" class="choicesimgs" alt="Image 3" onclick="showForm3('java')">
+    <img src="image/js.png" class="choicesimgs" alt="Image 4" onclick="showForm3('js')">
+    <img src="image/html.webp" class="choicesimgs" alt="Image 5" onclick="showForm3('html')">
+    <img src="image/python.png" class="choicesimgs" alt="Image 6" onclick="showForm3('python')">
+  </div>  
+</form>
 
   <form id="form3" style="display: none; font-size: 20px; color: white;">
     <h2 id="languageType">Choose Difficulty</h2>
@@ -77,29 +65,11 @@
   </b>
   </form>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <div id="game" style="display: none;">
     <div id="result"></div> 
     <div class="questioncontainer">
     <h2 id="question"></h2>
   </div>
-
-
-
-
   <div class="submit-container">
     <div class="hardfield">
 <font size="30px">
@@ -108,10 +78,6 @@
     </div>
     <button class="hardbutton" id="hardbutton" style="text-align: center; margin: 10px; padding: 20px; border-radius: 15px; background-color: #4371c6; border: none; color: white; ">Submit</button>
   </div>
-
-
-
-
 
     <form id="quizForm">
       <div style="display: grid; grid-template-columns: repeat(4, 1fr);" id="choices"></div>
@@ -126,7 +92,7 @@
   float: left;
  
   ;
- ">exit level</div>
+ ">Back</div>
  </center>
     </b>
      
