@@ -229,6 +229,14 @@ button[type="button"] {
 
 #form3 {
   font-size: 30px;
+  display: none;
+}
+#form2 {
+  font-size: 30px;
+  display: none;
+}#form22 {
+  font-size: 30px;
+  display: none;
 }
 .question {
   font-size: 20px;

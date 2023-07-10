@@ -2456,7 +2456,7 @@ choice.style.fontSize = "15px";
 choice.style.backgroundColor = "white";
 choice.style.color = "black";
 choice.style.border = "none";
-choice.style.width = "115px";
+choice.style.width = "110px";
 choice.style.borderRadius = "10px";
 
 // Add event listener to check answer on button click
@@ -2536,7 +2536,7 @@ function checkAnswer(event) {
       // Quiz is complete
       endGame();
     }
-  }, 1500); // Delay of 1.5 seconds (1500 milliseconds)
+  }, 3000); // Delay of 1.5 seconds (1500 milliseconds)
 }
 
 function home() {
@@ -2549,25 +2549,32 @@ function endGame() {
   document.body.style.backgroundImage = 'url("image/confetti.gif")';
   document.querySelector(".form0").style.display = "none";
 
+
   // Hide the game element
   document.getElementById("game").style.display = "none";
 
-  // Update the score display
-  document.getElementById("score").textContent = " YOUR SCORE IS ! \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" + score + "/" + quizData[currentLanguage][currentDifficulty].length;
-  document.getElementById("score").style.display = "block";
 
+  // Update the score display
+  document.getElementById("score").textContent = " YOUR SCORE IS ! \n\n\n\n\n\n\n\n" + score + "/" + quizData[currentLanguage][currentDifficulty].length;
+  document.getElementById("score").style.display = "block";
+ 
 
 
 
   // Reload the page after 3 seconds
   setTimeout(function() {
     location.reload();    
-  }, 5000);
+  },30000);
+
+{
+        document.getElementById("form22").style.display = "block";
+        document.getElementById("form22").style.marginLeft = "400px";
+  }
 }
 
 //para ito sa back sa quiz bali baback sha sa prev question 
 //tinanggal ko kc ayaw nyo kiya pinalitan ng back to another form
-function exit2() {
+function goBack() {
   if (currentQuestionIndex > 0) {
     currentQuestionIndex--;
     showQuestion();
@@ -2587,28 +2594,26 @@ function exit2() {
       document.getElementById("backButton").style.display = "none";
     }function exit1() {
       document.getElementById("form1").style.display = "none";
-      document.getElementById("form2").style.display = "block";y//Ang paglalagay ng block na element na may id na form2 ay ipapakita ang form kong ano naka lagay sa id 
+      document.getElementById("form2").style.display = "block";// pag ni click mo yung back button matik pupunta sa form2 kiya naka block
+      //Ang paglalagay ng block na element na may id na form2 ay ipapakita ang form kong ano naka lagay sa id 
       document.getElementById("form3").style.display = "none";
       document.getElementById("game").style.display = "none";
       document.getElementById("score").style.display = "none";
       document.getElementById("backButton").style.display = "none";
     }
-function exit2() {
 
+function exit2() {
   document.getElementById("form1").style.display = "block";
   document.getElementById("form2").style.display = "none";
   document.getElementById("form3").style.display = "none";
   document.getElementById("game").style.display = "none";
   document.getElementById("score").style.display = "none";
-  document.getElementById("choices").innerHTML = "block"; // Clear the choices
+  document.getElementById("score").style.display = "none";
+  document.getElementById("choices").style.display = "block";
 
-  // Auto-refresh the page after 5 seconds (5000 milliseconds)
-  setTimeout(function() {
-    location.reload();
-  }, 500);
+setTimeout(function() {
+  // Reload the page
+  location.reload();
+}, 100);
+ // Refresh every 5 seconds (adjust the delay as needed)
 }
-
-// Adding event listener to an element with the ID "myButton"
-document.getElementById("myButton").addEventListener("click", exit2);
-
-
