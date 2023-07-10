@@ -2568,7 +2568,7 @@ function endGame() {
 
 {
         document.getElementById("form22").style.display = "block";
-        document.getElementById("form22").style.marginLeft = "400px";
+        document.getElementById("form22").style.marginLeft = "200px";
   }
 }
 
