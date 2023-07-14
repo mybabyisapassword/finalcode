@@ -143,7 +143,7 @@ const quizData = {
     "question": "#include <stdio.h>\n\nint main() {\n  int my1.a)______[]= {25, 50, 75, 100};\n  int i;\n  \n  for (i = 0; i < 4; i++) {\n    printf(\"%d\\n\", 1.b)_______);\n  }\n \n  return 0;\n}\n",
     "choices": ["()", "Numbers", ";"],
     "correctAnswer": "Numbers",
-    "output": "25\n50\n75\n100"
+    "output": "what is the next one ?"
   },
 
 
@@ -2449,24 +2449,32 @@ function showQuestion() {
     choice.value = currentQuestion.choices[i];
 
     choice.style.display = "block"; // Set display to "block" to stack buttons vertically
-choice.style.marginLeft = ""; // Add margin to center the buttons horizontally
-choice.style.padding = "20px";
-choice.style.margin = "2vh"
-choice.style.fontSize = "15px";
-choice.style.backgroundColor = "white";
-choice.style.color = "black";
-choice.style.border = "none";
-choice.style.width = "110px";
-choice.style.borderRadius = "10px";
+    choice.style.marginLeft = ""; // Add margin to center the buttons horizontally
+    choice.style.padding = "20px";
+    choice.style.margin = "2vh"
+    choice.style.fontSize = "15px";
+    choice.style.backgroundColor = "white";
+    choice.style.color = "black";
+    choice.style.border = "none";
+    choice.style.width = "110px";
+    choice.style.borderRadius = "10px";
 
-// Add event listener to check answer on button click
-
+    // Add event listener to check answer on button click
     choice.addEventListener("click", checkAnswer);
 
     choicesElement.appendChild(choice);
   }
 }
 
+function goToNextQuestion() {
+  // Add your code here to handle going to the next question
+  // You can increment the currentQuestionIndex and call the showQuestion() function again
+
+  currentQuestionIndex++; // Increment the index to move to the next question
+
+  // Call showQuestion() again to display the next question
+  showQuestion();
+}
 
 //code ito ng hard level
 
@@ -2547,7 +2555,7 @@ function home() {
 function endGame() {
   // Replace background image with a GIF
   document.body.style.backgroundImage = 'url("image/confetti.gif")';
-  document.querySelector(".form0").style.display = "none";
+  document.querySelector(".form0").style.display = "block";
 
 
   // Hide the game element
@@ -2566,10 +2574,6 @@ function endGame() {
     location.reload();    
   },30000);
 
-{
-        document.getElementById("form22").style.display = "block";
-        document.getElementById("form22").style.marginLeft = "200px";
-  }
 }
 
 //para ito sa back sa quiz bali baback sha sa prev question 

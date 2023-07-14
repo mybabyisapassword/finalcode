@@ -14,24 +14,6 @@
   </div>
 
 
-  <div class="form22" id ="form22" style="display: none;">
-    
-       <div id="baButton" onclick="home()" class="back22" style=" background-color: deepskyblue;
-  width: 100px;
-  height: 30px;
-  margin: 100px;
-  border-radius: 15px;
-  font-size: 25px;
-  float: revert;
-  transition: background-color 0.3s ease-in-out
-  display: ;
- 
-  ;
- ">exit </div>
- 
-  </div>
-
-
 
 
   <form id="form1">
@@ -99,25 +81,36 @@
     <button class="hardbutton" id="hardbutton" style="text-align: center; margin: 10px; padding: 20px; border-radius: 15px; background-color: #4371c6; border: none; color: white; ">Submit</button>
   </div>
 
-    <form id="quizForm">
-      <div style="display: grid; grid-template-columns: repeat(4, 1fr);" id="choices"></div>
-      <b>
-        <center>
-       <div id="baButton" onclick="home()" class="button-back" style=" background-color: deepskyblue;
-  width: 200px;
-  height: 30px;
-  border-radius: 15px;
-  font-size: 25px;
-  transition: background-color 0.3s ease-in-out;
-  float: left;
-  display: ;
- 
-  ;
- ">exit level</div>
- </center>
-    </b>
-     
-    </form>
+
+  
+<form id="quizForm">
+  <div style="display: grid; grid-template-columns: repeat(4, 1fr);" id="choices"></div>
+  <b>
+    <center>
+      <div id="baButton" onclick="home()" class="button-back" style="background-color: deepskyblue;
+        width: 200px;
+        height: 30px;
+        border-radius: 15px;
+        font-size: 25px;
+        transition: background-color 0.3s ease-in-out;
+        float: left;
+      ">
+        Exit Level
+      </div>
+      <div id="nextButton" onclick="goToNextQuestion()" class="button-next" style="background-color: deepskyblue;
+        width: 200px;
+        height: 30px;
+        border-radius: 15px;
+        font-size: 25px;
+        transition: background-color 0.3s ease-in-out;
+        float: right;
+      ">
+        Next
+      </div>
+    </center>
+  </b>
+</form>
+
   </div>
   <div id="score" style="display: none;"></div>
 
