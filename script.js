@@ -1195,22 +1195,75 @@ int main () {\n
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   "js": {
       "easy": [
          {
    
     question: `
-      <h2>What Can JavaScript Do?</h2>\n
-      <p ___"demo">JavaScript can change HTML content.</p>\n
-      <button type="button" onclick='document.getElementById("demo").innerHTML =\n "Hello JavaScript!"'>Click Me!</button>\n
+      <h2>What Can\n JavaScript Do?</h2>\n
+      <p ___"demo">JavaScript \ncan change HTML \ncontent.</p>\n
+      <button type="button"\n onclick='document.\ngetElementById("demo").\ninnerHTML =\n "Hello JavaScript!"'>\nClick Me!</button>\n
     `,
-    choices: [
-      'id=',
-      'Id=',
-      'id ='
-    ],
+
+    choices: ['id=', 'Id=', 'id =' ],
+      
     correctAnswer: 'id=',
-    output:'The output of the code you provided would \n\nbe an HTML button with the following structure:'
+    output:'The output of the\n\n code you provided would \n\nbe an HTML button with \nthe following structure:'
   },
 
 
@@ -1218,10 +1271,10 @@ int main () {\n
 {
    
     question: `
-      <h2>JavaScript in Body</h2>\n
+      <h2>JavaScript \nin Body</h2>\n
       <p id="demo"></p>
       _______\n
-      document.getElementById("demo").innerHTML = "My First JavaScript";\n\n
+      document.getElementById\n("demo").innerHTML = \n"My First JavaScript";\n\n
     `,
     choices: [
       '<Script>',
@@ -1229,7 +1282,7 @@ int main () {\n
       '{script}'
     ],
     correctAnswer: '<script>',
-    output:'The output would be an HTML paragraph element \n(<p>) with the id attribute set to "demo" and no initial content.'
+    output:'The output would \nbe an HTML paragraph\n element \n(<p>) with the id \nattribute set to "\ndemo" and no initial content.'
   },
 
 
@@ -1239,9 +1292,9 @@ int main () {\n
 
   {
     question: `
-      <h2>Demo JavaScript in Head</h2>\n
-      <p id="demo">A Paragraph.</p>
-      _______ \ntype="button" onclick="myFunction()">Try it</button>
+      <h2>Demo JavaScript\n in Head</h2>\n
+      <p id="demo">A Paragraph\n.</p>
+      _______ \ntype="button" onclick=\n"myFunction()">\nTry it</button>\n
     `,
     choices: [
       '<button>',
@@ -1249,7 +1302,7 @@ int main () {\n
       '<button'
     ],
     correctAnswer: '<button',
-    output:'The output of the provided code would be an HTML page displaying a heading that says \n\n"Demo JavaScript in Head," a paragraph with the text "A Paragraph.," \n\nand a button labeled "Try it."'
+    output:'The output of the \nprovided code would \nbe an HTML page displaying \na heading that says \n\n"Demo JavaScript in Head,"\n a paragraph with the\n text "A Paragraph.," \n\nand a button labeled\n "Try it."'
   },
 
 
@@ -1259,12 +1312,12 @@ int main () {\n
 
   {
     question: `
-      <h2>Demo External JavaScript</h2>\n
-      <p id="demo">A Paragraph.</p>\n
-      <button type="button" onclick="myFunction()">Try it</button>\n
-      <p>This example links to "myScript.js".____</p>\n
-      <p>(myFunction is stored in "myScript.js")</p>\n
-      <script src="myScript.js"></script>
+      <h2>Demo External\n JavaScript</h2>\n
+      <p id="demo">\nA Paragraph.</p>\n
+      <button type=\n"button" onclick=\n"myFunction()">\nTry it</button>\n
+      <p>This example \nlinks to \n"myScript.js".____</p>\n
+      <p>(myFunction is \nstored in "\nmyScript.js")</p>\n
+      <script src="myScript.js\n\n"></script>
     `,
     choices: [
       '<p>',
@@ -1272,7 +1325,7 @@ int main () {\n
       '</p>'
     ],
     correctAnswer: '</p>',
-    output:'The output would be an HTML page with a heading saying "Demo External JavaScript," \n\na paragraph with the text "A Paragraph.," a button labeled "Try it," \n\n\n\n\n\na paragraph mentioning the link to an external JavaScript file, and another paragraph stating that\n\n\n\n the function myFunction() is stored in the external file "myScript.js," which is linked to \n\nthe HTML page using the <script> tag with the src attribute set to "myScript.js".'
+    output:'The output would\n be an HTML page with a heading\n saying "Demo External\n JavaScript," \n\na paragraph with the \ntext "A Paragraph.," a \nbutton labeled "Try it," \n\n\n\n\n\na paragraph mentioning the link to an external JavaScript file, and another paragraph stating that\n\n\n\n the function myFunction() is stored in the external file "myScript.js," which is linked to \n\nthe HTML page using the <script> tag with the src attribute set to "myScript.js".'
   },
 
 
@@ -1282,12 +1335,12 @@ int main () {\n
     question: `
       <h2>External JavaScript</h2>\n
       ______
-      <p id="demo">A Paragraph.</p>\n\n
-      <button type="button" onclick="myFunction()">Click Me</button>\n
-      <p>This example uses a full web URL to link to "myScript.js".</p>\n
-      <p>(myFunction is stored in "myScript.js")</p>\n
+      <p id="demo">A\n Paragraph.</p>\n\n
+      <button type=\n"button" onclick=\n"myFunction()">\nClick Me</button>\n
+      <p>This example\n uses a full web \nURL to link to \n"myScript.js".</p>\n
+      <p>(myFunction \nis stored in \n"myScript.js")</p>\n
       </body>\n
-      <script src="https://www.w3schools.com/js/myScript.js"></script>
+      <script src=\n"https://www.w3schools.\ncom/js/myScript.\njs"></script>
     `,
     choices: [
       '<body>',
@@ -1295,7 +1348,7 @@ int main () {\n
       '</body>'
     ],
     correctAnswer: '<body>',
-    output:'The output would be an HTML page with a heading saying "External JavaScript," \n\na paragraph with the text "A Paragraph.," a button labeled "Click Me,"\n\n a paragraph mentioning the use of a full web URL to link to the external JavaScript file \n\n\n\n\n\n\n\n\n\n"myScript.js," and another paragraph stating that the function \n\n\n\n\n\n\n\nmyFunction() is stored in the external file "myScript.js," \n\n\n\n\n\nwhich is linked to the HTML page using the <script> tag with t\n\n\n\nhe src attribute set to "https://www.w3schools.com/js/myScript.js".'
+    output:'The output would\n be an HTML page\n with a heading saying \n"External JavaScript," \n\na paragraph with \nthe text "A Paragraph.,\n" a button labeled "Click Me,"\n\n a paragraph mentioning the\n use of a full web\n URL to link to the \nexternal JavaScript file \n\n\n\n\n\n\n\n\n\n"myScript.js," and another paragraph stating that the function \n\n\n\n\n\n\n\nmyFunction() is stored in the external file "myScript.js," \n\n\n\n\n\nwhich is linked to the HTML page using the <script> tag with t\n\n\n\nhe src attribute set to "https://www.w3schools.com/js/myScript.js".'
   },
 
 
@@ -1303,11 +1356,11 @@ int main () {\n
   {
     question: `
       __________
-      <h2>My First Web Page</h2>\n
-      <p>My First Paragraph.</p>\n
+      <h2>My First\n Web Page</h2>\n
+      <p>My First \nParagraph.</p>\n
       <p id="demo"></p>\n
       <script>\n
-        document.getElementById("demo").innerHTML = 5 + 6;\n
+        document.getElementById\n("demo").innerHTML\n = 5 + 6;\n
       </script>
       </html>
     `,
@@ -1317,7 +1370,7 @@ int main () {\n
       '<!DOCTYPE Html>'
     ],
     correctAnswer: '<!DOCTYPE html>',
-    output:'The output would be an HTML page displaying a heading saying\n\n "My First Web Page," a paragraph saying "My First Paragraph.," \n\nand an empty paragraph, which is filled by JavaScript code to display the result of\n\n\n\n\n\n the expression "5 + 6," which is "11."'
+    output:'The output would be an\n HTML page displaying a \n\nheading saying\n\n "My First Web Page," \na paragraph saying "My \nFirst Paragraph.," \n\nand an empty paragraph,\n which is filled by \nJavaScript code to \ndisplay the result of\n\n\n\n\n\n the expression "5 +\n 6," which is "11."'
   },
 
 
@@ -1326,10 +1379,10 @@ int main () {\n
 
   {
     question: `
-      <h2>Activate Debugging_____\n\n
-      <p>F12 on your keyboard will activate debugging.</p>\n
-      <p>Then select "Console" in the debugger menu.</p>\n
-      <p>Then click Run again.</p>\n
+      <h2>Activate\n Debugging_____\n\n
+      <p>F12 on your\n keyboard will \nactivate debugging.</p>\n
+      <p>Then select \n"Console" in the \ndebugger menu.</p>\n
+      <p>Then click\n Run again.</p>\n
       <script>\n\n
         console.log(5 + 6);\n
       </script>
@@ -1340,15 +1393,15 @@ int main () {\n
       '</h2>'
     ],
     correctAnswer: '</h2>',
-    output:'The output would be an HTML page with a heading saying "Activate Debugging,"\n\n\n\n and three paragraphs with instructions for activating debugging,\n\n followed by a JavaScript code block that logs the result of the expression \n\\n\nn"5 + 6" (which is 11) to the browser console.'
+    output:'The output would be\n an HTML page with a \nheading saying \n"Activate Debugging,"\n\n\n\n and three paragraphs with \n\ninstructions for\n activating debugging,\n\n followed by a JavaScript\n code block that logs\n the result of the expression \n\\n\nn"5 + 6" (which is 11) to the\n browser console.'
   },
 
 
   {
     question: `
-      <h2>The window.print() Method</h2>\n
-      <p>Click the button to print the current page.</p>\n
-      <button onclick="window._____">Print this page</button>\n
+      <h2>The window.\nprint() Method</h2>\n
+      <p>Click the button \nto print the\n current page.</p>\n
+      <button onclick=\n"window._____">Print\n this page</button>\n
     `,
     choices: [
       'print()',
@@ -1356,7 +1409,7 @@ int main () {\n
       'Print()'
     ],
     correctAnswer: 'print()',
-    output:'The output would be an HTML page with a heading saying \n\n"The window.print() Method," a paragraph with the text "Click the\n\n button to print the current page," and a button labeled "Print this page."\n\n When the button is clicked, it triggers the window.print() method, which opens \n\nthe browser s print dialog to print the current page.'
+    output:'The output would be\n an HTML page with a\n heading saying \n\n"The window.print() Method,"\n a paragraph with the \ntext "Click the\n\n button to print the\n current page," and a\n button labeled "Print \nthis page."\n\n When the button is clicked,\n it triggers the window.print() \nmethod, which opens \n\nthe browser s print dialog\n to print the current page.'
   },
 
 
@@ -1365,11 +1418,11 @@ int main () {\n
 
   {
     question: `
-      <h2>JavaScript Statements</h2>\n
-      <p>In HTML, JavaScript statements are executed by the browser.</p>\n
+      <h2>JavaScript\n Statements</h2>\n
+      <p>In HTML, JavaScript\n statements are \nexecuted by the browser.</p>\n
       <p id="demo"></p>\n
       <script>\n
-        document.getElementById(______).innerHTML = "Hello Dolly.";\n
+        document.getElementById\n(______).innerHTML = \n"Hello Dolly.";\n
       </script>
     `,
     choices: [
@@ -1378,7 +1431,7 @@ int main () {\n
       '"demo"'
     ],
     correctAnswer: '"demo"',
-    output:'The output would be an HTML page displaying a heading saying "JavaScript Statements,"\n\n a paragraph about JavaScript statements being executed by the browser, \n\nand an empty paragraph with the id "demo" that is filled with the text "Hello Dolly." using JavaScript.'
+    output:'The output would \nbe an HTML page \ndisplaying a heading \nsaying "JavaScript Statements,"\n\n a paragraph about JavaScript\n statements being executed by\n the browser, \n\nand an empty paragraph with the id "demo" that is filled with the text "Hello Dolly." using JavaScript.'
   },
 
 
@@ -1386,11 +1439,11 @@ int main () {\n
 
   {
     question: `
-      <h2>JavaScript Numbers</h2>\n
-      <p>Number can be written with or without decimals.</p>\n
+      <h2>JavaScript\n Numbers</h2>\n
+      <p>Number can be\n written with or \nwithout decimals.</p>\n
       <p id="demo"></p>\n
       <script>\n\n
-        document.getElementById("demo")__________ = 10.50;\n
+        document.getElementById\n("demo")__________ = 10.50;\n
       </script>
     `,
     choices: [
@@ -1399,7 +1452,7 @@ int main () {\n
       '.InnerHTML'
     ],
     correctAnswer: '.innerHTML',
-    output:'The output would be an HTML page with a heading saying "JavaScript Numbers," \n\na paragraph stating that numbers can be written with or without decimals\n\nan empty paragraph with the id attribute set to "demo," and a JavaScript code block that sets the content of the element with the id "demo" (<p id="demo"></p>) to the number 10.50 using the innerHTML property.'
+    output:'The output would\n be an HTML page \nwith a heading saying \n"JavaScript Numbers," \n\na paragraph stating that \nnumbers can be written with\n or without decimals\n\nan empty paragraph with the \nid attribute set to "demo," and a \nJavaScript code block that sets\n the content of the element with\n the id "demo" (<p id="demo"></p>)\n to the number 10.50 using the\n innerHTML property.'
   }
   ],
 
@@ -1408,24 +1461,24 @@ int main () {\n
 
   "normal": [
     {
-      "question": "What is the output of the following code?\n\nconsole.log(typeof 42);",
+      "question": "What is the output\n of the following code?\n\nconsole.log(typeof 42);",
       "choices": ["number", "string", "boolean"],
       "correctAnswer": "number"
     },
     {
-      "question": "Which method is used to remove the last element from an array in JavaScript?",
+      "question": "Which method is\n used to remove the last \nelement from an array in JavaScript?",
       "choices": ["pop()", "shift()", "remove()"],
       "correctAnswer": "pop()"
     },
     
     
     {
-      "question": "Which function is used to convert a string to an integer in JavaScript?",
+      "question": "Which function is used\n to convert a string to\n an integer in JavaScript?",
       "choices": ["parseInt()", "toString()", "toFixed()"],
       "correctAnswer": "parseInt()"
     },
     {
-      "question": "What is the output of the following code?\n\nconsole.log(3 === '3');",
+      "question": "What is the output \nof the following code?\n\nconsole.log(3 === '3')\n;",
       "choices": ["true", "false", "NaN"],
       "correctAnswer": "false"
     },
