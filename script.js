@@ -2470,10 +2470,20 @@ function goToNextQuestion() {
   // Add your code here to handle going to the next question
   // You can increment the currentQuestionIndex and call the showQuestion() function again
 
-  currentQuestionIndex++; // Increment the index to move to the next question
 
+  currentQuestionIndex++; // Increment the index to move to the next question
+ if (currentQuestionIndex < quizData[currentLanguage][currentDifficulty].length) {
+      showQuestion();
+      document.getElementById("result").textContent = "";
+    } else {
+      // Quiz is complete
+      endGame();
+
+    }
   // Call showQuestion() again to display the next question
   showQuestion();
+ 
+   
 }
 
 //code ito ng hard level
@@ -2533,18 +2543,20 @@ function checkAnswer(event) {
     }
   }
 
+
   event.target.checked = false;
   // Move to the next question after a short delay
   setTimeout(function() {
-    currentQuestionIndex++;
+    
     if (currentQuestionIndex < quizData[currentLanguage][currentDifficulty].length) {
       showQuestion();
       document.getElementById("result").textContent = "";
     } else {
       // Quiz is complete
       endGame();
+
     }
-  }, 350000); // Delay of 1.5 seconds (1500 milliseconds)
+  }, 1500); // Delay of 1.5 seconds (1500 milliseconds)
 }
 
 function home() {
