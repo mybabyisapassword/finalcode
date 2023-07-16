@@ -2544,7 +2544,7 @@ function checkAnswer(event) {
       // Quiz is complete
       endGame();
     }
-  }, 3000); // Delay of 1.5 seconds (1500 milliseconds)
+  }, 350000); // Delay of 1.5 seconds (1500 milliseconds)
 }
 
 function home() {
